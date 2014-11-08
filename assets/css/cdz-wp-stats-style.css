@@ -1,0 +1,32 @@
+/*
+ *       ( ( (                        |"|                         ___         .      .   
+ *     '. ___ .'       ,,,,,         _|_|_        __MMM__        .|||.      .  .:::.     
+ *    '  (> <) '      /(o o)\        (o o)         (o o)         (o o)        :(o o):  . 
+ *   ooO--(_)--Ooo-ooO--(_)--Ooo-ooO--(_)--Ooo-ooO--(_)--Ooo-ooO--(_)--Ooo-ooO--(_)--Ooo
+ *     ____          _                  _                   _                           
+ *    / ___|___   __| | ___ _ __ ____  | |_   _ _ __   __ _| | ___   ___ ___  _ __ ___  
+ *   | |   / _ \ / _` |/ _ \ '__|_  /  | | | | | '_ \ / _` | |/ _ \ / __/ _ \| '_ ` _ \ 
+ *   | |__| (_) | (_| |  __/ |   / / |_| | |_| | | | | (_| | |  __/| (_| (_) | | | | | |
+ *    \____\___/ \__,_|\___|_|  /___\___/ \__,_|_| |_|\__, |_|\___(_)___\___/|_| |_| |_|
+ *                                                    |___/                             
+ */
+
+#cdz-wp-stats { color: #aaa; background-color: #222; height: 40px; border-bottom: 1px solid #222; padding: 10px 20px; left: 0px; right: 0px; bottom: -1px; font-size: 12px; position: fixed; z-index: 99999; }
+.wp-admin #cdz-wp-stats { left: 160px; }
+#cdz-wp-stats .cj-logo { width: 200px; height: 40px; border-right: 1px solid #333; padding: 0px 20px 0px 0px; }
+#cdz-wp-stats .cj-logo a { display: block; }
+#cdz-wp-stats .stats { height: 30px; top: 15px; left: 260px; position: absolute; }
+#cdz-wp-stats .stats ul { height: 30px; padding: 0px; margin: 0px; list-style: none outside; }
+#cdz-wp-stats .stats ul li { height: 15px; line-height: 15px; padding: 0px; margin: 0px; list-style: none outside; white-space: nowrap; }
+#cdz-wp-stats ul li strong { color: #eee; font-size: 13px; }
+
+@media ( max-width: 900px ) {
+	#cdz-wp-stats { padding: 10px; }
+	#cdz-wp-stats .cj-logo { border: 0px; padding: 0px; margin: auto; }
+	#cdz-wp-stats .stats { display: none; }
+	.wp-admin #cdz-wp-stats { left: 36px; }
+}
+
+@media ( max-width: 782px ) {
+	.wp-admin #cdz-wp-stats { left: 0px; }
+}

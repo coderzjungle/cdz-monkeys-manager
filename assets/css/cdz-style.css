@@ -1,0 +1,156 @@
+/*
+ *       ( ( (                        |"|                         ___         .      .   
+ *     '. ___ .'       ,,,,,         _|_|_        __MMM__        .|||.      .  .:::.     
+ *    '  (> <) '      /(o o)\        (o o)         (o o)         (o o)        :(o o):  . 
+ *   ooO--(_)--Ooo-ooO--(_)--Ooo-ooO--(_)--Ooo-ooO--(_)--Ooo-ooO--(_)--Ooo-ooO--(_)--Ooo
+ *     ____          _                  _                   _                           
+ *    / ___|___   __| | ___ _ __ ____  | |_   _ _ __   __ _| | ___   ___ ___  _ __ ___  
+ *   | |   / _ \ / _` |/ _ \ '__|_  /  | | | | | '_ \ / _` | |/ _ \ / __/ _ \| '_ ` _ \ 
+ *   | |__| (_) | (_| |  __/ |   / / |_| | |_| | | | | (_| | |  __/| (_| (_) | | | | | |
+ *    \____\___/ \__,_|\___|_|  /___\___/ \__,_|_| |_|\__, |_|\___(_)___\___/|_| |_| |_|
+ *                                                    |___/                             
+ */
+
+/*
+ *	WP Admin
+ */
+
+#wpadminbar #wp-admin-bar-cdz-theme-options > * { color: #eee; }
+#wpadminbar #wp-admin-bar-cdz-theme-options > .ab-item:before { content: ' '; width: 20px; height: 32px; background: url('../img/admin/dashicon.png') center no-repeat !important; padding: 0px; }
+#wpadminbar #wp-admin-bar-cdz-theme-options:hover * { color: #9c0; }
+#wpadminbar #wp-admin-bar-cdz-theme-options:hover > .ab-item:before { background: url('../img/admin/dashicon-hover.png') center no-repeat !important; }
+#wpadminbar #wp-admin-bar-update_notifier > .ab-item:before { content: '\f463'; top: 2px; }
+
+#adminmenu .toplevel_page_cdz-theme-options { background-color: #111; }
+#adminmenu .toplevel_page_cdz-theme-options * { color: #eee; }
+#adminmenu .toplevel_page_cdz-theme-options .wp-menu-image:before { content: ''; background: url('../img/admin/dashicon.png') center no-repeat; }
+#adminmenu .toplevel_page_cdz-theme-options:hover .wp-menu-image:before { background: url('../img/admin/dashicon-hover.png') center no-repeat; }
+#adminmenu .toplevel_page_cdz-theme-options:hover * { color: #9c0; }
+#adminmenu .toplevel_page_cdz-theme-options.current .wp-menu-image:before,
+#adminmenu .toplevel_page_cdz-theme-options.current:hover .wp-menu-image:before { background: url('../img/admin/dashicon-current.png') center no-repeat; }
+#adminmenu .toplevel_page_cdz-theme-options.current:hover * { color: #fff; }
+
+table.plugins #the-list #monkeys-manager .plugin-title > strong:before {
+	content: ' ';
+	width: 20px;
+	height: 20px;
+	background: url('../img/admin/dashicon-black.png') center no-repeat !important;
+	padding: 0px;
+	margin: -2px 5px 0px 0px;
+	display: block;
+	float: left;
+}
+
+/*
+ *	General
+ */
+
+p { min-height: 1px; margin-bottom: 10px; }
+article { margin-bottom: 30px; }
+.entry-content p { position: relative; }
+.entry-header, .entry-summary, .entry-content, .entry-meta { margin-bottom: 10px; }
+
+#gondor .separator {
+	width: 500%;
+	border-top: 1px solid #eee;
+	margin-left: -200%;
+	position: absolute;
+}
+#gondor.left-sidebar .separator { left: 0; }
+#gondor.right-sidebar .separator { right: 0; }
+
+
+
+/*
+ *	cdzTemplateParts
+ */
+
+article.cdz-template-big-thumbnail .thumb { margin-bottom: 20px; }
+article.cdz-template-small-thumbnail .entry-header h2,
+article.cdz-template-big-thumbnail .entry-header h2 { margin: 0px; }
+article.cdz-template-small-thumbnail .entry-summary p,
+article.cdz-template-big-thumbnail .entry-summary p { text-align: justify; }
+article.cdz-template-small-thumbnail .entry-content p,
+article.cdz-template-small-thumbnail .entry-meta p { margin-bottom: 10px; }
+
+/*
+ *	cdzTemplatePart: Small Thumbnail
+ */
+
+article.cdz-style-small-thumbnail .thumb { width: 25%; margin-right: 3%; float: left; }
+article.cdz-style-small-thumbnail .thumb-img { max-width: 100%; height: auto; display: block; }
+article.cdz-style-small-thumbnail .entry-header,
+article.cdz-style-small-thumbnail .entry-summary,
+article.cdz-style-small-thumbnail .entry-content,
+article.cdz-style-small-thumbnail .entry-meta { width: 72%; float: right; }
+@media ( max-width: 767px ) { article.cdz-style-style-small-thumbnail .thumb { width: 100%; margin: 0 0 30px 0; } }
+
+article.cdz-style-small-thumbnail-right .thumb { width: 25%; margin-left: 3%; float: right; }
+article.cdz-style-small-thumbnail-right .thumb-img { max-width: 100%; height: auto; display: block; }
+article.cdz-style-small-thumbnail-right .entry-header,
+article.cdz-style-small-thumbnail-right .entry-summary,
+article.cdz-style-small-thumbnail-right .entry-content,
+article.cdz-style-small-thumbnail-right .entry-meta { width: 72%; text-align: right; float: left; }
+@media ( max-width: 767px ) { article.cdz-style-style-small-thumbnail-right .thumb { width: 100%; margin: 0 0 30px 0; } }
+
+/*
+ *	cdzTemplatePart: Big Thumbnail
+ */
+
+article.cdz-style-big-thumbnail .thumb { margin-bottom: 10px; }
+article.cdz-style-big-thumbnail .thumb-img { max-width: 100%; height: auto; display: block; }
+
+/*
+ *	cdzTemplatePart: Columns
+ */
+
+article.cdz-style-2-columns,
+article.cdz-style-3-columns,
+article.cdz-style-4-columns,
+article.cdz-style-5-columns,
+article.cdz-style-6-columns { float: left; }
+article.cdz-style-2-columns .thumb-img,
+article.cdz-style-3-columns .thumb-img,
+article.cdz-style-4-columns .thumb-img,
+article.cdz-style-5-columns .thumb-img,
+article.cdz-style-6-columns .thumb-img { max-width: 100%; height: auto; display: block; }
+article.cdz-style-2-columns:nth-child(2n),
+article.cdz-style-3-columns:nth-child(3n),
+article.cdz-style-4-columns:nth-child(4n),
+article.cdz-style-5-columns:nth-child(5n),
+article.cdz-style-6-columns:nth-child(6n) { margin-right: 0px; }
+article.cdz-style-2-columns:nth-child(2n+1),
+article.cdz-style-3-columns:nth-child(3n+1),
+article.cdz-style-4-columns:nth-child(4n+1),
+article.cdz-style-5-columns:nth-child(5n+1),
+article.cdz-style-6-columns:nth-child(6n+1) { clear: both; }
+
+/*
+ *	cdzTemplatePart: 2 Columns
+ */
+
+article.cdz-style-2-columns { width: 48%; margin-right: 4%; }
+
+/*
+ *	cdzTemplatePart: 3 Columns
+ */
+
+article.cdz-style-3-columns { width: 30%; margin-right: 5%; }
+
+/*
+ *	cdzTemplatePart: 4 Columns
+ */
+
+article.cdz-style-4-columns { width: 22%; margin-right: 4%; }
+
+/*
+ *	cdzTemplatePart: 5 Columns
+ */
+
+article.cdz-style-5-columns { width: 16%; margin-right: 5%; }
+
+/*
+ *	cdzTemplatePart: 6 Columns
+ */
+
+article.cdz-style-6-columns { width: 13.33333333333%; margin-right: 4%; }

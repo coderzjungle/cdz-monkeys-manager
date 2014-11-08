@@ -1,0 +1,258 @@
+/*
+ *       ( ( (                        |"|                         ___         .      .   
+ *     '. ___ .'       ,,,,,         _|_|_        __MMM__        .|||.      .  .:::.     
+ *    '  (> <) '      /(o o)\        (o o)         (o o)         (o o)        :(o o):  . 
+ *   ooO--(_)--Ooo-ooO--(_)--Ooo-ooO--(_)--Ooo-ooO--(_)--Ooo-ooO--(_)--Ooo-ooO--(_)--Ooo
+ *     ____          _                  _                   _                           
+ *    / ___|___   __| | ___ _ __ ____  | |_   _ _ __   __ _| | ___   ___ ___  _ __ ___  
+ *   | |   / _ \ / _` |/ _ \ '__|_  /  | | | | | '_ \ / _` | |/ _ \ / __/ _ \| '_ ` _ \ 
+ *   | |__| (_) | (_| |  __/ |   / / |_| | |_| | | | | (_| | |  __/| (_| (_) | | | | | |
+ *    \____\___/ \__,_|\___|_|  /___\___/ \__,_|_| |_|\__, |_|\___(_)___\___/|_| |_| |_|
+ *                                                    |___/                             
+ */
+
+/*
+ *	Theme Options
+ */
+
+#cdz-panel { max-width:840px; background:#fff; }
+#cdz-panel h3 { cursor: default; background-color: #f1f1f1; border-bottom: 1px solid #ddd; }
+#cdz-panel p { margin-bottom:0; padding-bottom:10px; }
+#cdz-panel .section { padding:10px 10px 0; }
+#cdz-panel .group { padding-bottom: 30px; }
+#cdz-panel .section .controls { float: left; min-width:350px; width: 54%; padding-right:2%; }
+#cdz-panel .section .explain { max-width:38%; float: left; font-size: 12px; line-height:16px; color: #777; }
+#cdz-panel .controls input[type=text] { width:100%; }
+#cdz-panel .section-checkbox .controls { width: 98%; }
+#cdz-panel .section-checkbox .explain { max-width:94%; }
+#cdz-panel .controls select, #cdz-panel .controls textarea { margin-bottom:10px; width:100%; }
+#cdz-panel .section-radio label, #cdz-panel .section-multicheck label { float:left; max-width:90%; line-height: 16px; margin-bottom: 5px; }
+#cdz-panel input.checkbox, #cdz-panel input.of-radio { margin: 0 10px 5px 0; float:left; clear:both; }
+#cdz-panel .section-typography .controls { float:none; width:auto; }
+#cdz-panel .section-typography .explain { float:none; width:auto; }
+#cdz-panel .controls .of-typography-size { width:80px; float:left; }
+#cdz-panel .controls .of-typography-unit { width:50px; margin-left:5px; float:left; }
+#cdz-panel .controls .of-typography-face { width:100px; margin-left:5px; float:left; }
+#cdz-panel .controls .of-typography-style { width:80px; margin-left:5px; margin-right:5px; float:left; }
+#cdz-panel .of-background-properties { clear:both; margin-top: 18px; }
+#cdz-panel .controls .of-background-repeat { width:125px; margin-right:5px; float:left; }
+#cdz-panel .controls .of-background-position { width:125px; margin-right:5px; float:left; }
+#cdz-panel .controls .of-background-attachment { width:125px; margin-right:5px; float:left; }
+#cdz-panel .section-background .wp-picker-container { margin-bottom:10px; }
+#cdz-panel .controls .of-radio-img-img { border:3px solid #f9f9f9; margin:0 5px 10px 0; display:none; cursor:pointer; float:left; }
+#cdz-panel .controls .of-radio-img-selected { border:3px solid #ccc }
+#cdz-panel .controls .of-radio-img-img:hover { opacity:.8; }
+#cdz-panel .controls .of-border-width { width:80px; float:left; }
+#cdz-panel .controls .of-border-style { width:120px; float:left; }
+#cdz-panel .hide { display:none; }
+#cdz-panel .of-option-image { max-width:340px; margin:3px 0 18px 0; }
+#cdz-panel .mini .controls select, #cdz-panel .section .mini .controls { width: 140px; }
+#cdz-panel .mini .controls input, #cdz-panel .mini .controls { min-width:140px; width: 140px; }
+#cdz-panel .mini .explain { max-width:74%; }
+
+/*
+ *	Editor
+ */
+
+#cdz-panel .section-editor .explain { max-width: 98%; float:none; margin-bottom:5px; }
+
+/*
+ *	Image Uploader
+ */
+
+#cdz-panel .controls input.upload { width:80%; }
+#cdz-panel .screenshot { float:left; margin-left:1px; position:relative; width:344px; margin-top:3px; }
+#cdz-panel .screenshot img { background:#fafafa; border-color:#ccc #eee #eee #ccc; border-style:solid; border-width:1px; float:left; max-width:334px; padding:4px; margin-bottom:10px; }
+#cdz-panel .screenshot .remove-image { background:url("../img/theme-options/icon-delete.png") no-repeat; border:medium none; bottom:4px; display:block; float:left; height:16px; padding:0; position:absolute; left:-4px; text-indent:-9999px; width:16px; }
+#cdz-panel .screenshot .no_image .file_link { margin-left: 20px; }
+#cdz-panel .screenshot .no_image .remove-button { bottom: 0px; }
+#cdz-panel .reset-button { float:left; cursor:pointer; }
+
+/*
+ *	Bottom Section
+ */
+
+#cdz-panel-submit { padding: 7px 10px; border-top: 1px solid #ddd; background-color: #f1f1f1; }
+#cdz-panel .button-primary { float:right; }
+#cdz-panel .section:after { content: ""; display: table; }
+#cdz-panel .section:after { clear: both; }
+
+/*
+ *	cdz Admin Header
+ */
+
+#cdz-theme-options-header { max-width: 1200px; height: 150px; margin: 0px; position: relative; display: none; }
+#cdz-theme-options-header .logo img { margin: 25px 0px 0px 20px; }
+.wrap h2 { margin-bottom: 10px; }
+
+/*
+ *	Wrap
+ */
+
+#cdz-panel-wrap { max-width: 1200px; background-color: #fff; border: 1px solid #e5e5e5; padding: 20px; margin: 0px 20px 20px 0px; position: relative; -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04); box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04); }
+#cdz-panel-wrap:after { clear: both; content: ''; display: block; }
+#cdz-panel-wrap .updated { display: none; }
+
+/*
+#cdz-panel-wrap .updated { background-color: #f7f7f7; margin: 0px 0px 0px 241px; -webkit-box-shadow: none; box-shadow: none; display: none; position: absolute; }
+#cdz-panel-wrap .updated strong { font-weight: normal !important; }
+#cdz-panel-wrap .updated strong em { color: #222; font-style: normal; font-weight: 600 !important; }
+*/
+
+/*
+ *	Alerts
+ */
+
+/* #cdz-panel-wrap .updated, #cdz-panel-wrap .error { margin-left: 20px; float: right; } */
+
+/*
+ *	Loading
+ */
+
+#cdz-panel-wrap .loading {}
+#cdz-panel-wrap .loading p { font-size: 20px; text-align: center; }
+#cdz-panel-wrap .loading p i { font-size: 50px; }
+
+/*
+ *	Tabs
+ */
+
+#cdz-panel-wrap h2.nav-tab-wrapper { width: 200px; border: none; padding: 0px; position: absolute; display: none; }
+#cdz-panel-wrap h2.nav-tab-wrapper:after { clear: both; content: ''; display: block; }
+
+#cdz-panel-wrap h2.nav-tab-wrapper a { color: #555; background: transparent; width: 100%; border: 0px; border-left: 4px solid #eee; padding: 7px 15px; margin: 0px 0px 2px 0px; font-size: 13px; font-weight: normal; box-sizing: border-box; -moz-box-sizing: border-box; }
+#cdz-panel-wrap h2.nav-tab-wrapper a:hover, #cdz-panel-wrap h2.nav-tab-wrapper a.nav-tab-active { background-color: #f1f1f1; border-color: #2ea2cc; }
+#cdz-panel-wrap h2.nav-tab-wrapper a:before { margin-right: 10px; font-size: 14px; font-family: "FontAwesome"; }
+#cdz-panel-wrap h2.nav-tab-wrapper a.multiportfolios-tab:before { content: "\f0b1"; }
+#cdz-panel-wrap h2.nav-tab-wrapper a.lovelytestimonials-tab:before { content: "\f0c0"; }
+
+/*
+ *	Page title
+ */
+
+#cdz-panel-wrap h2.page_title { color: #ddd; height: 30px; padding: 0px; margin: 5px 0px 45px 0px; font-size: 20px; float: left; display: none; }
+#cdz-panel-wrap h2.page_title i { margin-right: 5px; }
+
+/*
+ *	Content
+ */
+
+#cdz-panel-wrap #cdz-panel-metabox { border-left: 1px solid #eee; padding: 0px 0px 0px 20px; margin-left: 220px; display: none; }
+#cdz-panel-wrap #cdz-panel-metabox #cdz-panel { background: none !important; max-width: none !important; min-height: 500px; border: none !important; padding: 0px; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
+#cdz-panel-wrap #cdz-panel-metabox #cdz-panel h3 { display: none; }
+#cdz-panel-wrap #cdz-panel-metabox #cdz-panel .section { padding: 0px 11px; margin-bottom: 10px; position: relative; }
+
+#section-opt_adv_options label:after { content: "\f155"; background-color: #f5fae5; color: #9c0; border: 1px solid #e0f0b2; padding: 5px; margin-left: 10px; font: 16px 'dashicons'; display: inline-block; position: absolute; }
+
+#cdz-panel-wrap #cdz-panel-metabox #cdz-panel .section.no-std { background-color: #faa !important; display: none !important; }
+#cdz-panel-wrap #cdz-panel-metabox #cdz-panel .section.advo { background-color: #f5fae5; /*border-radius: 5px;*/ border: 1px solid #e0f0b2; padding: 10px !important; display: none; }
+#cdz-panel-wrap #cdz-panel-metabox #cdz-panel .section.advo:before { content: "\f155"; color: #cce57f; font: 22px 'dashicons'; display: inline-block; position: absolute; right: 10px; }
+
+#cdz-panel-wrap #cdz-panel-metabox #cdz-panel .section .heading { color: #222; width: 200px; line-height: 29px; margin: 0px; font-size: 13px; position: absolute; }
+#cdz-panel-wrap #cdz-panel-metabox #cdz-panel .section .heading span { color: #777; }
+#cdz-panel-wrap #cdz-panel-metabox #cdz-panel .section .option { margin-left: 220px; }
+#cdz-panel-wrap #cdz-panel-metabox #cdz-panel .section .option .controls { font-size: 13px; }
+#cdz-panel-wrap #cdz-panel-metabox #cdz-panel .section .option .controls .of-radio { margin: 0px 10px 10px 0px; }
+#cdz-panel-wrap #cdz-panel-metabox #cdz-panel .section .option .controls .checkbox { margin: 7px 10px 7px 0px; }
+#cdz-panel-wrap #cdz-panel-metabox #cdz-panel .section .option .explain { color: #444 !important; line-height: 29px !important; font-size: 13px !important; float: left; }
+ 
+#cdz-panel-wrap #cdz-panel-metabox #cdz-panel .section-info { background-color: #f7f7f7; border-left: 4px solid #2ea2cc; padding: 5px 0px 0px 15px;  margin: 50px 0px 20px 0px; }
+#cdz-panel-wrap #cdz-panel-metabox #cdz-panel .group > .section-info:nth-child(2) { margin-top: 0px !important; }
+#cdz-panel-wrap #cdz-panel-metabox #cdz-panel .section-info h4.heading { width: auto !important; font-size: 17px !important; float: none !important; position: static; }
+#cdz-panel-wrap #cdz-panel-metabox #cdz-panel .section-info p { padding-bottom: 10px !important; margin: 0px !important; font-size: 13px !important; }
+
+#cdz-panel-wrap #cdz-panel-metabox #cdz-panel .section-upload .option .controls { width: auto; }
+#cdz-panel-wrap #cdz-panel-metabox #cdz-panel .section-upload .option .controls .upload { margin-right: 5px; display: block; float: left; clear: left; }
+#cdz-panel-wrap #cdz-panel-metabox #cdz-panel .section-upload .option .controls .upload-button { display: block; float: left; }
+#cdz-panel-wrap #cdz-panel-metabox #cdz-panel .section-upload .option .explain { max-width: 100%; clear: left; }
+
+#cdz-panel-wrap #cdz-panel-metabox #cdz-panel .wp-picker-container a { margin-bottom: 0px; }
+
+#cdz-panel-wrap #cdz-panel-metabox #cdz-panel .section-color .option .controls .wp-picker-container input.of-color.wp-color-picker { width: 80px !important; }
+
+#cdz-panel-wrap #cdz-panel-metabox #cdz-panel .section-background .option .controls { width: auto; }
+#cdz-panel-wrap #cdz-panel-metabox #cdz-panel .section-background .option .controls .wp-picker-container { margin-top: 3px; display: block; float: left; clear: left; }
+#cdz-panel-wrap #cdz-panel-metabox #cdz-panel .section-background .option .controls .upload { margin-right: 5px; display: block; float: left; clear: left; }
+#cdz-panel-wrap #cdz-panel-metabox #cdz-panel .section-background .option .controls .upload-button { display: block; float: left; }
+
+#cdz-panel-wrap #cdz-panel-metabox #cdz-panel .micro .controls select, #cdz-panel-wrap #cdz-panel-metabox #cdz-panel .section .micro .controls { width: 60px !important; }
+#cdz-panel-wrap #cdz-panel-metabox #cdz-panel .micro .controls input, #cdz-panel-wrap #cdz-panel-metabox #cdz-panel .micro .controls { min-width: 60px !important; width: 60px !important; }
+
+#cdz-panel-wrap #cdz-panel-metabox #cdz-panel .section #cdz-sidebars-manager i.fa { margin-right: 5px; font-size: 14px; }
+#cdz-panel-wrap #cdz-panel-metabox #cdz-panel .section #cdz-sidebars-manager .cdz-del { margin-left: 5px; cursor: pointer; }
+#cdz-panel-wrap #cdz-panel-metabox #cdz-panel .section #cdz-sidebars-manager .cdz-del:hover { color: #a00; }
+#cdz-panel-wrap #cdz-panel-metabox #cdz-panel .section #cdz-sidebars-manager .cdz-add { margin: 10px 0px 30px 30px; display: inline-block; cursor: pointer; }
+#cdz-panel-wrap #cdz-panel-metabox #cdz-panel .section #cdz-sidebars-manager .cdz-add:hover { color: #0a0; }
+
+#cdz-panel-wrap #cdz-panel-metabox #cdz-panel #cdz-panel-submit { background: transparent; border: 0px ; padding: 0px; margin: 0px 0px 30px 0px; }
+#cdz-panel-wrap #cdz-panel-metabox #cdz-panel #cdz-panel-submit .button-primary { margin: 5px 0px 0px 0px; float: left; }
+#cdz-panel-wrap #cdz-panel-metabox #cdz-panel #cdz-panel-submit .reset-button { float: right; /*display: none;*/ }
+
+/*
+ *	Documentation
+ */
+
+#cdz-panel-wrap.cdz-doc #cdz-panel-metabox #cdz-panel h3 { padding: 10px 0px; margin-top: 20px; display: block; cursor: auto; }
+#cdz-panel-wrap.cdz-doc #cdz-panel-metabox #cdz-panel h3:before { content: "»"; margin-right: 10px; }
+
+/*
+ *	Update Notifier
+ */
+
+#update-notifier .notice { background-color: #eee; border-radius: 5px; padding: 5px 10px; margin: 0px 0px 20px 0px; display: inline-block; }
+#update-notifier h1 { color: #222; font-size: 23px; font-weight: normal; display: block; }
+#update-notifier h2 { margin: 0px 0px 10px 10px; }
+#update-notifier h3 { color: #222; border-bottom: 1px solid #EEE; padding: 10px 0px; margin-top: 20px; font-size: 14px; font-weight: 600; display: block; cursor: auto; }
+#update-notifier h3:before { content: "»"; margin-right: 10px; }
+#update-notifier #update-info { margin: 0px 0px 30px 10px; }
+#update-notifier #update-log { background-color: #eee; border-radius: 5px; padding: 20px; }
+#update-notifier #update-log h3 { border-color: #ddd; padding-top: 0px; margin: 0px 0px 20px 0px; }
+#update-notifier #update-log p { margin-top: 0px; }
+
+/*
+ *	Responsive
+ */
+
+@media ( max-width: 767px ) {
+	#cdz-panel-wrap h2.nav-tab-wrapper { border: 0px; padding: 0px; }
+	#cdz-panel-wrap h2.nav-tab-wrapper:after{ clear: both; content: ''; display: block; }
+	#cdz-panel-wrap h2.nav-tab-wrapper a { width: 50%; display: block; box-sizing: border-box; border-width: 1px; margin: 0px; white-space: nowrap; float: left; overflow: hidden; }
+	#cdz-panel-wrap h2.nav-tab-wrapper a.nav-tab-active { background-color: #d4d4d4; height: 38px; border: 1px solid #ccc; }
+	#cdz-panel-wrap h2.nav-tab-wrapper a.nav-tab-active:hover { background-color: #fff; }
+}
+
+/*
+ *	Admin colors
+ */
+
+.admin-color-fresh #cdz-panel-wrap h2.nav-tab-wrapper a:hover,
+.admin-color-fresh #cdz-panel-wrap h2.nav-tab-wrapper a.nav-tab-active,
+.admin-color-fresh #cdz-panel-wrap #cdz-panel-metabox #cdz-panel .section-info { border-color: #0074a2; }
+
+.admin-color-light #cdz-panel-wrap h2.nav-tab-wrapper a:hover,
+.admin-color-light #cdz-panel-wrap h2.nav-tab-wrapper a.nav-tab-active,
+.admin-color-light #cdz-panel-wrap #cdz-panel-metabox #cdz-panel .section-info { border-color: #888888; }
+
+.admin-color-blue #cdz-panel-wrap h2.nav-tab-wrapper a:hover,
+.admin-color-blue #cdz-panel-wrap h2.nav-tab-wrapper a.nav-tab-active,
+.admin-color-blue #cdz-panel-wrap #cdz-panel-metabox #cdz-panel .section-info { border-color: #096484; }
+
+.admin-color-coffee #cdz-panel-wrap h2.nav-tab-wrapper a:hover,
+.admin-color-coffee #cdz-panel-wrap h2.nav-tab-wrapper a.nav-tab-active,
+.admin-color-coffee #cdz-panel-wrap #cdz-panel-metabox #cdz-panel .section-info { border-color: #c7a589; }
+
+.admin-color-ectoplasm #cdz-panel-wrap h2.nav-tab-wrapper a:hover,
+.admin-color-ectoplasm #cdz-panel-wrap h2.nav-tab-wrapper a.nav-tab-active,
+.admin-color-ectoplasm #cdz-panel-wrap #cdz-panel-metabox #cdz-panel .section-info { border-color: #a3b745; }
+
+.admin-color-midnight #cdz-panel-wrap h2.nav-tab-wrapper a:hover,
+.admin-color-midnight #cdz-panel-wrap h2.nav-tab-wrapper a.nav-tab-active,
+.admin-color-midnight #cdz-panel-wrap #cdz-panel-metabox #cdz-panel .section-info { border-color: #e14d43; }
+
+.admin-color-ocean #cdz-panel-wrap h2.nav-tab-wrapper a:hover,
+.admin-color-ocean #cdz-panel-wrap h2.nav-tab-wrapper a.nav-tab-active,
+.admin-color-ocean #cdz-panel-wrap #cdz-panel-metabox #cdz-panel .section-info { border-color: #9ebaa0; }
+
+.admin-color-sunrise #cdz-panel-wrap h2.nav-tab-wrapper a:hover,
+.admin-color-sunrise #cdz-panel-wrap h2.nav-tab-wrapper a.nav-tab-active,
+.admin-color-sunrise #cdz-panel-wrap #cdz-panel-metabox #cdz-panel .section-info { border-color: #dd823b; }
