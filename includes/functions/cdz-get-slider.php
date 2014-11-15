@@ -47,7 +47,7 @@ if ( ! function_exists( 'cdz_get_slider' ) ) {
 
 				$slider = '<div class="fiximage"><img src="' . cdz_get_option( 'opt_slider_' . $template . '_fiximage_url' ) . '" /></div>';
 
-			} elseif ( $slider == 'revslider') {
+			} else if ( $slider == 'revslider' && class_exists( 'RevSlider' ) ) {
 
 				$revslider = new RevSlider();
 				$revslider->initByID( cdz_get_option( 'opt_slider_' . $template . '_revslider_id' ) );
