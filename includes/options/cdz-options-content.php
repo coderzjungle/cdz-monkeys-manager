@@ -65,7 +65,7 @@ if ( ! function_exists( 'cdz_options_content' ) ) {
 			'id'			=>	'opt_content_title_font',
 			'type'			=>	'typography',
 			'options'		=>	array(
-									'sizes'		=>	array( '15', '16', '17', '18', '19', '20', '22', '24', '26', '30' ),
+									'sizes'		=>	array( '15', '16', '17', '18', '19', '20', '22', '24', '26', '30', '35', '40' ),
 									'color'		=>	false,
 								),
 			'std'			=>	cdz_get_theme_options_std( 'opt_content_title_font' ),
