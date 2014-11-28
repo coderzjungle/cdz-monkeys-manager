@@ -211,8 +211,8 @@ if ( ! function_exists( 'cdz_image_resize') ) {
 
 		$cdz_image = array (
 			'url' => $image_src[0],
-			'width' => $width,
-			'height' => $height
+			'width' => $image_src[1],
+			'height' => $image_src[2],
 		);
 
 		return $cdz_image;

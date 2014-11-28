@@ -28,12 +28,14 @@ if ( ! function_exists( 'cdz_image' ) ) {
 
 		if ( $width == '' ) {
 
-			$width = $container_width = (int) cdz_get_option( 'opt_grid_container_max_width' );
+			$width = $container_width = (int) cdz_get_option( 'opt_grid_container_max_width' ) - 40;
 			$template_sidebars = cdz_get_sidebars( $cdz_template );
 			$single_column_width = $container_width / 100 * 8.33333333333;
 
 			if ( isset( $template_sidebars['left'] ) &&  $template_sidebars['left'] != 'none' ) $width -= $template_sidebars['left_cols'] * $single_column_width;
 			if ( isset( $template_sidebars['right'] ) &&  $template_sidebars['right'] != 'none' ) $width -= $template_sidebars['right_cols'] * $single_column_width;
+
+			$width -= 30; // column padding
 
 			if ( $margin > 0 ) { $width -= $margin; }
 
