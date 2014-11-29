@@ -157,7 +157,7 @@ if ( ! class_exists( 'cdz_Theme_Options' ) ) {
 
 			$menu = array(
 				'page_title' => __( 'Coderz Jungle', 'cdz' ),
-				'menu_title' => __( 'Thene Options', 'cdz' ),
+				'menu_title' => __( 'Theme Options', 'cdz' ),
 				'capability' => 'edit_theme_options',
 				'menu_slug' => 'cdz-theme-options',
 			);
@@ -179,7 +179,7 @@ if ( ! class_exists( 'cdz_Theme_Options' ) ) {
 			$args = array(
 				//'parent' => 'appearance',
 				'id' => 'cdz-theme-options',
-				'title' => __( 'Thene Options', 'cdz' ),
+				'title' => __( 'Theme Options', 'cdz' ),
 				'href' => admin_url( 'admin.php?page=' . $menu['menu_slug'] )
 			);
 
