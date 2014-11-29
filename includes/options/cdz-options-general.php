@@ -222,7 +222,6 @@ if ( ! function_exists( 'cdz_options_general' ) ) {
 				'type'			=>	'typography',
 				'options'		=>	array(
 										'sizes'		=>	array( '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20' ),
-										'styles'	=>	false,
 										'color'		=>	false,
 									),
 				'std'			=>	cdz_get_theme_options_std( 'opt_typography_font' ),
@@ -269,7 +268,6 @@ if ( ! function_exists( 'cdz_options_general' ) ) {
 				'type'			=>	'typography',
 				'options'		=>	array(
 										'sizes'		=>	array( '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20' ),
-										'styles'	=>	false,
 										'color'		=>	false,
 									),
 				'std'			=>	cdz_get_theme_options_std( 'opt_button_font' ),

@@ -23,17 +23,6 @@ if ( ! function_exists( 'cdz_register_sidebars' ) ) {
 
 	function cdz_register_sidebars( $sidebars ) {
 
-		/*register_sidebar( array(
-			'name'			=> __( 'Default Sidebar', 'cdz' ),
-			'description'	=> __( 'The default sidebar.', 'cdz' ),
-			'id'			=> 'default-sidebar',
-			'class'			=> 'sidebar',
-			'before_title'	=> '<h3>',
-			'after_title'	=> '</h3>',
-			'before_widget' => '<div class="widget">',
-			'after_widget'  => '</div>',
-		));*/
-
 		if ( isset( $sidebars ) ) {
 
 			foreach ( $sidebars as $value ) {
