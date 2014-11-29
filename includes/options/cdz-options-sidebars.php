@@ -47,7 +47,6 @@ if ( ! function_exists( 'cdz_options_sidebars' ) ) {
 			'desc'			=>	__( 'Manage all your custom sidebars', 'cdz' ),
 			'type'			=>	'info',
 		);
-
 		$options[] = array(
 			'name'			=>	__( 'Custom sidebars', 'cdz' ),
 			'id'			=>	'opt_sidebar_custom',
@@ -64,7 +63,6 @@ if ( ! function_exists( 'cdz_options_sidebars' ) ) {
 			'desc'			=>	__( 'Customize your general configuration', 'cdz' ),
 			'type'			=>	'info',
 		);
-
 		$options[] = array(
 			'name'			=>	__( 'Header sidebar', 'cdz' ),
 			'id'			=>	'opt_sidebar_general_header',
@@ -72,7 +70,6 @@ if ( ! function_exists( 'cdz_options_sidebars' ) ) {
 			'options'		=>	$sidebars_list,
 			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_general_header' ),
 		);
-
 		$options[] = array(
 			'name'			=>	__( 'Footer sidebar', 'cdz' ),
 			'id'			=>	'opt_sidebar_general_footer',
@@ -80,7 +77,6 @@ if ( ! function_exists( 'cdz_options_sidebars' ) ) {
 			'options'		=>	$sidebars_list,
 			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_general_footer' ),
 		);
-
 		$options[] = array(
 			'name'			=>	__( 'Left sidebar', 'cdz' ),
 			'id'			=>	'opt_sidebar_general_left',
@@ -88,7 +84,6 @@ if ( ! function_exists( 'cdz_options_sidebars' ) ) {
 			'options'		=>	$sidebars_list,
 			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_general_left' ),
 		);
-
 		$options[] = array(
 			'name'			=>	__( 'Left sidebar width', 'cdz' ),
 			'desc'			=>	__( 'grid columns', 'cdz' ),
@@ -104,7 +99,6 @@ if ( ! function_exists( 'cdz_options_sidebars' ) ) {
 								),
 			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_general_left_cols' ),
 		);
-
 		$options[] = array(
 			'name'			=>	__( 'Right sidebar', 'cdz' ),
 			'id'			=>	'opt_sidebar_general_right',
@@ -112,7 +106,6 @@ if ( ! function_exists( 'cdz_options_sidebars' ) ) {
 			'options'		=>	$sidebars_list,
 			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_general_right' ),
 		);
-
 		$options[] = array(
 			'name'			=>	__( 'Right sidebar width', 'cdz' ),
 			'desc'			=>	__( 'grid columns', 'cdz' ),
@@ -138,7 +131,6 @@ if ( ! function_exists( 'cdz_options_sidebars' ) ) {
 			'desc'			=>	__( 'Customize your home page sidebars', 'cdz' ),
 			'type'			=>	'info',
 		);
-
 		$options[] = array(
 			'name'			=>	__( 'Enable settings', 'cdz' ),
 			'desc'			=>	__( 'These options will override the general settings in this page', 'cdz' ),
@@ -146,7 +138,6 @@ if ( ! function_exists( 'cdz_options_sidebars' ) ) {
 			'type'			=>	'checkbox',
 			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_home' ),
 		);
-
 		$options[] = array(
 			'name'			=>	__( 'Left sidebar', 'cdz' ),
 			'id'			=>	'opt_sidebar_home_left',
@@ -155,7 +146,6 @@ if ( ! function_exists( 'cdz_options_sidebars' ) ) {
 			'options'		=>	$sidebars_list,
 			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_home_left' ),
 		);
-
 		$options[] = array(
 			'name'			=>	__( 'Left sidebar width', 'cdz' ),
 			'desc'			=>	__( 'grid columns', 'cdz' ),
@@ -171,7 +161,6 @@ if ( ! function_exists( 'cdz_options_sidebars' ) ) {
 								),
 			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_home_left_cols' ),
 		);
-
 		$options[] = array(
 			'name'			=>	__( 'Right sidebar', 'cdz' ),
 			'id'			=>	'opt_sidebar_home_right',
@@ -180,7 +169,6 @@ if ( ! function_exists( 'cdz_options_sidebars' ) ) {
 			'options'		=>	$sidebars_list,
 			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_home_right' ),
 		);
-
 		$options[] = array(
 			'name'			=>	__( 'Right sidebar Width', 'cdz' ),
 			'desc'			=>	__( 'grid columns', 'cdz' ),
@@ -206,7 +194,6 @@ if ( ! function_exists( 'cdz_options_sidebars' ) ) {
 			'desc'			=>	__( 'Customize your blog page sidebars', 'cdz' ),
 			'type'			=>	'info',
 		);
-
 		$options[] = array(
 			'name'			=>	__( 'Enable settings', 'cdz' ),
 			'desc'			=>	__( 'These options will override the general settings in this page', 'cdz' ),
@@ -214,7 +201,6 @@ if ( ! function_exists( 'cdz_options_sidebars' ) ) {
 			'type'			=>	'checkbox',
 			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_blog' ),
 		);
-
 		$options[] = array(
 			'name'			=>	__( 'Left sidebar', 'cdz' ),
 			'id'			=>	'opt_sidebar_blog_left',
@@ -223,7 +209,6 @@ if ( ! function_exists( 'cdz_options_sidebars' ) ) {
 			'options'		=>	$sidebars_list,
 			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_blog_left' ),
 		);
-
 		$options[] = array(
 			'name'			=>	__( 'Left sidebar width', 'cdz' ),
 			'desc'			=>	__( 'grid columns', 'cdz' ),
@@ -239,7 +224,6 @@ if ( ! function_exists( 'cdz_options_sidebars' ) ) {
 								),
 			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_blog_left_cols' ),
 		);
-
 		$options[] = array(
 			'name'			=>	__( 'Right sidebar', 'cdz' ),
 			'id'			=>	'opt_sidebar_blog_right',
@@ -248,7 +232,6 @@ if ( ! function_exists( 'cdz_options_sidebars' ) ) {
 			'options'		=>	$sidebars_list,
 			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_blog_right' ),
 		);
-
 		$options[] = array(
 			'name'			=>	__( 'Right sidebar Width', 'cdz' ),
 			'desc'			=>	__( 'grid columns', 'cdz' ),
@@ -274,7 +257,6 @@ if ( ! function_exists( 'cdz_options_sidebars' ) ) {
 			'desc'			=>	__( 'Customize your search page sidebars', 'cdz' ),
 			'type'			=>	'info',
 		);
-
 		$options[] = array(
 			'name'			=>	__( 'Enable settings', 'cdz' ),
 			'desc'			=>	__( 'These options will override the general settings in this page', 'cdz' ),
@@ -282,7 +264,6 @@ if ( ! function_exists( 'cdz_options_sidebars' ) ) {
 			'type'			=>	'checkbox',
 			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_search' ),
 		);
-
 		$options[] = array(
 			'name'			=>	__( 'Left sidebar', 'cdz' ),
 			'id'			=>	'opt_sidebar_search_left',
@@ -291,7 +272,6 @@ if ( ! function_exists( 'cdz_options_sidebars' ) ) {
 			'options'		=>	$sidebars_list,
 			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_search_left' ),
 		);
-
 		$options[] = array(
 			'name'			=>	__( 'Left sidebar width', 'cdz' ),
 			'desc'			=>	__( 'grid columns', 'cdz' ),
@@ -307,7 +287,6 @@ if ( ! function_exists( 'cdz_options_sidebars' ) ) {
 								),
 			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_search_left_cols' ),
 		);
-
 		$options[] = array(
 			'name'			=>	__( 'Right sidebar', 'cdz' ),
 			'id'			=>	'opt_sidebar_search_right',
@@ -316,7 +295,6 @@ if ( ! function_exists( 'cdz_options_sidebars' ) ) {
 			'options'		=>	$sidebars_list,
 			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_search_right' ),
 		);
-
 		$options[] = array(
 			'name'			=>	__( 'Right sidebar Width', 'cdz' ),
 			'desc'			=>	__( 'grid columns', 'cdz' ),
@@ -342,7 +320,6 @@ if ( ! function_exists( 'cdz_options_sidebars' ) ) {
 			'desc'			=>	__( 'Customize your 404 page sedebars', 'cdz' ),
 			'type'			=>	'info',
 		);
-
 		$options[] = array(
 			'name'			=>	__( 'Enable settings', 'cdz' ),
 			'desc'			=>	__( 'These options will override the general settings in this page', 'cdz' ),
@@ -350,7 +327,6 @@ if ( ! function_exists( 'cdz_options_sidebars' ) ) {
 			'type'			=>	'checkbox',
 			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_error404' ),
 		);
-
 		$options[] = array(
 			'name'			=>	__( 'Left sidebar', 'cdz' ),
 			'id'			=>	'opt_sidebar_error404_left',
@@ -359,7 +335,6 @@ if ( ! function_exists( 'cdz_options_sidebars' ) ) {
 			'options'		=>	$sidebars_list,
 			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_error404_left' ),
 		);
-
 		$options[] = array(
 			'name'			=>	__( 'Left sidebar width', 'cdz' ),
 			'desc'			=>	__( 'grid columns', 'cdz' ),
@@ -375,7 +350,6 @@ if ( ! function_exists( 'cdz_options_sidebars' ) ) {
 								),
 			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_error404_left_cols' ),
 		);
-
 		$options[] = array(
 			'name'			=>	__( 'Right sidebar', 'cdz' ),
 			'id'			=>	'opt_sidebar_error404_right',
@@ -384,7 +358,6 @@ if ( ! function_exists( 'cdz_options_sidebars' ) ) {
 			'options'		=>	$sidebars_list,
 			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_error404_right' ),
 		);
-
 		$options[] = array(
 			'name'			=>	__( 'Right sidebar Width', 'cdz' ),
 			'desc'			=>	__( 'grid columns', 'cdz' ),
@@ -410,7 +383,6 @@ if ( ! function_exists( 'cdz_options_sidebars' ) ) {
 			'desc'			=>	__( 'Customize your single post pages sidebars', 'cdz' ),
 			'type'			=>	'info',
 		);
-
 		$options[] = array(
 			'name'			=>	__( 'Enable settings', 'cdz' ),
 			'desc'			=>	__( 'These options will override the general settings in this page', 'cdz' ),
@@ -418,7 +390,6 @@ if ( ! function_exists( 'cdz_options_sidebars' ) ) {
 			'type'			=>	'checkbox',
 			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_single' ),
 		);
-
 		$options[] = array(
 			'name'			=>	__( 'Left sidebar', 'cdz' ),
 			'id'			=>	'opt_sidebar_single_left',
@@ -427,7 +398,6 @@ if ( ! function_exists( 'cdz_options_sidebars' ) ) {
 			'options'		=>	$sidebars_list,
 			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_single_left' ),
 		);
-
 		$options[] = array(
 			'name'			=>	__( 'Left sidebar width', 'cdz' ),
 			'desc'			=>	__( 'grid columns', 'cdz' ),
@@ -443,7 +413,6 @@ if ( ! function_exists( 'cdz_options_sidebars' ) ) {
 								),
 			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_single_left_cols' ),
 		);
-
 		$options[] = array(
 			'name'			=>	__( 'Right sidebar', 'cdz' ),
 			'id'			=>	'opt_sidebar_single_right',
@@ -452,7 +421,6 @@ if ( ! function_exists( 'cdz_options_sidebars' ) ) {
 			'options'		=>	$sidebars_list,
 			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_single_right' ),
 		);
-
 		$options[] = array(
 			'name'			=>	__( 'Right sidebar Width', 'cdz' ),
 			'desc'			=>	__( 'grid columns', 'cdz' ),
@@ -470,15 +438,77 @@ if ( ! function_exists( 'cdz_options_sidebars' ) ) {
 		);
 
 		/*
-		 *	Shop page
+		 *	Page
 		 */
 
 		$options[] = array(
-			'name'			=>	__( 'Shop page', 'cdz' ),
+			'name'			=>	__( 'Other pages', 'cdz' ),
+			'desc'			=>	__( 'Customize your general pages sidebars', 'cdz' ),
+			'type'			=>	'info',
+		);
+		$options[] = array(
+			'name'			=>	__( 'Enable settings', 'cdz' ),
+			'desc'			=>	__( 'These options will override the general settings in this page', 'cdz' ),
+			'id'			=>	'opt_sidebar_page',
+			'type'			=>	'checkbox',
+			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_page' ),
+		);
+		$options[] = array(
+			'name'			=>	__( 'Left sidebar', 'cdz' ),
+			'id'			=>	'opt_sidebar_page_left',
+			'class'			=>	'hide',
+			'type'			=>	'select',
+			'options'		=>	$sidebars_list,
+			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_page_left' ),
+		);
+		$options[] = array(
+			'name'			=>	__( 'Left sidebar width', 'cdz' ),
+			'desc'			=>	__( 'grid columns', 'cdz' ),
+			'id'			=>	'opt_sidebar_page_left_cols',
+			'class'			=>	'micro hide',
+			'type'			=>	'select',
+			'options'		=>	array(
+									'1'		=>	'1',
+									'2'		=>	'2',
+									'3'		=>	'3',
+									'4'		=>	'4',
+									'5'		=>	'5',
+								),
+			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_page_left_cols' ),
+		);
+		$options[] = array(
+			'name'			=>	__( 'Right sidebar', 'cdz' ),
+			'id'			=>	'opt_sidebar_page_right',
+			'class'			=>	'hide',
+			'type'			=>	'select',
+			'options'		=>	$sidebars_list,
+			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_page_right' ),
+		);
+		$options[] = array(
+			'name'			=>	__( 'Right sidebar Width', 'cdz' ),
+			'desc'			=>	__( 'grid columns', 'cdz' ),
+			'id'			=>	'opt_sidebar_page_right_cols',
+			'class'			=>	'micro hide',
+			'type'			=>	'select',
+			'options'		=>	array(
+									'1'		=>	'1',
+									'2'		=>	'2',
+									'3'		=>	'3',
+									'4'		=>	'4',
+									'5'		=>	'5',
+								),
+			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_page_right_cols' ),
+		);
+
+		/*
+		 *	Woocommerce - Shop page
+		 */
+
+		$options[] = array(
+			'name'			=>	__( 'Woocommerce - Shop page', 'cdz' ),
 			'desc'			=>	__('Plugins supported', 'cdz') . ': <a href="https://wordpress.org/plugins/woocommerce/" target="_blank">' . __( 'Woocommerce', 'cdz' ) . '</a>',
 			'type'			=>	'info',
 		);
-
 		$options[] = array(
 			'name'			=>	__( 'Enable settings', 'cdz' ),
 			'desc'			=>	__( 'These options will override the general settings in this page', 'cdz' ),
@@ -486,7 +516,6 @@ if ( ! function_exists( 'cdz_options_sidebars' ) ) {
 			'type'			=>	'checkbox',
 			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_shop' ),
 		);
-
 		$options[] = array(
 			'name'			=>	__( 'Left sidebar', 'cdz' ),
 			'id'			=>	'opt_sidebar_shop_left',
@@ -495,7 +524,6 @@ if ( ! function_exists( 'cdz_options_sidebars' ) ) {
 			'options'		=>	$sidebars_list,
 			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_shop_left' ),
 		);
-
 		$options[] = array(
 			'name'			=>	__( 'Left sidebar width', 'cdz' ),
 			'desc'			=>	__( 'grid columns', 'cdz' ),
@@ -511,7 +539,6 @@ if ( ! function_exists( 'cdz_options_sidebars' ) ) {
 								),
 			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_shop_left_cols' ),
 		);
-
 		$options[] = array(
 			'name'			=>	__( 'Right sidebar', 'cdz' ),
 			'id'			=>	'opt_sidebar_shop_right',
@@ -520,7 +547,6 @@ if ( ! function_exists( 'cdz_options_sidebars' ) ) {
 			'options'		=>	$sidebars_list,
 			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_shop_right' ),
 		);
-
 		$options[] = array(
 			'name'			=>	__( 'Right sidebar Width', 'cdz' ),
 			'desc'			=>	__( 'grid columns', 'cdz' ),
@@ -538,15 +564,77 @@ if ( ! function_exists( 'cdz_options_sidebars' ) ) {
 		);
 
 		/*
-		 *	Single product page
+		 *	Woocommerce - Product category page
 		 */
 
 		$options[] = array(
-			'name'			=>	__( 'Single product page', 'cdz' ),
+			'name'			=>	__( 'Woocommerce - Product category page', 'cdz' ),
 			'desc'			=>	__('Plugins supported', 'cdz') . ': <a href="https://wordpress.org/plugins/woocommerce/" target="_blank">' . __( 'Woocommerce', 'cdz' ) . '</a>',
 			'type'			=>	'info',
 		);
+		$options[] = array(
+			'name'			=>	__( 'Enable settings', 'cdz' ),
+			'desc'			=>	__( 'These options will override the general settings in this page', 'cdz' ),
+			'id'			=>	'opt_sidebar_product_category',
+			'type'			=>	'checkbox',
+			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_product_category' ),
+		);
+		$options[] = array(
+			'name'			=>	__( 'Left sidebar', 'cdz' ),
+			'id'			=>	'opt_sidebar_product_category_left',
+			'class'			=>	'hide',
+			'type'			=>	'select',
+			'options'		=>	$sidebars_list,
+			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_product_category_left' ),
+		);
+		$options[] = array(
+			'name'			=>	__( 'Left sidebar width', 'cdz' ),
+			'desc'			=>	__( 'grid columns', 'cdz' ),
+			'id'			=>	'opt_sidebar_product_category_left_cols',
+			'class'			=>	'micro hide',
+			'type'			=>	'select',
+			'options'		=>	array(
+									'1'		=>	'1',
+									'2'		=>	'2',
+									'3'		=>	'3',
+									'4'		=>	'4',
+									'5'		=>	'5',
+								),
+			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_product_category_left_cols' ),
+		);
+		$options[] = array(
+			'name'			=>	__( 'Right sidebar', 'cdz' ),
+			'id'			=>	'opt_sidebar_product_category_right',
+			'class'			=>	'hide',
+			'type'			=>	'select',
+			'options'		=>	$sidebars_list,
+			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_product_category_right' ),
+		);
+		$options[] = array(
+			'name'			=>	__( 'Right sidebar Width', 'cdz' ),
+			'desc'			=>	__( 'grid columns', 'cdz' ),
+			'id'			=>	'opt_sidebar_product_category_right_cols',
+			'class'			=>	'micro hide',
+			'type'			=>	'select',
+			'options'		=>	array(
+									'1'		=>	'1',
+									'2'		=>	'2',
+									'3'		=>	'3',
+									'4'		=>	'4',
+									'5'		=>	'5',
+								),
+			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_product_category_right_cols' ),
+		);
 
+		/*
+		 *	Woocommerce - Single product page
+		 */
+
+		$options[] = array(
+			'name'			=>	__( 'Woocommerce - Single product page', 'cdz' ),
+			'desc'			=>	__('Plugins supported', 'cdz') . ': <a href="https://wordpress.org/plugins/woocommerce/" target="_blank">' . __( 'Woocommerce', 'cdz' ) . '</a>',
+			'type'			=>	'info',
+		);
 		$options[] = array(
 			'name'			=>	__( 'Enable settings', 'cdz' ),
 			'desc'			=>	__( 'These options will override the general settings in this page', 'cdz' ),
@@ -554,7 +642,6 @@ if ( ! function_exists( 'cdz_options_sidebars' ) ) {
 			'type'			=>	'checkbox',
 			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_product' ),
 		);
-
 		$options[] = array(
 			'name'			=>	__( 'Left sidebar', 'cdz' ),
 			'id'			=>	'opt_sidebar_product_left',
@@ -563,7 +650,6 @@ if ( ! function_exists( 'cdz_options_sidebars' ) ) {
 			'options'		=>	$sidebars_list,
 			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_product_left' ),
 		);
-
 		$options[] = array(
 			'name'			=>	__( 'Left sidebar width', 'cdz' ),
 			'desc'			=>	__( 'grid columns', 'cdz' ),
@@ -579,7 +665,6 @@ if ( ! function_exists( 'cdz_options_sidebars' ) ) {
 								),
 			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_product_left_cols' ),
 		);
-
 		$options[] = array(
 			'name'			=>	__( 'Right sidebar', 'cdz' ),
 			'id'			=>	'opt_sidebar_product_right',
@@ -588,7 +673,6 @@ if ( ! function_exists( 'cdz_options_sidebars' ) ) {
 			'options'		=>	$sidebars_list,
 			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_product_right' ),
 		);
-
 		$options[] = array(
 			'name'			=>	__( 'Right sidebar Width', 'cdz' ),
 			'desc'			=>	__( 'grid columns', 'cdz' ),
@@ -606,36 +690,33 @@ if ( ! function_exists( 'cdz_options_sidebars' ) ) {
 		);
 
 		/*
-		 *	Page
+		 *	Woocommerce - Cart page
 		 */
 
 		$options[] = array(
-			'name'			=>	__( 'Other pages', 'cdz' ),
-			'desc'			=>	__( 'Customize your general pages sidebars', 'cdz' ),
+			'name'			=>	__( 'Woocommerce - Cart page', 'cdz' ),
+			'desc'			=>	__('Plugins supported', 'cdz') . ': <a href="https://wordpress.org/plugins/woocommerce/" target="_blank">' . __( 'Woocommerce', 'cdz' ) . '</a>',
 			'type'			=>	'info',
 		);
-
 		$options[] = array(
 			'name'			=>	__( 'Enable settings', 'cdz' ),
 			'desc'			=>	__( 'These options will override the general settings in this page', 'cdz' ),
-			'id'			=>	'opt_sidebar_page',
+			'id'			=>	'opt_sidebar_cart',
 			'type'			=>	'checkbox',
-			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_page' ),
+			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_cart' ),
 		);
-
 		$options[] = array(
 			'name'			=>	__( 'Left sidebar', 'cdz' ),
-			'id'			=>	'opt_sidebar_page_left',
+			'id'			=>	'opt_sidebar_cart_left',
 			'class'			=>	'hide',
 			'type'			=>	'select',
 			'options'		=>	$sidebars_list,
-			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_page_left' ),
+			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_cart_left' ),
 		);
-
 		$options[] = array(
 			'name'			=>	__( 'Left sidebar width', 'cdz' ),
 			'desc'			=>	__( 'grid columns', 'cdz' ),
-			'id'			=>	'opt_sidebar_page_left_cols',
+			'id'			=>	'opt_sidebar_cart_left_cols',
 			'class'			=>	'micro hide',
 			'type'			=>	'select',
 			'options'		=>	array(
@@ -645,22 +726,20 @@ if ( ! function_exists( 'cdz_options_sidebars' ) ) {
 									'4'		=>	'4',
 									'5'		=>	'5',
 								),
-			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_page_left_cols' ),
+			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_cart_left_cols' ),
 		);
-
 		$options[] = array(
 			'name'			=>	__( 'Right sidebar', 'cdz' ),
-			'id'			=>	'opt_sidebar_page_right',
+			'id'			=>	'opt_sidebar_cart_right',
 			'class'			=>	'hide',
 			'type'			=>	'select',
 			'options'		=>	$sidebars_list,
-			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_page_right' ),
+			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_cart_right' ),
 		);
-
 		$options[] = array(
 			'name'			=>	__( 'Right sidebar Width', 'cdz' ),
 			'desc'			=>	__( 'grid columns', 'cdz' ),
-			'id'			=>	'opt_sidebar_page_right_cols',
+			'id'			=>	'opt_sidebar_cart_right_cols',
 			'class'			=>	'micro hide',
 			'type'			=>	'select',
 			'options'		=>	array(
@@ -670,10 +749,141 @@ if ( ! function_exists( 'cdz_options_sidebars' ) ) {
 									'4'		=>	'4',
 									'5'		=>	'5',
 								),
-			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_page_right_cols' ),
+			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_cart_right_cols' ),
 		);
 
+		/*
+		 *	Woocommerce - Checkout page
+		 */
+
+		$options[] = array(
+			'name'			=>	__( 'Woocommerce - Checkout page', 'cdz' ),
+			'desc'			=>	__('Plugins supported', 'cdz') . ': <a href="https://wordpress.org/plugins/woocommerce/" target="_blank">' . __( 'Woocommerce', 'cdz' ) . '</a>',
+			'type'			=>	'info',
+		);
+		$options[] = array(
+			'name'			=>	__( 'Enable settings', 'cdz' ),
+			'desc'			=>	__( 'These options will override the general settings in this page', 'cdz' ),
+			'id'			=>	'opt_sidebar_checkout',
+			'type'			=>	'checkbox',
+			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_checkout' ),
+		);
+		$options[] = array(
+			'name'			=>	__( 'Left sidebar', 'cdz' ),
+			'id'			=>	'opt_sidebar_checkout_left',
+			'class'			=>	'hide',
+			'type'			=>	'select',
+			'options'		=>	$sidebars_list,
+			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_checkout_left' ),
+		);
+		$options[] = array(
+			'name'			=>	__( 'Left sidebar width', 'cdz' ),
+			'desc'			=>	__( 'grid columns', 'cdz' ),
+			'id'			=>	'opt_sidebar_checkout_left_cols',
+			'class'			=>	'micro hide',
+			'type'			=>	'select',
+			'options'		=>	array(
+									'1'		=>	'1',
+									'2'		=>	'2',
+									'3'		=>	'3',
+									'4'		=>	'4',
+									'5'		=>	'5',
+								),
+			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_checkout_left_cols' ),
+		);
+		$options[] = array(
+			'name'			=>	__( 'Right sidebar', 'cdz' ),
+			'id'			=>	'opt_sidebar_checkout_right',
+			'class'			=>	'hide',
+			'type'			=>	'select',
+			'options'		=>	$sidebars_list,
+			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_checkout_right' ),
+		);
+		$options[] = array(
+			'name'			=>	__( 'Right sidebar Width', 'cdz' ),
+			'desc'			=>	__( 'grid columns', 'cdz' ),
+			'id'			=>	'opt_sidebar_checkout_right_cols',
+			'class'			=>	'micro hide',
+			'type'			=>	'select',
+			'options'		=>	array(
+									'1'		=>	'1',
+									'2'		=>	'2',
+									'3'		=>	'3',
+									'4'		=>	'4',
+									'5'		=>	'5',
+								),
+			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_checkout_right_cols' ),
+		);
+
+		/*
+		 *	Woocommerce - My Account page
+		 */
+
+		$options[] = array(
+			'name'			=>	__( 'Woocommerce - My Account page', 'cdz' ),
+			'desc'			=>	__('Plugins supported', 'cdz') . ': <a href="https://wordpress.org/plugins/woocommerce/" target="_blank">' . __( 'Woocommerce', 'cdz' ) . '</a>',
+			'type'			=>	'info',
+		);
+		$options[] = array(
+			'name'			=>	__( 'Enable settings', 'cdz' ),
+			'desc'			=>	__( 'These options will override the general settings in this page', 'cdz' ),
+			'id'			=>	'opt_sidebar_account',
+			'type'			=>	'checkbox',
+			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_account' ),
+		);
+		$options[] = array(
+			'name'			=>	__( 'Left sidebar', 'cdz' ),
+			'id'			=>	'opt_sidebar_account_left',
+			'class'			=>	'hide',
+			'type'			=>	'select',
+			'options'		=>	$sidebars_list,
+			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_account_left' ),
+		);
+		$options[] = array(
+			'name'			=>	__( 'Left sidebar width', 'cdz' ),
+			'desc'			=>	__( 'grid columns', 'cdz' ),
+			'id'			=>	'opt_sidebar_account_left_cols',
+			'class'			=>	'micro hide',
+			'type'			=>	'select',
+			'options'		=>	array(
+									'1'		=>	'1',
+									'2'		=>	'2',
+									'3'		=>	'3',
+									'4'		=>	'4',
+									'5'		=>	'5',
+								),
+			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_account_left_cols' ),
+		);
+		$options[] = array(
+			'name'			=>	__( 'Right sidebar', 'cdz' ),
+			'id'			=>	'opt_sidebar_account_right',
+			'class'			=>	'hide',
+			'type'			=>	'select',
+			'options'		=>	$sidebars_list,
+			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_account_right' ),
+		);
+		$options[] = array(
+			'name'			=>	__( 'Right sidebar Width', 'cdz' ),
+			'desc'			=>	__( 'grid columns', 'cdz' ),
+			'id'			=>	'opt_sidebar_account_right_cols',
+			'class'			=>	'micro hide',
+			'type'			=>	'select',
+			'options'		=>	array(
+									'1'		=>	'1',
+									'2'		=>	'2',
+									'3'		=>	'3',
+									'4'		=>	'4',
+									'5'		=>	'5',
+								),
+			'std'			=>	cdz_get_theme_options_std( 'opt_sidebar_account_right_cols' ),
+		);
+
+		/*
+		 *	Return
+		 */
+
 		return $options;
+
 	}
 
 }

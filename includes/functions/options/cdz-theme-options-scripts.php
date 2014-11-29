@@ -69,9 +69,13 @@ if ( ! function_exists( 'cdz_theme_options_scripts' ) ) {
 					$array['sidebar_search']			= array( 'sidebar_search_left', 'sidebar_search_left_cols', 'sidebar_search_right', 'sidebar_search_right_cols' );
 					$array['sidebar_error404']			= array( 'sidebar_error404_left', 'sidebar_error404_left_cols', 'sidebar_error404_right', 'sidebar_error404_right_cols' );
 					$array['sidebar_single']			= array( 'sidebar_single_left', 'sidebar_single_left_cols', 'sidebar_single_right', 'sidebar_single_right_cols' );
-					$array['sidebar_shop']				= array( 'sidebar_shop_left', 'sidebar_shop_left_cols', 'sidebar_shop_right', 'sidebar_shop_right_cols' );
-					$array['sidebar_product']			= array( 'sidebar_product_left', 'sidebar_product_left_cols', 'sidebar_product_right', 'sidebar_product_right_cols' );
 					$array['sidebar_page']				= array( 'sidebar_page_left', 'sidebar_page_left_cols', 'sidebar_page_right', 'sidebar_page_right_cols' );
+					$array['sidebar_shop']				= array( 'sidebar_shop_left', 'sidebar_shop_left_cols', 'sidebar_shop_right', 'sidebar_shop_right_cols' );
+					$array['sidebar_product_category']	= array( 'sidebar_product_category_left', 'sidebar_product_category_left_cols', 'sidebar_product_category_right', 'sidebar_product_category_right_cols' );
+					$array['sidebar_product']			= array( 'sidebar_product_left', 'sidebar_product_left_cols', 'sidebar_product_right', 'sidebar_product_right_cols' );
+					$array['sidebar_cart']				= array( 'sidebar_cart_left', 'sidebar_cart_left_cols', 'sidebar_cart_right', 'sidebar_cart_right_cols' );
+					$array['sidebar_checkout']			= array( 'sidebar_checkout_left', 'sidebar_checkout_left_cols', 'sidebar_checkout_right', 'sidebar_checkout_right_cols' );
+					$array['sidebar_account']			= array( 'sidebar_account_left', 'sidebar_account_left_cols', 'sidebar_account_right', 'sidebar_account_right_cols' );
 					
 					// Testimonials
 					// $array['slider_plugin_lt']			= array( 'slider_plugin_lt_type' );
