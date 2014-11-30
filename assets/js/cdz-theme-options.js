@@ -42,8 +42,6 @@ jQuery(document).ready( function($) {
 		 *	Loads tabbed sections if they exist
 		 */
 
-		if ( $('.nav-tab-wrapper').length > 0 ) { options_framework_tabs(); }
-
 		function options_framework_tabs() {
 
 			var $group = $('.group'),
@@ -61,7 +59,7 @@ jQuery(document).ready( function($) {
 			 *	Find if a selected tab is saved in localStorage
 			 */
 
-			if ( typeof(localStorage) != 'undefined' ) {
+			if ( typeof( localStorage ) != 'undefined' && localStorage.getItem('active_tab') != null ) {
 
 				active_tab = localStorage.getItem('active_tab');
 				cdz_theme_options_tab = active_tab.indexOf( 'options-group-' );
@@ -110,6 +108,12 @@ jQuery(document).ready( function($) {
 			});
 
 		}
+
+		if ( $('.nav-tab-wrapper').length > 0 ) { options_framework_tabs(); }
+
+		/*
+		 *	Loading
+		 */
 
 		$('#cdz-panel-wrap .loading').fadeOut( 'slow', function(){
 
