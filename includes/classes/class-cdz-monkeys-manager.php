@@ -66,6 +66,14 @@ if ( ! class_exists( 'cdz_Monkeys_Manager' ) ) {
 
 			if ( CDZ_THEME ) { $this->update_notifier(); }
 
+			/*
+			 *	Woocommerce Hooks
+			 */
+
+			if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
+				require_once CDZ_PLUGIN_PATH . '/includes/third/woocommerce.php';
+			}
+
 		}
 
 		/*
