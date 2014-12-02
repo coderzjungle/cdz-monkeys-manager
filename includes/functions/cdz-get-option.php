@@ -35,13 +35,17 @@ if ( ! function_exists( 'cdz_get_option' ) ) {
 
 			$_SESSION['cdz_options'][] = $name;
 
-			if ( isset( $option['face'] )
-				 && ! empty( $option['face'] )
-				 && ( ! isset( $_SESSION['cdz_fonts'][$option['face']] )
-				 || $_SESSION['cdz_fonts'][$option['face']] != $option['style'] )
-			) {
+			if ( isset( $option['face'] ) && ! empty( $option['face'] )	) {
 
-				$_SESSION['cdz_fonts'][$option['face']] = $option['style'];
+				if ( ! isset( $_SESSION['cdz_fonts'][$option['face']] ) ) {
+
+					$_SESSION['cdz_fonts'][$option['face']] = $option['style'];
+
+				} else if ( strpos( $_SESSION['cdz_fonts'][$option['face']], $option['style'] ) === FALSE ) {
+
+					$_SESSION['cdz_fonts'][$option['face']] .= ',' . $option['style'];
+
+				}
 
 			}
 

@@ -27,14 +27,15 @@ if ( ! function_exists( 'cdz_get_google_fonts_url' ) ) {
 
 		foreach ( $_SESSION['cdz_fonts'] as $key => $value) {
 
-			if ( isset( $fonts[$key] ) && ! empty( $fonts[$key] ) ) { $fonts[$key] .= ',' . $value . ',' . $value . 'italic'; }
-			else { $fonts[$key] = $value . ',' . $value . 'italic'; }
+			$styles = explode( ',', $value );
+			$string = '';
+			foreach ( $styles as $key_2 => $value_2 ) { $string .= ',' . $value_2 . ',' . $value_2 . 'italic'; }
+			$fonts[$key] = $string;
 
 		}
 
 		$families = '';
-
-		foreach ( $fonts as $key => $value) { $families .= $key . ':cdz,' . $value . '|'; }
+		foreach ( $fonts as $key => $value) { $families .= $key . ':cdz' . $value . '|'; }
 
 		return $families;
 
