@@ -27,7 +27,7 @@ if ( ! function_exists( 'cdz_to_get_sidebars_list' ) ) {
 
 		$sidebar_list = array(
 			'none'				=>	'- None -',
-			// 'default-sidebar'	=>	'Default Sidebar',
+			'general-sidebar'	=> 'General Sidebar',
 		);
 
 		if ( isset( $sidebars ) ) {

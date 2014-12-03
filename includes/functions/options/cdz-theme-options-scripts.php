@@ -110,7 +110,7 @@ if ( ! function_exists( 'cdz_theme_options_scripts' ) ) {
 					$js_sidebars_html .= '<form id="cdz-sidebars-manager-form"><table><tr></tr>';
 
 					foreach ( cdz_to_get_sidebars_list() as $slug => $name) {
-						if ( $slug != 'none' && $slug != 'default-sidebar' ) {
+						if ( $slug != 'none' && $slug != 'general-sidebar' ) {
 							$js_sidebars_html .= '<tr class="cdz-srow">';
 							$js_sidebars_html .= '<td><i class="fa fa-cog"></i></td>';
 							$js_sidebars_html .= '<td><input type="text" name="x" value="' . $name . '" class="name" /></td>';

@@ -83,6 +83,7 @@ article.cdz-style-small-thumbnail .entry-header,
 article.cdz-style-small-thumbnail .entry-summary,
 article.cdz-style-small-thumbnail .entry-content,
 article.cdz-style-small-thumbnail .entry-meta { width: 72%; float: right; }
+article.cdz-style-small-thumbnail .full { width: 100%; float: none; }
 @media ( max-width: 767px ) { article.cdz-style-style-small-thumbnail .thumb { width: 100%; margin: 0 0 30px 0; } }
 
 article.cdz-style-small-thumbnail-right .thumb { width: 25%; margin-left: 3%; float: right; }
@@ -91,6 +92,7 @@ article.cdz-style-small-thumbnail-right .entry-header,
 article.cdz-style-small-thumbnail-right .entry-summary,
 article.cdz-style-small-thumbnail-right .entry-content,
 article.cdz-style-small-thumbnail-right .entry-meta { width: 72%; text-align: right; float: left; }
+article.cdz-style-small-thumbnail-right .full { width: 100%; float: none; }
 @media ( max-width: 767px ) { article.cdz-style-style-small-thumbnail-right .thumb { width: 100%; margin: 0 0 30px 0; } }
 
 /*
