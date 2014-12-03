@@ -317,6 +317,7 @@ if ( ! function_exists( 'cdz_options_sliders' ) ) {
 			'options'		=>	array(
 									'none'			=>	'- None -',
 									'fiximage'		=>	'Fixed Image',
+									'featured'		=>	'Featured Image',
 									'revslider'		=>	'Revolution Slider (Plugin)',
 								),
 			'std'			=>	cdz_get_theme_options_std( 'opt_slider_single_type' ),
