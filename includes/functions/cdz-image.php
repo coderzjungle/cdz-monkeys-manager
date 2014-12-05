@@ -35,8 +35,6 @@ if ( ! function_exists( 'cdz_image' ) ) {
 			if ( isset( $template_sidebars['left'] ) &&  $template_sidebars['left'] != 'none' ) $width -= $template_sidebars['left_cols'] * $single_column_width;
 			if ( isset( $template_sidebars['right'] ) &&  $template_sidebars['right'] != 'none' ) $width -= $template_sidebars['right_cols'] * $single_column_width;
 
-			$width -= 30; // column padding
-
 			if ( $margin > 0 ) { $width -= $margin; }
 
 		}

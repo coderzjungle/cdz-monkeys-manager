@@ -124,7 +124,7 @@ if ( ! function_exists( 'cdz_options_widgets' ) ) {
 			'id'			=>	'opt_widgets_title_font',
 			'type'			=>	'typography',
 			'options'		=>	array(
-									'sizes'		=>	array( '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20' ),
+									'sizes'		=>	array( '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', '25'),
 									'color'		=>	false,
 								),
 			'std'			=>	cdz_get_theme_options_std( 'opt_widgets_title_font' ),

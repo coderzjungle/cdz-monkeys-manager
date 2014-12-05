@@ -31,6 +31,10 @@ if ( ! function_exists( 'cdz_get_slider' ) ) {
 
 				$slider = '<div class="fiximage"><img src="' . cdz_get_option( 'opt_slider_fiximage_url' ) . '" /></div>';
 
+			} elseif ( $slider == 'featured' ) {
+
+				$slider = '<div class="featured"></div>';
+
 			} elseif ( $slider == 'revslider') {
 
 				$revslider = new RevSlider();
@@ -47,6 +51,10 @@ if ( ! function_exists( 'cdz_get_slider' ) ) {
 
 				$slider = '<div class="fiximage"><img src="' . cdz_get_option( 'opt_slider_' . $template . '_fiximage_url' ) . '" /></div>';
 
+			} elseif ( $slider == 'featured' ) {
+
+				$slider = '<div class="featured"></div>';
+
 			} else if ( $slider == 'revslider' && class_exists( 'RevSlider' ) ) {
 
 				$revslider = new RevSlider();
@@ -62,6 +70,10 @@ if ( ! function_exists( 'cdz_get_slider' ) ) {
 			if ( $slider == 'fiximage') {
 
 				$slider = '<div class="fiximage"><img src="' . cdz_get_option( 'opt_slider_general_fiximage_url' ) . '" /></div>';
+
+			} elseif ( $slider == 'featured' ) {
+
+				$slider = '<div class="featured"></div>';
 
 			} elseif ( $slider == 'revslider' && class_exists( 'RevSlider' ) ) {
 
