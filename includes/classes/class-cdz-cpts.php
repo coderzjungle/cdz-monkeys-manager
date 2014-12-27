@@ -27,6 +27,8 @@ if ( ! class_exists( 'cdz_Cpts' ) ) {
 		 *	Custom Post Types
 		 */
 
+		var $location				= NULL;
+
 		var $service				= NULL;
 		var $service_category		= NULL;
 		var $service_group			= NULL;
@@ -55,9 +57,7 @@ if ( ! class_exists( 'cdz_Cpts' ) ) {
 
 		function objects() {
 
-			$this->work					= new cdz_Work();
-			$this->work_category		= new cdz_Work_Category();
-			$this->work_portfolio		= new cdz_Work_Portfolio();
+			$this->location				= new cdz_Location();
 
 			$this->service				= new cdz_Service();
 			$this->service_category		= new cdz_Service_Category();
@@ -66,6 +66,10 @@ if ( ! class_exists( 'cdz_Cpts' ) ) {
 			$this->testimonial			= new cdz_Testimonial();
 			$this->testimonial_category	= new cdz_Testimonial_Category();
 			$this->testimonial_group	= new cdz_Testimonial_Group();
+
+			$this->work					= new cdz_Work();
+			$this->work_category		= new cdz_Work_Category();
+			$this->work_portfolio		= new cdz_Work_Portfolio();
 
 		}
 
