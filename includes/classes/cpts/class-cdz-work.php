@@ -71,7 +71,7 @@ class cdz_Work {
 
 		$labels = array(
 			'name'					=>	__( 'Works', 'cdz' ),
-			'singular_name'			=>	__( 'singular_name', 'cdz' ),
+			'singular_name'			=>	__( 'Work', 'cdz' ),
 			'menu_name'				=>	__( 'Works', 'cdz' ),
 			'all_items'				=>	__( 'All Works', 'cdz' ),
 			'add_new'				=>	__( 'Add Work', 'cdz' ),

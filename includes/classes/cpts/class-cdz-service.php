@@ -71,7 +71,7 @@ class cdz_Service {
 
 		$labels = array(
 			'name'					=>	__( 'Services', 'cdz' ),
-			'singular_name'			=>	__( 'singular_name', 'cdz' ),
+			'singular_name'			=>	__( 'Service', 'cdz' ),
 			'menu_name'				=>	__( 'Services', 'cdz' ),
 			'all_items'				=>	__( 'All Services', 'cdz' ),
 			'add_new'				=>	__( 'Add Service', 'cdz' ),
