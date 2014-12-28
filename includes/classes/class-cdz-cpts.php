@@ -28,6 +28,8 @@ if ( ! class_exists( 'cdz_Cpts' ) ) {
 		 */
 
 		var $location				= NULL;
+		var $location_category		= NULL;
+		var $location_group			= NULL;
 
 		var $service				= NULL;
 		var $service_category		= NULL;
@@ -58,6 +60,8 @@ if ( ! class_exists( 'cdz_Cpts' ) ) {
 		function objects() {
 
 			$this->location				= new cdz_Location();
+			$this->location_category	= new cdz_Location_Category();
+			$this->location_group		= new cdz_Location_Group();
 
 			$this->service				= new cdz_Service();
 			$this->service_category		= new cdz_Service_Category();
