@@ -291,8 +291,6 @@ class cdz_Work {
 		/*
 		 *	Doc: http://codex.wordpress.org/Plugin_API/Filter_Reference/manage_edit-post_type_columns
 		 */
-
-		var_dump( $old_columns );
 		
 		$columns['cb']					= '<input type="checkbox" />';
 		$columns['cdz_work_thumb']		= __( 'Image', 'cdz' );
