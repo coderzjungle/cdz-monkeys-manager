@@ -25,6 +25,8 @@ if ( get_post_thumbnail_id() ) : ?>
 
 		<?php
 
+		if ( ! isset( $style ) ) { $style = 'small-thumbnail'; }
+
 		$thumb = cdz_image(
 			get_post_thumbnail_id(),
 			'',
