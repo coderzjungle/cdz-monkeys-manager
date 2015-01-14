@@ -1,21 +1,21 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: cdz Multi Portfolios\n"
-"POT-Creation-Date: 2014-11-07 13:11+0100\n"
-"PO-Revision-Date: 2014-11-07 13:11+0100\n"
+"POT-Creation-Date: 2015-01-14 18:45+0100\n"
+"PO-Revision-Date: 2015-01-14 18:45+0100\n"
 "Last-Translator: Yithemes <support@yithemes.com>\n"
 "Language-Team: \n"
 "Language: en_GB\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.6.8\n"
+"X-Generator: Poedit 1.7.1\n"
 "X-Poedit-Basepath: ./\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-KeywordsList: __;_e;_x\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../includes/classes/class-cdz-monkeys-manager.php:146
+#: ../includes/classes/class-cdz-monkeys-manager.php:154
 msgid "Update"
 msgstr ""
 
@@ -48,22 +48,338 @@ msgstr ""
 msgid "peak memory usage"
 msgstr ""
 
+#: ../includes/classes/cpts/class-cdz-location-category.php:43
+msgid "Location Categories"
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location-category.php:44
+msgid "Location Category"
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location-category.php:45
+#: ../includes/classes/cpts/class-cdz-location.php:293
+#: ../includes/classes/cpts/class-cdz-service-category.php:45
+#: ../includes/classes/cpts/class-cdz-service.php:278
+#: ../includes/classes/cpts/class-cdz-testimonial-category.php:45
+#: ../includes/classes/cpts/class-cdz-testimonial.php:288
+#: ../includes/classes/cpts/class-cdz-work-category.php:45
+#: ../includes/classes/cpts/class-cdz-work.php:299
+#: ../includes/options/cdz-options-blog.php:88
+msgid "Categories"
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location-category.php:46
+msgid "All Location Categories"
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location-category.php:47
+msgid "Edit Location Category"
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location-category.php:48
+msgid "View Location Category"
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location-category.php:49
+msgid "Update Location Category"
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location-category.php:50
+msgid "Add New Location Category"
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location-category.php:51
+msgid "New Location Category Name"
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location-category.php:52
+msgid "Search Location Categories"
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location-category.php:54
+msgid "Separate location categories with commas"
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location-category.php:55
+msgid "Add or remove location categories"
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location-category.php:56
+msgid "Choose from the most used location categories"
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location-category.php:57
+msgid "No location categories found."
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location-category.php:61
+#: ../includes/classes/cpts/class-cdz-service-category.php:61
+#: ../includes/classes/cpts/class-cdz-testimonial-category.php:61
+#: ../includes/classes/cpts/class-cdz-work-category.php:61
+msgid "Category"
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location-group.php:43
+msgid "Location Groups"
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location-group.php:44
+msgid "Location Group"
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location-group.php:45
+#: ../includes/classes/cpts/class-cdz-location.php:292
+#: ../includes/classes/cpts/class-cdz-service-group.php:45
+#: ../includes/classes/cpts/class-cdz-service.php:277
+#: ../includes/classes/cpts/class-cdz-testimonial-group.php:45
+#: ../includes/classes/cpts/class-cdz-testimonial.php:287
+msgid "Groups"
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location-group.php:46
+msgid "All Location Groups"
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location-group.php:47
+msgid "Edit Location Group"
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location-group.php:48
+msgid "View Location Group"
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location-group.php:49
+msgid "Update Location Group"
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location-group.php:50
+msgid "Add New Location Group"
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location-group.php:51
+msgid "New Location Group Name"
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location-group.php:52
+msgid "Search Location Groups"
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location-group.php:54
+msgid "Separate location groups with commas"
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location-group.php:55
+msgid "Add or remove location groups"
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location-group.php:56
+msgid "Choose from the most used location groups"
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location-group.php:57
+msgid "No location groups found."
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location-group.php:61
+#: ../includes/classes/cpts/class-cdz-service-group.php:61
+#: ../includes/classes/cpts/class-cdz-testimonial-group.php:61
+msgid "Group"
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location.php:73
+#: ../includes/classes/cpts/class-cdz-location.php:75
+msgid "Locations"
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location.php:74
+msgid "Location"
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location.php:76
+msgid "All Locations"
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location.php:77
+msgid "Add Location"
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location.php:78
+msgid "Add New Location"
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location.php:79
+msgid "Edit Location"
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location.php:80
+msgid "New Location"
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location.php:81
+msgid "View Location"
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location.php:82
+msgid "Search Locations"
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location.php:83
+msgid "No locations found"
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location.php:84
+msgid "No locations found in Trash"
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location.php:115
+#, php-format
+msgid "Location updated. <a href=\"%s\">View location</a>"
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location.php:116
+#: ../includes/classes/cpts/class-cdz-service.php:116
+#: ../includes/classes/cpts/class-cdz-testimonial.php:116
+#: ../includes/classes/cpts/class-cdz-work.php:116
+msgid "Custom field updated."
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location.php:117
+#: ../includes/classes/cpts/class-cdz-service.php:117
+#: ../includes/classes/cpts/class-cdz-testimonial.php:117
+#: ../includes/classes/cpts/class-cdz-work.php:117
+msgid "Custom field deleted."
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location.php:118
+msgid "Location updated."
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location.php:119
+#, php-format
+msgid "Location restored to revision from %s"
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location.php:120
+#, php-format
+msgid "Location published. <a href=\"%s\">View location</a>"
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location.php:121
+msgid "Location saved."
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location.php:122
+#, php-format
+msgid ""
+"Location submitted. <a target=\"_blank\" href=\"%s\">Preview location</a>"
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location.php:124
+#, php-format
+msgid ""
+"Location scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href="
+"\"%2$s\">Preview location</a>"
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location.php:125
+#: ../includes/classes/cpts/class-cdz-service.php:125
+#: ../includes/classes/cpts/class-cdz-testimonial.php:125
+#: ../includes/classes/cpts/class-cdz-work.php:125
+msgid "M j, Y @ G:i"
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location.php:127
+#, php-format
+msgid ""
+"Location draft updated. <a target=\"_blank\" href=\"%s\">Preview location</a>"
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location.php:140
+msgid "Location info"
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location.php:169
+#: ../templates/cdz-location-single.php:47
+msgid "Address"
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location.php:172
+msgid "Latitude"
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location.php:175
+msgid "Longitude"
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location.php:178
+#: ../includes/classes/cpts/class-cdz-testimonial.php:177
+#: ../includes/classes/cpts/class-cdz-work.php:179
+msgid "Website URL"
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location.php:181
+msgid "Phone Number"
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location.php:207
+#: ../includes/classes/cpts/class-cdz-service.php:195
+#: ../includes/classes/cpts/class-cdz-testimonial.php:203
+#: ../includes/classes/cpts/class-cdz-work.php:212
+msgid "\"Read More\" Label"
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location.php:210
+msgid "Feature this location?"
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location.php:290
+#: ../includes/classes/cpts/class-cdz-service.php:275
+#: ../includes/classes/cpts/class-cdz-testimonial.php:285
+#: ../includes/classes/cpts/class-cdz-work.php:296
+msgid "Image"
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location.php:291
+#: ../includes/classes/cpts/class-cdz-service.php:276
+#: ../includes/classes/cpts/class-cdz-testimonial.php:286
+#: ../includes/classes/cpts/class-cdz-work.php:297
+msgid "Title"
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location.php:294
+#: ../includes/classes/cpts/class-cdz-service.php:279
+#: ../includes/classes/cpts/class-cdz-testimonial.php:289
+#: ../includes/classes/cpts/class-cdz-work.php:300
+msgid "Featured"
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location.php:295
+#: ../includes/classes/cpts/class-cdz-service.php:280
+#: ../includes/classes/cpts/class-cdz-testimonial.php:290
+#: ../includes/classes/cpts/class-cdz-work.php:301
+msgid "Order"
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location.php:309
+#: ../includes/classes/cpts/class-cdz-service.php:294
+#: ../includes/classes/cpts/class-cdz-testimonial.php:304
+#: ../includes/classes/cpts/class-cdz-work.php:315
+msgid "Yes"
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-location.php:309
+#: ../includes/classes/cpts/class-cdz-service.php:294
+#: ../includes/classes/cpts/class-cdz-testimonial.php:304
+#: ../includes/classes/cpts/class-cdz-work.php:315
+msgid "No"
+msgstr ""
+
 #: ../includes/classes/cpts/class-cdz-service-category.php:43
 msgid "Service Categories"
 msgstr ""
 
 #: ../includes/classes/cpts/class-cdz-service-category.php:44
 msgid "Service Category"
-msgstr ""
-
-#: ../includes/classes/cpts/class-cdz-service-category.php:45
-#: ../includes/classes/cpts/class-cdz-service.php:280
-#: ../includes/classes/cpts/class-cdz-testimonial-category.php:45
-#: ../includes/classes/cpts/class-cdz-testimonial.php:290
-#: ../includes/classes/cpts/class-cdz-work-category.php:45
-#: ../includes/classes/cpts/class-cdz-work.php:301
-#: ../includes/options/cdz-options-blog.php:88
-msgid "Categories"
 msgstr ""
 
 #: ../includes/classes/cpts/class-cdz-service-category.php:46
@@ -110,25 +426,12 @@ msgstr ""
 msgid "No service categories found."
 msgstr ""
 
-#: ../includes/classes/cpts/class-cdz-service-category.php:61
-#: ../includes/classes/cpts/class-cdz-testimonial-category.php:61
-#: ../includes/classes/cpts/class-cdz-work-category.php:61
-msgid "Category"
-msgstr ""
-
 #: ../includes/classes/cpts/class-cdz-service-group.php:43
 msgid "Service Groups"
 msgstr ""
 
 #: ../includes/classes/cpts/class-cdz-service-group.php:44
 msgid "Service Group"
-msgstr ""
-
-#: ../includes/classes/cpts/class-cdz-service-group.php:45
-#: ../includes/classes/cpts/class-cdz-service.php:279
-#: ../includes/classes/cpts/class-cdz-testimonial-group.php:45
-#: ../includes/classes/cpts/class-cdz-testimonial.php:289
-msgid "Groups"
 msgstr ""
 
 #: ../includes/classes/cpts/class-cdz-service-group.php:46
@@ -175,19 +478,13 @@ msgstr ""
 msgid "No service groups found."
 msgstr ""
 
-#: ../includes/classes/cpts/class-cdz-service-group.php:61
-#: ../includes/classes/cpts/class-cdz-testimonial-group.php:61
-msgid "Group"
-msgstr ""
-
 #: ../includes/classes/cpts/class-cdz-service.php:73
 #: ../includes/classes/cpts/class-cdz-service.php:75
 msgid "Services"
 msgstr ""
 
 #: ../includes/classes/cpts/class-cdz-service.php:74
-#: ../includes/classes/cpts/class-cdz-work.php:74
-msgid "singular_name"
+msgid "Service"
 msgstr ""
 
 #: ../includes/classes/cpts/class-cdz-service.php:76
@@ -231,18 +528,6 @@ msgstr ""
 msgid "Service updated. <a href=\"%s\">View services</a>"
 msgstr ""
 
-#: ../includes/classes/cpts/class-cdz-service.php:116
-#: ../includes/classes/cpts/class-cdz-testimonial.php:116
-#: ../includes/classes/cpts/class-cdz-work.php:116
-msgid "Custom field updated."
-msgstr ""
-
-#: ../includes/classes/cpts/class-cdz-service.php:117
-#: ../includes/classes/cpts/class-cdz-testimonial.php:117
-#: ../includes/classes/cpts/class-cdz-work.php:117
-msgid "Custom field deleted."
-msgstr ""
-
 #: ../includes/classes/cpts/class-cdz-service.php:118
 msgid "Service updated."
 msgstr ""
@@ -274,12 +559,6 @@ msgid ""
 "\"%2$s\">Preview services</a>"
 msgstr ""
 
-#: ../includes/classes/cpts/class-cdz-service.php:125
-#: ../includes/classes/cpts/class-cdz-testimonial.php:125
-#: ../includes/classes/cpts/class-cdz-work.php:125
-msgid "M j, Y @ G:i"
-msgstr ""
-
 #: ../includes/classes/cpts/class-cdz-service.php:127
 #, php-format
 msgid ""
@@ -303,50 +582,8 @@ msgstr ""
 msgid "Custom URL"
 msgstr ""
 
-#: ../includes/classes/cpts/class-cdz-service.php:195
-#: ../includes/classes/cpts/class-cdz-testimonial.php:203
-#: ../includes/classes/cpts/class-cdz-work.php:212
-msgid "\"Read More\" Label"
-msgstr ""
-
 #: ../includes/classes/cpts/class-cdz-service.php:198
 msgid "Feature this services?"
-msgstr ""
-
-#: ../includes/classes/cpts/class-cdz-service.php:277
-#: ../includes/classes/cpts/class-cdz-testimonial.php:287
-#: ../includes/classes/cpts/class-cdz-work.php:298
-msgid "Image"
-msgstr ""
-
-#: ../includes/classes/cpts/class-cdz-service.php:278
-#: ../includes/classes/cpts/class-cdz-testimonial.php:288
-#: ../includes/classes/cpts/class-cdz-work.php:299
-msgid "Title"
-msgstr ""
-
-#: ../includes/classes/cpts/class-cdz-service.php:281
-#: ../includes/classes/cpts/class-cdz-testimonial.php:291
-#: ../includes/classes/cpts/class-cdz-work.php:302
-msgid "Featured"
-msgstr ""
-
-#: ../includes/classes/cpts/class-cdz-service.php:282
-#: ../includes/classes/cpts/class-cdz-testimonial.php:292
-#: ../includes/classes/cpts/class-cdz-work.php:303
-msgid "Order"
-msgstr ""
-
-#: ../includes/classes/cpts/class-cdz-service.php:296
-#: ../includes/classes/cpts/class-cdz-testimonial.php:306
-#: ../includes/classes/cpts/class-cdz-work.php:317
-msgid "Yes"
-msgstr ""
-
-#: ../includes/classes/cpts/class-cdz-service.php:296
-#: ../includes/classes/cpts/class-cdz-testimonial.php:306
-#: ../includes/classes/cpts/class-cdz-work.php:317
-msgid "No"
 msgstr ""
 
 #: ../includes/classes/cpts/class-cdz-testimonial-category.php:43
@@ -567,14 +804,10 @@ msgstr ""
 
 #: ../includes/classes/cpts/class-cdz-testimonial.php:174
 #: ../includes/classes/cpts/class-cdz-work.php:176
+#: ../templates/cdz-location-single.php:57
 #: ../templates/cdz-testimonial-single.php:56
 #: ../templates/cdz-work-single.php:58
 msgid "Website"
-msgstr ""
-
-#: ../includes/classes/cpts/class-cdz-testimonial.php:177
-#: ../includes/classes/cpts/class-cdz-work.php:179
-msgid "Website URL"
 msgstr ""
 
 #: ../includes/classes/cpts/class-cdz-testimonial.php:206
@@ -643,7 +876,7 @@ msgid "Work Portfolio"
 msgstr ""
 
 #: ../includes/classes/cpts/class-cdz-work-portfolio.php:45
-#: ../includes/classes/cpts/class-cdz-work.php:300
+#: ../includes/classes/cpts/class-cdz-work.php:298
 #: ../includes/options/cdz-options-portfolios.php:36
 msgid "Portfolios"
 msgstr ""
@@ -699,6 +932,10 @@ msgstr ""
 #: ../includes/classes/cpts/class-cdz-work.php:73
 #: ../includes/classes/cpts/class-cdz-work.php:75
 msgid "Works"
+msgstr ""
+
+#: ../includes/classes/cpts/class-cdz-work.php:74
+msgid "Work"
 msgstr ""
 
 #: ../includes/classes/cpts/class-cdz-work.php:76
@@ -952,7 +1189,9 @@ msgstr ""
 
 #: ../includes/classes/theme-options/class-cdz-theme-options.php:160
 #: ../includes/classes/theme-options/class-cdz-theme-options.php:182
-msgid "Thene Options"
+#: ../includes/functions/options/cdz-theme-options-page.php:34
+#: ../includes/functions/options/cdz-theme-options-page.php:61
+msgid "Theme Options"
 msgstr ""
 
 #: ../includes/classes/widgets/class-cdz-flickr-images.php:33
@@ -1004,11 +1243,6 @@ msgstr ""
 msgid "Theme Update"
 msgstr ""
 
-#: ../includes/functions/options/cdz-theme-options-page.php:34
-#: ../includes/functions/options/cdz-theme-options-page.php:61
-msgid "Theme Options"
-msgstr ""
-
 #: ../includes/functions/options/cdz-theme-options-page.php:35
 msgid "View Website"
 msgstr ""
@@ -1022,12 +1256,12 @@ msgstr ""
 msgid "ATTENTION! Your theme settings will be lost."
 msgstr ""
 
-#: ../includes/functions/options/cdz-theme-options-scripts.php:114
-#: ../includes/functions/options/cdz-theme-options-scripts.php:142
+#: ../includes/functions/options/cdz-theme-options-scripts.php:118
+#: ../includes/functions/options/cdz-theme-options-scripts.php:146
 msgid "Delete"
 msgstr ""
 
-#: ../includes/functions/options/cdz-theme-options-scripts.php:119
+#: ../includes/functions/options/cdz-theme-options-scripts.php:123
 msgid "Add new sidebar"
 msgstr ""
 
@@ -1147,7 +1381,7 @@ msgstr ""
 #: ../includes/options/cdz-options-content.php:64
 #: ../includes/options/cdz-options-content.php:209
 #: ../includes/options/cdz-options-general.php:220
-#: ../includes/options/cdz-options-general.php:267
+#: ../includes/options/cdz-options-general.php:266
 #: ../includes/options/cdz-options-navigation-top.php:86
 #: ../includes/options/cdz-options-navigation-top.php:310
 #: ../includes/options/cdz-options-navigation.php:86
@@ -1160,7 +1394,7 @@ msgstr ""
 #: ../includes/options/cdz-options-blog.php:181
 #: ../includes/options/cdz-options-content.php:83
 #: ../includes/options/cdz-options-content.php:228
-#: ../includes/options/cdz-options-general.php:279
+#: ../includes/options/cdz-options-general.php:277
 #: ../includes/options/cdz-options-navigation-top.php:97
 #: ../includes/options/cdz-options-navigation-top.php:321
 #: ../includes/options/cdz-options-navigation.php:105
@@ -1173,7 +1407,7 @@ msgstr ""
 #: ../includes/options/cdz-options-blog.php:186
 #: ../includes/options/cdz-options-content.php:88
 #: ../includes/options/cdz-options-content.php:233
-#: ../includes/options/cdz-options-general.php:284
+#: ../includes/options/cdz-options-general.php:282
 #: ../includes/options/cdz-options-navigation-top.php:102
 #: ../includes/options/cdz-options-navigation-top.php:326
 #: ../includes/options/cdz-options-navigation.php:110
@@ -1186,7 +1420,7 @@ msgstr ""
 #: ../includes/options/cdz-options-blog.php:187
 #: ../includes/options/cdz-options-content.php:89
 #: ../includes/options/cdz-options-content.php:234
-#: ../includes/options/cdz-options-general.php:285
+#: ../includes/options/cdz-options-general.php:283
 #: ../includes/options/cdz-options-navigation-top.php:103
 #: ../includes/options/cdz-options-navigation-top.php:327
 #: ../includes/options/cdz-options-navigation.php:111
@@ -1199,7 +1433,7 @@ msgstr ""
 #: ../includes/options/cdz-options-blog.php:193
 #: ../includes/options/cdz-options-content.php:95
 #: ../includes/options/cdz-options-content.php:240
-#: ../includes/options/cdz-options-general.php:291
+#: ../includes/options/cdz-options-general.php:289
 #: ../includes/options/cdz-options-navigation-top.php:109
 #: ../includes/options/cdz-options-navigation-top.php:333
 #: ../includes/options/cdz-options-navigation.php:117
@@ -1212,7 +1446,7 @@ msgstr ""
 #: ../includes/options/cdz-options-blog.php:198
 #: ../includes/options/cdz-options-content.php:100
 #: ../includes/options/cdz-options-content.php:245
-#: ../includes/options/cdz-options-general.php:296
+#: ../includes/options/cdz-options-general.php:294
 #: ../includes/options/cdz-options-navigation-top.php:114
 #: ../includes/options/cdz-options-navigation-top.php:338
 #: ../includes/options/cdz-options-navigation.php:122
@@ -1225,7 +1459,7 @@ msgstr ""
 #: ../includes/options/cdz-options-blog.php:199
 #: ../includes/options/cdz-options-content.php:101
 #: ../includes/options/cdz-options-content.php:246
-#: ../includes/options/cdz-options-general.php:297
+#: ../includes/options/cdz-options-general.php:295
 #: ../includes/options/cdz-options-navigation-top.php:115
 #: ../includes/options/cdz-options-navigation-top.php:339
 #: ../includes/options/cdz-options-navigation.php:123
@@ -1238,7 +1472,7 @@ msgstr ""
 #: ../includes/options/cdz-options-blog.php:200
 #: ../includes/options/cdz-options-content.php:102
 #: ../includes/options/cdz-options-content.php:247
-#: ../includes/options/cdz-options-general.php:298
+#: ../includes/options/cdz-options-general.php:296
 #: ../includes/options/cdz-options-navigation-top.php:116
 #: ../includes/options/cdz-options-navigation-top.php:340
 #: ../includes/options/cdz-options-navigation.php:124
@@ -1251,7 +1485,7 @@ msgstr ""
 #: ../includes/options/cdz-options-blog.php:201
 #: ../includes/options/cdz-options-content.php:103
 #: ../includes/options/cdz-options-content.php:248
-#: ../includes/options/cdz-options-general.php:299
+#: ../includes/options/cdz-options-general.php:297
 #: ../includes/options/cdz-options-navigation-top.php:117
 #: ../includes/options/cdz-options-navigation-top.php:341
 #: ../includes/options/cdz-options-navigation.php:125
@@ -1264,8 +1498,8 @@ msgstr ""
 #: ../includes/options/cdz-options-blog.php:207
 #: ../includes/options/cdz-options-content.php:109
 #: ../includes/options/cdz-options-content.php:254
-#: ../includes/options/cdz-options-general.php:232
-#: ../includes/options/cdz-options-general.php:305
+#: ../includes/options/cdz-options-general.php:231
+#: ../includes/options/cdz-options-general.php:303
 #: ../includes/options/cdz-options-navigation-top.php:123
 #: ../includes/options/cdz-options-navigation-top.php:347
 #: ../includes/options/cdz-options-navigation.php:131
@@ -1276,7 +1510,7 @@ msgid "Font color"
 msgstr ""
 
 #: ../includes/options/cdz-options-blog.php:214
-#: ../includes/options/cdz-options-general.php:312
+#: ../includes/options/cdz-options-general.php:310
 #: ../includes/options/cdz-options-navigation-top.php:130
 #: ../includes/options/cdz-options-navigation-top.php:354
 #: ../includes/options/cdz-options-navigation.php:138
@@ -1287,7 +1521,7 @@ msgstr ""
 #: ../includes/options/cdz-options-blog.php:221
 #: ../includes/options/cdz-options-content.php:130
 #: ../includes/options/cdz-options-content.php:275
-#: ../includes/options/cdz-options-general.php:319
+#: ../includes/options/cdz-options-general.php:317
 #: ../includes/options/cdz-options-navigation-top.php:144
 #: ../includes/options/cdz-options-navigation-top.php:241
 #: ../includes/options/cdz-options-navigation-top.php:368
@@ -1299,7 +1533,7 @@ msgid "Background color"
 msgstr ""
 
 #: ../includes/options/cdz-options-blog.php:228
-#: ../includes/options/cdz-options-general.php:326
+#: ../includes/options/cdz-options-general.php:324
 #: ../includes/options/cdz-options-navigation-top.php:151
 #: ../includes/options/cdz-options-navigation-top.php:375
 #: ../includes/options/cdz-options-navigation.php:159
@@ -1311,7 +1545,7 @@ msgstr ""
 #: ../includes/options/cdz-options-content.php:144
 #: ../includes/options/cdz-options-content.php:282
 #: ../includes/options/cdz-options-general.php:182
-#: ../includes/options/cdz-options-general.php:333
+#: ../includes/options/cdz-options-general.php:331
 #: ../includes/options/cdz-options-navigation-top.php:165
 #: ../includes/options/cdz-options-navigation-top.php:248
 #: ../includes/options/cdz-options-navigation-top.php:389
@@ -1324,7 +1558,7 @@ msgid "Border color"
 msgstr ""
 
 #: ../includes/options/cdz-options-blog.php:242
-#: ../includes/options/cdz-options-general.php:340
+#: ../includes/options/cdz-options-general.php:338
 #: ../includes/options/cdz-options-navigation-top.php:172
 #: ../includes/options/cdz-options-navigation-top.php:396
 #: ../includes/options/cdz-options-navigation.php:180
@@ -1336,7 +1570,7 @@ msgstr ""
 #: ../includes/options/cdz-options-content.php:158
 #: ../includes/options/cdz-options-content.php:289
 #: ../includes/options/cdz-options-general.php:159
-#: ../includes/options/cdz-options-general.php:347
+#: ../includes/options/cdz-options-general.php:345
 #: ../includes/options/cdz-options-navigation-top.php:186
 #: ../includes/options/cdz-options-navigation-top.php:255
 #: ../includes/options/cdz-options-navigation-top.php:410
@@ -1357,9 +1591,9 @@ msgstr ""
 #: ../includes/options/cdz-options-content.php:313
 #: ../includes/options/cdz-options-content.php:322
 #: ../includes/options/cdz-options-general.php:160
-#: ../includes/options/cdz-options-general.php:348
-#: ../includes/options/cdz-options-general.php:371
-#: ../includes/options/cdz-options-general.php:380
+#: ../includes/options/cdz-options-general.php:346
+#: ../includes/options/cdz-options-general.php:369
+#: ../includes/options/cdz-options-general.php:378
 #: ../includes/options/cdz-options-navigation-top.php:187
 #: ../includes/options/cdz-options-navigation-top.php:210
 #: ../includes/options/cdz-options-navigation-top.php:219
@@ -1391,7 +1625,7 @@ msgstr ""
 #: ../includes/options/cdz-options-content.php:167
 #: ../includes/options/cdz-options-content.php:298
 #: ../includes/options/cdz-options-general.php:168
-#: ../includes/options/cdz-options-general.php:356
+#: ../includes/options/cdz-options-general.php:354
 #: ../includes/options/cdz-options-navigation-top.php:195
 #: ../includes/options/cdz-options-navigation-top.php:264
 #: ../includes/options/cdz-options-navigation-top.php:419
@@ -1407,7 +1641,7 @@ msgstr ""
 #: ../includes/options/cdz-options-content.php:172
 #: ../includes/options/cdz-options-content.php:303
 #: ../includes/options/cdz-options-general.php:173
-#: ../includes/options/cdz-options-general.php:361
+#: ../includes/options/cdz-options-general.php:359
 #: ../includes/options/cdz-options-navigation-top.php:200
 #: ../includes/options/cdz-options-navigation-top.php:269
 #: ../includes/options/cdz-options-navigation-top.php:424
@@ -1423,7 +1657,7 @@ msgstr ""
 #: ../includes/options/cdz-options-content.php:173
 #: ../includes/options/cdz-options-content.php:304
 #: ../includes/options/cdz-options-general.php:174
-#: ../includes/options/cdz-options-general.php:362
+#: ../includes/options/cdz-options-general.php:360
 #: ../includes/options/cdz-options-navigation-top.php:201
 #: ../includes/options/cdz-options-navigation-top.php:270
 #: ../includes/options/cdz-options-navigation-top.php:425
@@ -1439,7 +1673,7 @@ msgstr ""
 #: ../includes/options/cdz-options-content.php:174
 #: ../includes/options/cdz-options-content.php:305
 #: ../includes/options/cdz-options-general.php:175
-#: ../includes/options/cdz-options-general.php:363
+#: ../includes/options/cdz-options-general.php:361
 #: ../includes/options/cdz-options-navigation-top.php:202
 #: ../includes/options/cdz-options-navigation-top.php:271
 #: ../includes/options/cdz-options-navigation-top.php:426
@@ -1455,7 +1689,7 @@ msgstr ""
 #: ../includes/options/cdz-options-content.php:175
 #: ../includes/options/cdz-options-content.php:306
 #: ../includes/options/cdz-options-general.php:176
-#: ../includes/options/cdz-options-general.php:364
+#: ../includes/options/cdz-options-general.php:362
 #: ../includes/options/cdz-options-navigation-top.php:203
 #: ../includes/options/cdz-options-navigation-top.php:272
 #: ../includes/options/cdz-options-navigation-top.php:427
@@ -1472,7 +1706,7 @@ msgstr ""
 #: ../includes/options/cdz-options-content.php:312
 #: ../includes/options/cdz-options-general.php:103
 #: ../includes/options/cdz-options-general.php:190
-#: ../includes/options/cdz-options-general.php:370
+#: ../includes/options/cdz-options-general.php:368
 #: ../includes/options/cdz-options-navigation-top.php:209
 #: ../includes/options/cdz-options-navigation-top.php:278
 #: ../includes/options/cdz-options-navigation-top.php:433
@@ -1529,14 +1763,14 @@ msgstr ""
 
 #: ../includes/options/cdz-options-content.php:116
 #: ../includes/options/cdz-options-content.php:261
-#: ../includes/options/cdz-options-general.php:239
+#: ../includes/options/cdz-options-general.php:238
 #: ../includes/options/cdz-options-widgets.php:297
 msgid "Links color"
 msgstr ""
 
 #: ../includes/options/cdz-options-content.php:123
 #: ../includes/options/cdz-options-content.php:268
-#: ../includes/options/cdz-options-general.php:246
+#: ../includes/options/cdz-options-general.php:245
 #: ../includes/options/cdz-options-widgets.php:304
 msgid "Links color (hover)"
 msgstr ""
@@ -1552,7 +1786,7 @@ msgstr ""
 #: ../includes/options/cdz-options-content.php:190
 #: ../includes/options/cdz-options-content.php:321
 #: ../includes/options/cdz-options-general.php:198
-#: ../includes/options/cdz-options-general.php:379
+#: ../includes/options/cdz-options-general.php:377
 #: ../includes/options/cdz-options-navigation-top.php:218
 #: ../includes/options/cdz-options-navigation-top.php:287
 #: ../includes/options/cdz-options-navigation-top.php:442
@@ -1570,7 +1804,7 @@ msgstr ""
 
 #: ../includes/options/cdz-options-error404.php:41
 #: ../includes/options/cdz-options-error404.php:50
-#: ../includes/options/cdz-options-sidebars.php:341
+#: ../includes/options/cdz-options-sidebars.php:319
 #: ../includes/options/cdz-options-sliders.php:250
 #: ../includes/options/cdz-options-slogans.php:227
 msgid "404 page"
@@ -1658,7 +1892,7 @@ msgid "(or \"Bottom text\" in \"centered\" copyright layout)"
 msgstr ""
 
 #: ../includes/options/cdz-options-general.php:35
-#: ../includes/options/cdz-options-sidebars.php:63
+#: ../includes/options/cdz-options-sidebars.php:62
 #: ../includes/options/cdz-options-sliders.php:63
 #: ../includes/options/cdz-options-slogans.php:44
 msgid "General"
@@ -1732,11 +1966,11 @@ msgstr ""
 msgid "Customize your general typography"
 msgstr ""
 
-#: ../includes/options/cdz-options-general.php:261
+#: ../includes/options/cdz-options-general.php:260
 msgid "Buttons"
 msgstr ""
 
-#: ../includes/options/cdz-options-general.php:262
+#: ../includes/options/cdz-options-general.php:261
 msgid "Customize your general buttons"
 msgstr ""
 
@@ -2037,9 +2271,9 @@ msgstr ""
 #: ../includes/options/cdz-options-sliders.php:215
 #: ../includes/options/cdz-options-sliders.php:264
 #: ../includes/options/cdz-options-sliders.php:313
-#: ../includes/options/cdz-options-sliders.php:362
-#: ../includes/options/cdz-options-sliders.php:411
-#: ../includes/options/cdz-options-sliders.php:460
+#: ../includes/options/cdz-options-sliders.php:363
+#: ../includes/options/cdz-options-sliders.php:412
+#: ../includes/options/cdz-options-sliders.php:461
 msgid "Slider"
 msgstr ""
 
@@ -2051,22 +2285,26 @@ msgstr ""
 #: ../includes/options/cdz-options-plugin-lt.php:66
 #: ../includes/options/cdz-options-plugin-lt.php:113
 #: ../includes/options/cdz-options-plugin-lt.php:158
-#: ../includes/options/cdz-options-sidebars.php:143
-#: ../includes/options/cdz-options-sidebars.php:211
-#: ../includes/options/cdz-options-sidebars.php:279
-#: ../includes/options/cdz-options-sidebars.php:347
-#: ../includes/options/cdz-options-sidebars.php:415
-#: ../includes/options/cdz-options-sidebars.php:483
-#: ../includes/options/cdz-options-sidebars.php:551
-#: ../includes/options/cdz-options-sidebars.php:619
+#: ../includes/options/cdz-options-sidebars.php:135
+#: ../includes/options/cdz-options-sidebars.php:198
+#: ../includes/options/cdz-options-sidebars.php:261
+#: ../includes/options/cdz-options-sidebars.php:324
+#: ../includes/options/cdz-options-sidebars.php:387
+#: ../includes/options/cdz-options-sidebars.php:450
+#: ../includes/options/cdz-options-sidebars.php:513
+#: ../includes/options/cdz-options-sidebars.php:576
+#: ../includes/options/cdz-options-sidebars.php:639
+#: ../includes/options/cdz-options-sidebars.php:702
+#: ../includes/options/cdz-options-sidebars.php:765
+#: ../includes/options/cdz-options-sidebars.php:828
 #: ../includes/options/cdz-options-sliders.php:109
 #: ../includes/options/cdz-options-sliders.php:158
 #: ../includes/options/cdz-options-sliders.php:207
 #: ../includes/options/cdz-options-sliders.php:256
 #: ../includes/options/cdz-options-sliders.php:305
-#: ../includes/options/cdz-options-sliders.php:354
-#: ../includes/options/cdz-options-sliders.php:403
-#: ../includes/options/cdz-options-sliders.php:452
+#: ../includes/options/cdz-options-sliders.php:355
+#: ../includes/options/cdz-options-sliders.php:404
+#: ../includes/options/cdz-options-sliders.php:453
 #: ../includes/options/cdz-options-slogans.php:89
 #: ../includes/options/cdz-options-slogans.php:137
 #: ../includes/options/cdz-options-slogans.php:185
@@ -2088,10 +2326,10 @@ msgstr ""
 #: ../includes/options/cdz-options-sliders.php:179
 #: ../includes/options/cdz-options-sliders.php:228
 #: ../includes/options/cdz-options-sliders.php:277
-#: ../includes/options/cdz-options-sliders.php:326
-#: ../includes/options/cdz-options-sliders.php:375
-#: ../includes/options/cdz-options-sliders.php:424
-#: ../includes/options/cdz-options-sliders.php:473
+#: ../includes/options/cdz-options-sliders.php:327
+#: ../includes/options/cdz-options-sliders.php:376
+#: ../includes/options/cdz-options-sliders.php:425
+#: ../includes/options/cdz-options-sliders.php:474
 msgid "Fixed Image"
 msgstr ""
 
@@ -2101,10 +2339,10 @@ msgstr ""
 #: ../includes/options/cdz-options-sliders.php:187
 #: ../includes/options/cdz-options-sliders.php:236
 #: ../includes/options/cdz-options-sliders.php:285
-#: ../includes/options/cdz-options-sliders.php:334
-#: ../includes/options/cdz-options-sliders.php:383
-#: ../includes/options/cdz-options-sliders.php:432
-#: ../includes/options/cdz-options-sliders.php:481
+#: ../includes/options/cdz-options-sliders.php:335
+#: ../includes/options/cdz-options-sliders.php:384
+#: ../includes/options/cdz-options-sliders.php:433
+#: ../includes/options/cdz-options-sliders.php:482
 msgid "Revolution Slider"
 msgstr ""
 
@@ -2134,81 +2372,105 @@ msgid "Sidebars"
 msgstr ""
 
 #: ../includes/options/cdz-options-plugin-lt.php:153
-#: ../includes/options/cdz-options-sidebars.php:206
+#: ../includes/options/cdz-options-sidebars.php:194
 msgid "Customize your blog page sidebars"
 msgstr ""
 
 #: ../includes/options/cdz-options-plugin-lt.php:166
-#: ../includes/options/cdz-options-sidebars.php:85
-#: ../includes/options/cdz-options-sidebars.php:151
-#: ../includes/options/cdz-options-sidebars.php:219
-#: ../includes/options/cdz-options-sidebars.php:287
-#: ../includes/options/cdz-options-sidebars.php:355
-#: ../includes/options/cdz-options-sidebars.php:423
-#: ../includes/options/cdz-options-sidebars.php:491
-#: ../includes/options/cdz-options-sidebars.php:559
-#: ../includes/options/cdz-options-sidebars.php:627
+#: ../includes/options/cdz-options-sidebars.php:81
+#: ../includes/options/cdz-options-sidebars.php:142
+#: ../includes/options/cdz-options-sidebars.php:205
+#: ../includes/options/cdz-options-sidebars.php:268
+#: ../includes/options/cdz-options-sidebars.php:331
+#: ../includes/options/cdz-options-sidebars.php:394
+#: ../includes/options/cdz-options-sidebars.php:457
+#: ../includes/options/cdz-options-sidebars.php:520
+#: ../includes/options/cdz-options-sidebars.php:583
+#: ../includes/options/cdz-options-sidebars.php:646
+#: ../includes/options/cdz-options-sidebars.php:709
+#: ../includes/options/cdz-options-sidebars.php:772
+#: ../includes/options/cdz-options-sidebars.php:835
 msgid "Left sidebar"
 msgstr ""
 
 #: ../includes/options/cdz-options-plugin-lt.php:175
-#: ../includes/options/cdz-options-sidebars.php:93
-#: ../includes/options/cdz-options-sidebars.php:160
-#: ../includes/options/cdz-options-sidebars.php:228
-#: ../includes/options/cdz-options-sidebars.php:296
-#: ../includes/options/cdz-options-sidebars.php:364
-#: ../includes/options/cdz-options-sidebars.php:432
-#: ../includes/options/cdz-options-sidebars.php:500
-#: ../includes/options/cdz-options-sidebars.php:568
-#: ../includes/options/cdz-options-sidebars.php:636
+#: ../includes/options/cdz-options-sidebars.php:88
+#: ../includes/options/cdz-options-sidebars.php:150
+#: ../includes/options/cdz-options-sidebars.php:213
+#: ../includes/options/cdz-options-sidebars.php:276
+#: ../includes/options/cdz-options-sidebars.php:339
+#: ../includes/options/cdz-options-sidebars.php:402
+#: ../includes/options/cdz-options-sidebars.php:465
+#: ../includes/options/cdz-options-sidebars.php:528
+#: ../includes/options/cdz-options-sidebars.php:591
+#: ../includes/options/cdz-options-sidebars.php:654
+#: ../includes/options/cdz-options-sidebars.php:717
+#: ../includes/options/cdz-options-sidebars.php:780
+#: ../includes/options/cdz-options-sidebars.php:843
 msgid "Left sidebar width"
 msgstr ""
 
 #: ../includes/options/cdz-options-plugin-lt.php:176
 #: ../includes/options/cdz-options-plugin-lt.php:201
-#: ../includes/options/cdz-options-sidebars.php:94
-#: ../includes/options/cdz-options-sidebars.php:118
-#: ../includes/options/cdz-options-sidebars.php:161
-#: ../includes/options/cdz-options-sidebars.php:186
-#: ../includes/options/cdz-options-sidebars.php:229
-#: ../includes/options/cdz-options-sidebars.php:254
-#: ../includes/options/cdz-options-sidebars.php:297
-#: ../includes/options/cdz-options-sidebars.php:322
-#: ../includes/options/cdz-options-sidebars.php:365
-#: ../includes/options/cdz-options-sidebars.php:390
-#: ../includes/options/cdz-options-sidebars.php:433
-#: ../includes/options/cdz-options-sidebars.php:458
-#: ../includes/options/cdz-options-sidebars.php:501
-#: ../includes/options/cdz-options-sidebars.php:526
-#: ../includes/options/cdz-options-sidebars.php:569
-#: ../includes/options/cdz-options-sidebars.php:594
-#: ../includes/options/cdz-options-sidebars.php:637
-#: ../includes/options/cdz-options-sidebars.php:662
+#: ../includes/options/cdz-options-sidebars.php:89
+#: ../includes/options/cdz-options-sidebars.php:111
+#: ../includes/options/cdz-options-sidebars.php:151
+#: ../includes/options/cdz-options-sidebars.php:174
+#: ../includes/options/cdz-options-sidebars.php:214
+#: ../includes/options/cdz-options-sidebars.php:237
+#: ../includes/options/cdz-options-sidebars.php:277
+#: ../includes/options/cdz-options-sidebars.php:300
+#: ../includes/options/cdz-options-sidebars.php:340
+#: ../includes/options/cdz-options-sidebars.php:363
+#: ../includes/options/cdz-options-sidebars.php:403
+#: ../includes/options/cdz-options-sidebars.php:426
+#: ../includes/options/cdz-options-sidebars.php:466
+#: ../includes/options/cdz-options-sidebars.php:489
+#: ../includes/options/cdz-options-sidebars.php:529
+#: ../includes/options/cdz-options-sidebars.php:552
+#: ../includes/options/cdz-options-sidebars.php:592
+#: ../includes/options/cdz-options-sidebars.php:615
+#: ../includes/options/cdz-options-sidebars.php:655
+#: ../includes/options/cdz-options-sidebars.php:678
+#: ../includes/options/cdz-options-sidebars.php:718
+#: ../includes/options/cdz-options-sidebars.php:741
+#: ../includes/options/cdz-options-sidebars.php:781
+#: ../includes/options/cdz-options-sidebars.php:804
+#: ../includes/options/cdz-options-sidebars.php:844
+#: ../includes/options/cdz-options-sidebars.php:867
 msgid "grid columns"
 msgstr ""
 
 #: ../includes/options/cdz-options-plugin-lt.php:191
-#: ../includes/options/cdz-options-sidebars.php:109
-#: ../includes/options/cdz-options-sidebars.php:176
-#: ../includes/options/cdz-options-sidebars.php:244
-#: ../includes/options/cdz-options-sidebars.php:312
-#: ../includes/options/cdz-options-sidebars.php:380
-#: ../includes/options/cdz-options-sidebars.php:448
-#: ../includes/options/cdz-options-sidebars.php:516
-#: ../includes/options/cdz-options-sidebars.php:584
-#: ../includes/options/cdz-options-sidebars.php:652
+#: ../includes/options/cdz-options-sidebars.php:103
+#: ../includes/options/cdz-options-sidebars.php:165
+#: ../includes/options/cdz-options-sidebars.php:228
+#: ../includes/options/cdz-options-sidebars.php:291
+#: ../includes/options/cdz-options-sidebars.php:354
+#: ../includes/options/cdz-options-sidebars.php:417
+#: ../includes/options/cdz-options-sidebars.php:480
+#: ../includes/options/cdz-options-sidebars.php:543
+#: ../includes/options/cdz-options-sidebars.php:606
+#: ../includes/options/cdz-options-sidebars.php:669
+#: ../includes/options/cdz-options-sidebars.php:732
+#: ../includes/options/cdz-options-sidebars.php:795
+#: ../includes/options/cdz-options-sidebars.php:858
 msgid "Right sidebar"
 msgstr ""
 
 #: ../includes/options/cdz-options-plugin-lt.php:200
-#: ../includes/options/cdz-options-sidebars.php:185
-#: ../includes/options/cdz-options-sidebars.php:253
-#: ../includes/options/cdz-options-sidebars.php:321
-#: ../includes/options/cdz-options-sidebars.php:389
-#: ../includes/options/cdz-options-sidebars.php:457
-#: ../includes/options/cdz-options-sidebars.php:525
-#: ../includes/options/cdz-options-sidebars.php:593
-#: ../includes/options/cdz-options-sidebars.php:661
+#: ../includes/options/cdz-options-sidebars.php:173
+#: ../includes/options/cdz-options-sidebars.php:236
+#: ../includes/options/cdz-options-sidebars.php:299
+#: ../includes/options/cdz-options-sidebars.php:362
+#: ../includes/options/cdz-options-sidebars.php:425
+#: ../includes/options/cdz-options-sidebars.php:488
+#: ../includes/options/cdz-options-sidebars.php:551
+#: ../includes/options/cdz-options-sidebars.php:614
+#: ../includes/options/cdz-options-sidebars.php:677
+#: ../includes/options/cdz-options-sidebars.php:740
+#: ../includes/options/cdz-options-sidebars.php:803
+#: ../includes/options/cdz-options-sidebars.php:866
 msgid "Right sidebar Width"
 msgstr ""
 
@@ -2236,52 +2498,56 @@ msgstr ""
 msgid "Manage all your custom sidebars"
 msgstr ""
 
-#: ../includes/options/cdz-options-sidebars.php:52
+#: ../includes/options/cdz-options-sidebars.php:51
 msgid "Custom sidebars"
 msgstr ""
 
-#: ../includes/options/cdz-options-sidebars.php:64
+#: ../includes/options/cdz-options-sidebars.php:63
 msgid "Customize your general configuration"
 msgstr ""
 
-#: ../includes/options/cdz-options-sidebars.php:69
+#: ../includes/options/cdz-options-sidebars.php:67
 msgid "Header sidebar"
 msgstr ""
 
-#: ../includes/options/cdz-options-sidebars.php:77
+#: ../includes/options/cdz-options-sidebars.php:74
 msgid "Footer sidebar"
 msgstr ""
 
-#: ../includes/options/cdz-options-sidebars.php:117
+#: ../includes/options/cdz-options-sidebars.php:110
 msgid "Right sidebar width"
 msgstr ""
 
-#: ../includes/options/cdz-options-sidebars.php:137
+#: ../includes/options/cdz-options-sidebars.php:130
 #: ../includes/options/cdz-options-sliders.php:103
 #: ../includes/options/cdz-options-slogans.php:83
 msgid "Home page"
 msgstr ""
 
-#: ../includes/options/cdz-options-sidebars.php:138
+#: ../includes/options/cdz-options-sidebars.php:131
 msgid "Customize your home page sidebars"
 msgstr ""
 
-#: ../includes/options/cdz-options-sidebars.php:144
-#: ../includes/options/cdz-options-sidebars.php:212
-#: ../includes/options/cdz-options-sidebars.php:280
-#: ../includes/options/cdz-options-sidebars.php:348
-#: ../includes/options/cdz-options-sidebars.php:416
-#: ../includes/options/cdz-options-sidebars.php:484
-#: ../includes/options/cdz-options-sidebars.php:552
-#: ../includes/options/cdz-options-sidebars.php:620
+#: ../includes/options/cdz-options-sidebars.php:136
+#: ../includes/options/cdz-options-sidebars.php:199
+#: ../includes/options/cdz-options-sidebars.php:262
+#: ../includes/options/cdz-options-sidebars.php:325
+#: ../includes/options/cdz-options-sidebars.php:388
+#: ../includes/options/cdz-options-sidebars.php:451
+#: ../includes/options/cdz-options-sidebars.php:514
+#: ../includes/options/cdz-options-sidebars.php:577
+#: ../includes/options/cdz-options-sidebars.php:640
+#: ../includes/options/cdz-options-sidebars.php:703
+#: ../includes/options/cdz-options-sidebars.php:766
+#: ../includes/options/cdz-options-sidebars.php:829
 #: ../includes/options/cdz-options-sliders.php:110
 #: ../includes/options/cdz-options-sliders.php:159
 #: ../includes/options/cdz-options-sliders.php:208
 #: ../includes/options/cdz-options-sliders.php:257
 #: ../includes/options/cdz-options-sliders.php:306
-#: ../includes/options/cdz-options-sliders.php:355
-#: ../includes/options/cdz-options-sliders.php:404
-#: ../includes/options/cdz-options-sliders.php:453
+#: ../includes/options/cdz-options-sliders.php:356
+#: ../includes/options/cdz-options-sliders.php:405
+#: ../includes/options/cdz-options-sliders.php:454
 #: ../includes/options/cdz-options-slogans.php:90
 #: ../includes/options/cdz-options-slogans.php:138
 #: ../includes/options/cdz-options-slogans.php:186
@@ -2291,67 +2557,89 @@ msgstr ""
 msgid "These options will override the general settings in this page"
 msgstr ""
 
-#: ../includes/options/cdz-options-sidebars.php:205
+#: ../includes/options/cdz-options-sidebars.php:193
 #: ../includes/options/cdz-options-sliders.php:152
 #: ../includes/options/cdz-options-slogans.php:131
 msgid "Blog page"
 msgstr ""
 
-#: ../includes/options/cdz-options-sidebars.php:273
+#: ../includes/options/cdz-options-sidebars.php:256
 #: ../includes/options/cdz-options-sliders.php:201
 #: ../includes/options/cdz-options-slogans.php:179
 msgid "Search page"
 msgstr ""
 
-#: ../includes/options/cdz-options-sidebars.php:274
+#: ../includes/options/cdz-options-sidebars.php:257
 msgid "Customize your search page sidebars"
 msgstr ""
 
-#: ../includes/options/cdz-options-sidebars.php:342
+#: ../includes/options/cdz-options-sidebars.php:320
 msgid "Customize your 404 page sedebars"
 msgstr ""
 
-#: ../includes/options/cdz-options-sidebars.php:409
+#: ../includes/options/cdz-options-sidebars.php:382
 #: ../includes/options/cdz-options-slogans.php:275
 msgid "Single post pages"
 msgstr ""
 
-#: ../includes/options/cdz-options-sidebars.php:410
+#: ../includes/options/cdz-options-sidebars.php:383
 msgid "Customize your single post pages sidebars"
 msgstr ""
 
-#: ../includes/options/cdz-options-sidebars.php:477
-#: ../includes/options/cdz-options-sliders.php:348
-msgid "Shop page"
-msgstr ""
-
-#: ../includes/options/cdz-options-sidebars.php:478
-#: ../includes/options/cdz-options-sidebars.php:546
-#: ../includes/options/cdz-options-sliders.php:349
-#: ../includes/options/cdz-options-sliders.php:398
-msgid "Plugins supported"
-msgstr ""
-
-#: ../includes/options/cdz-options-sidebars.php:478
-#: ../includes/options/cdz-options-sidebars.php:546
-#: ../includes/options/cdz-options-sliders.php:349
-#: ../includes/options/cdz-options-sliders.php:398
-msgid "Woocommerce"
-msgstr ""
-
-#: ../includes/options/cdz-options-sidebars.php:545
-#: ../includes/options/cdz-options-sliders.php:397
-msgid "Single product page"
-msgstr ""
-
-#: ../includes/options/cdz-options-sidebars.php:613
-#: ../includes/options/cdz-options-sliders.php:446
+#: ../includes/options/cdz-options-sidebars.php:445
+#: ../includes/options/cdz-options-sliders.php:447
 #: ../includes/options/cdz-options-slogans.php:323
 msgid "Other pages"
 msgstr ""
 
-#: ../includes/options/cdz-options-sidebars.php:614
+#: ../includes/options/cdz-options-sidebars.php:446
 msgid "Customize your general pages sidebars"
+msgstr ""
+
+#: ../includes/options/cdz-options-sidebars.php:508
+msgid "Woocommerce - Shop page"
+msgstr ""
+
+#: ../includes/options/cdz-options-sidebars.php:509
+#: ../includes/options/cdz-options-sidebars.php:572
+#: ../includes/options/cdz-options-sidebars.php:635
+#: ../includes/options/cdz-options-sidebars.php:698
+#: ../includes/options/cdz-options-sidebars.php:761
+#: ../includes/options/cdz-options-sidebars.php:824
+#: ../includes/options/cdz-options-sliders.php:350
+#: ../includes/options/cdz-options-sliders.php:399
+msgid "Plugins supported"
+msgstr ""
+
+#: ../includes/options/cdz-options-sidebars.php:509
+#: ../includes/options/cdz-options-sidebars.php:572
+#: ../includes/options/cdz-options-sidebars.php:635
+#: ../includes/options/cdz-options-sidebars.php:698
+#: ../includes/options/cdz-options-sidebars.php:761
+#: ../includes/options/cdz-options-sidebars.php:824
+#: ../includes/options/cdz-options-sliders.php:350
+#: ../includes/options/cdz-options-sliders.php:399
+msgid "Woocommerce"
+msgstr ""
+
+#: ../includes/options/cdz-options-sidebars.php:571
+msgid "Woocommerce - Product category page"
+msgstr ""
+
+#: ../includes/options/cdz-options-sidebars.php:634
+msgid "Woocommerce - Single product page"
+msgstr ""
+
+#: ../includes/options/cdz-options-sidebars.php:697
+msgid "Woocommerce - Cart page"
+msgstr ""
+
+#: ../includes/options/cdz-options-sidebars.php:760
+msgid "Woocommerce - Checkout page"
+msgstr ""
+
+#: ../includes/options/cdz-options-sidebars.php:823
+msgid "Woocommerce - My Account page"
 msgstr ""
 
 #: ../includes/options/cdz-options-sliders.php:54
@@ -2382,7 +2670,15 @@ msgstr ""
 msgid "Customize your single post pages slider"
 msgstr ""
 
-#: ../includes/options/cdz-options-sliders.php:447
+#: ../includes/options/cdz-options-sliders.php:349
+msgid "Shop page"
+msgstr ""
+
+#: ../includes/options/cdz-options-sliders.php:398
+msgid "Single product page"
+msgstr ""
+
+#: ../includes/options/cdz-options-sliders.php:448
 msgid "Customize your general pages slider"
 msgstr ""
 
@@ -2429,4 +2725,12 @@ msgstr ""
 
 #: ../includes/options/cdz-options-widgets.php:226
 msgid "Widgets text"
+msgstr ""
+
+#: ../includes/third/woocommerce.php:127
+msgid "Placeholder"
+msgstr ""
+
+#: ../templates/cdz-location-single.php:67
+msgid "Phone"
 msgstr ""
