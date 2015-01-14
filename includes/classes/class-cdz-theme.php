@@ -35,6 +35,12 @@ if ( ! class_exists( 'cdz_Theme' ) ) {
 
 			add_action( 'cdz_prepost_content', 'cdz_prepost_content', 10, 2 );
 
+			/*
+			 *	Print instant loader scripts
+			 */
+
+			add_action( 'wp_footer', 'cdz_instant_loader_scripts', 99 );
+
 		}
 
 		/*

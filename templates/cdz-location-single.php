@@ -43,7 +43,7 @@ if ( is_single() ) : ?>
 			<?php if ( $cdz_location_address ) : ?>
 
 				<p class="customer">
-					<i class="fa fa-user"></i>
+					<i class="fa fa-home"></i>
 					<span class="label"><?php echo __( 'Address' ) . ': '; ?></span>
 					<span class="text"><?php echo $cdz_location_address; ?></span>
 				</p>
@@ -63,7 +63,7 @@ if ( is_single() ) : ?>
 			<?php if ( $cdz_location_phone_number ) : ?>
 
 				<p class="skills">
-					<i class="fa fa-tasks"></i>
+					<i class="fa fa-phone-square"></i>
 					<span class="label"><?php echo __( 'Phone' ) . ': '; ?></span>
 					<span class="text"><?php echo $cdz_location_phone_number; ?></span>
 				</p>
