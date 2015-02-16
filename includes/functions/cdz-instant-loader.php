@@ -61,7 +61,7 @@ if ( ! function_exists( 'cdz_instant_loader' ) ) {
 
 			while ( have_posts() ) : the_post();
 
-				$template_path = get_template_directory() . '/cdz-instant-loader/' . $post_type . '.php';
+				$template_path = get_template_directory() . '/' . $post_type . '.php';
 				if ( ! file_exists( $template_path ) ) { $template_path = 'templates/' . $post_type . '.php'; }
 
 				if ( file_exists( $template_path ) ) { include $template_path; }
@@ -71,7 +71,23 @@ if ( ! function_exists( 'cdz_instant_loader' ) ) {
 
 		} else {
 
-			echo 'Ooops! This is not a "post" or "page" valid permalink...';
+			if ( file_exists( get_template_directory() . '/front-page.php' ) ) {
+
+				include get_template_directory() . '/front-page.php';
+
+			} else if ( file_exists( get_template_directory() . '/home.php' ) ) {
+
+				include get_template_directory() . '/home.php';
+
+			} else if ( file_exists( get_template_directory() . '/index.php' ) ) {
+
+				include get_template_directory() . '/index.php';
+
+			} else {
+
+				echo 'Ooops! This is not a valid permalink...';
+
+			}
 
 		}
 

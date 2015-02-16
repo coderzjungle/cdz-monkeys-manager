@@ -27,7 +27,7 @@ if ( ! function_exists( 'cdz_instant_loader_scripts' ) ) {
 
 		if ( ! is_admin() ) {
 
-			$js = "	jQuery('.cdz_il a').on( 'click', function() {
+			$js = "	jQuery('.cdz_il a').live( 'click', function() {
 
 						var permalink = jQuery(this).attr('href');
 
@@ -37,7 +37,7 @@ if ( ! function_exists( 'cdz_instant_loader_scripts' ) ) {
 
 						}
 
-						jQuery('#primary').html('loading...').load( '$plugindir/../../load.php?cdz_permalink=' + permalink + '&t=default&cdz_instant_loader=1', function() {
+						jQuery('#primary').html('<div class=\"cdz_instant_loading\"><i class=\"fa fa-circle-o-notch fa-spin\"></i></div>').load( '$plugindir/../../load.php?cdz_permalink=' + permalink + '&t=default&cdz_instant_loader=1', function() {
 
 							jQuery(this).fadeIn();
 
