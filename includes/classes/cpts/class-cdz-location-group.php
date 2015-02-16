@@ -62,7 +62,7 @@ class cdz_Location_Group {
 			'labels'			=>	$labels,
 			'show_in_nav_menus'	=>	true,
 			'hierarchical'		=>	true,
-			'rewrite'			=>	array( 'slug' => 'location-group' ),
+			'rewrite'			=>	apply_filters( 'cdz_location_group_rewrite', array( 'slug' => 'location-group' ) ),
 		);
 
 		register_taxonomy( 'cdz_location_group',

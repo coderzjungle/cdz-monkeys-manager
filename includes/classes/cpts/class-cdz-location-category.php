@@ -62,7 +62,7 @@ class cdz_Location_Category {
 			'labels'			=>	$labels,
 			'show_in_nav_menus'	=>	true,
 			'hierarchical'		=>	true,
-			'rewrite'			=>	array( 'slug' => 'location-category' ),
+			'rewrite'			=>	apply_filters( 'cdz_location_category_rewrite', array( 'slug' => 'location-category' ) ),
 		);
 
 		register_taxonomy( 'cdz_location_category',
