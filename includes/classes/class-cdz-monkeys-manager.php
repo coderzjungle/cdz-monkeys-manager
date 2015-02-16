@@ -89,9 +89,9 @@ if ( ! class_exists( 'cdz_Monkeys_Manager' ) ) {
 			 *	Load theme info
 			 */
 
-			if ( file_exists( CDZ_THEME_PATH . '/coderzjungle/info.php' ) ) {
+			if ( file_exists( CDZ_THEME_PATH . '/_cdz/info.php' ) ) {
 
-				require_once CDZ_THEME_PATH . '/coderzjungle/info.php';
+				require_once CDZ_THEME_PATH . '/_cdz/info.php';
 
 			} else {
 

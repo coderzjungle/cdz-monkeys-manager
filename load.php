@@ -13,8 +13,6 @@
  *                                                    |___/                             
  */
 
-var_dump('expression');
-
 define('WP_USE_THEMES', false);
 require('../../../wp-blog-header.php');
 

@@ -39,7 +39,7 @@ if ( ! class_exists( 'cdz_Theme_Options' ) ) {
 				 *	Theme Options Std
 				 */
 
-				if ( file_exists( CDZ_THEME_PATH . '/cdz-theme/options.php' ) ) { require_once CDZ_THEME_PATH . '/cdz-theme/options.php'; }
+				if ( file_exists( CDZ_THEME_PATH . '/_cdz/options.php' ) ) { require_once CDZ_THEME_PATH . '/_cdz/options.php'; }
 
 				/*
 				 *	Load Admin
