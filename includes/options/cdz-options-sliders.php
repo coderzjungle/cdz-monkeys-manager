@@ -31,13 +31,14 @@ if ( ! function_exists( 'cdz_options_sliders' ) ) {
 		 *	RevSlider
 		 */
 
-		$revlink = '';
-		$revslider_list = array( '0' => '- Not installed -' );
+		$revlink = $revslider_list = '';
 
 		if ( class_exists( 'RevSlider' ) ) {
 
 			$revslider = new RevSlider();
-			$revslider_list = array_merge( $revslider_list, (array) $revslider->getArrSlidersShort() );
+			$revslider_list = (array) $revslider->getArrSlidersShort();
+			$revslider_list[0] = '- Not installed -';
+			ksort( $revslider_list );
 			$revlink = '<a href="' . admin_url( 'admin.php?page=revslider' ) . '">' . __( 'Configure', 'cdz' ) . '</a>';
 
 		} else {
