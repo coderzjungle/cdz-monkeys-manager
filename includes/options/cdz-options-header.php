@@ -63,11 +63,20 @@ if ( ! function_exists( 'cdz_options_header' ) ) {
 				'type'			=>	'radio',
 				'options'		=>	array(
 										'type_1' =>	__( 'Type 1 - Logo Top, Nav Bottom', 'cdz' ),
-										'type_2' =>	__( 'Type 2 - Logo Bottom, Nav Top', 'cdz' ),
+										'type_2' =>	__( 'Type 2 - Nav Top, Logo Bottom', 'cdz' ),
 										'type_3' =>	__( 'Type 3 - Logo Left, Nav Right', 'cdz' ),
-										'type_4' =>	__( 'Type 4 - Logo Right, Nav Left', 'cdz' ),
+										'type_4' =>	__( 'Type 4 - Nav Left, Logo Right', 'cdz' ),
 									),
 				'std'			=>	cdz_get_theme_options_std( 'opt_header_layout' ),
+			);
+
+			$options[] = array(
+				'name'			=>	__( 'Fixed Header', 'cdz' ),
+				'desc'			=>	__( 'Position fixed on scroll', 'cdz' ),
+				'id'			=>	'opt_header_fixed',
+				'class'			=>	'advo',
+				'type'			=>	'checkbox',
+				'std'			=>	cdz_get_theme_options_std( 'opt_header_fixed' ),
 			);
 
 		}
@@ -134,7 +143,7 @@ if ( ! function_exists( 'cdz_options_header' ) ) {
 				'type'			=>	'radio',
 				'options'		=>	array(
 										'left'		=>	__( 'Left', 'cdz' ),
-									//	'center'	=>	__( 'Center', 'cdz' ),
+										'center'	=>	__( 'Center', 'cdz' ),
 										'right'		=>	__( 'Right', 'cdz' ),
 									),
 				'std'			=>	cdz_get_theme_options_std( 'opt_custom_logo_position' ),

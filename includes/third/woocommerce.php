@@ -24,19 +24,6 @@ add_action( 'cdz_theme_init', 'cdz_theme_init_woocommerce' );
 function cdz_theme_init_woocommerce() {
 
 	/*
-	 *	Woocommerce Columns
-	 */
-
-	add_filter( 'cdz_loop_shop_columns', create_function( '', 'return 4;' ) );
-	add_filter( 'loop_shop_columns', create_function( '', 'return 4;' ) );
-
-	add_filter( 'body_class', 'cdz_body_loop_shop_columns' );
-	function cdz_body_loop_shop_columns( $classes ) {
-		$classes[] = 'columns-' . apply_filters( 'cdz_loop_shop_columns', 4 );
-		return $classes;
-	}
-
-	/*
 	 *	Hooks
 	 */
 

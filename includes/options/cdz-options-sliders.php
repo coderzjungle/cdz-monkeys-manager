@@ -46,6 +46,7 @@ if ( ! function_exists( 'cdz_options_sliders' ) ) {
 			$revlink = '<a href="' . admin_url( 'themes.php?page=install-required-plugins' ) . '">' . __( 'Install', 'cdz' ) . '</a>';
 		}
 
+
 		/*
 		 *	Tab title
 		 */

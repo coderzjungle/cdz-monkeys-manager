@@ -351,6 +351,15 @@ if ( ! function_exists( 'cdz_options_general' ) ) {
 			);
 
 			$options[] = array(
+				'name'			=>	__( 'Border radius', 'cdz' ),
+				'desc'			=>	__( 'example', 'cdz') . ': 0px, 1px, ...',
+				'id'			=>	'opt_button_border_radius',
+				'class'			=>	'advo mini',
+				'type'			=>	'text',
+				'std'			=>	cdz_get_theme_options_std( 'opt_button_border_radius' ),
+			);
+
+			$options[] = array(
 				'name'			=>	__( 'Border style', 'cdz' ),
 				'id'			=>	'opt_button_border_style',
 				'class'			=>	'advo',

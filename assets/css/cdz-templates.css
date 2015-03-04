@@ -12,36 +12,6 @@
  */
 
 /*
- *	WP Admin
- */
-
-#wpadminbar #wp-admin-bar-cdz-theme-options > * { color: #eee; }
-#wpadminbar #wp-admin-bar-cdz-theme-options > .ab-item:before { content: ' '; width: 20px; height: 32px; background: url('../img/admin/dashicon.png') center no-repeat !important; padding: 0px; }
-#wpadminbar #wp-admin-bar-cdz-theme-options:hover * { color: #9c0; }
-#wpadminbar #wp-admin-bar-cdz-theme-options:hover > .ab-item:before { background: url('../img/admin/dashicon-hover.png') center no-repeat !important; }
-#wpadminbar #wp-admin-bar-update_notifier > .ab-item:before { content: '\f463'; top: 2px; }
-
-#adminmenu .toplevel_page_cdz-theme-options { background-color: #111; }
-#adminmenu .toplevel_page_cdz-theme-options * { color: #eee; }
-#adminmenu .toplevel_page_cdz-theme-options .wp-menu-image:before { content: ''; background: url('../img/admin/dashicon.png') center no-repeat; }
-#adminmenu .toplevel_page_cdz-theme-options:hover .wp-menu-image:before { background: url('../img/admin/dashicon-hover.png') center no-repeat; }
-#adminmenu .toplevel_page_cdz-theme-options:hover * { color: #9c0; }
-#adminmenu .toplevel_page_cdz-theme-options.current .wp-menu-image:before,
-#adminmenu .toplevel_page_cdz-theme-options.current:hover .wp-menu-image:before { background: url('../img/admin/dashicon-current.png') center no-repeat; }
-#adminmenu .toplevel_page_cdz-theme-options.current:hover * { color: #fff; }
-
-table.plugins #the-list #monkeys-manager .plugin-title > strong:before {
-	content: ' ';
-	width: 20px;
-	height: 20px;
-	background: url('../img/admin/dashicon-black.png') center no-repeat !important;
-	padding: 0px;
-	margin: -2px 5px 0px 0px;
-	display: block;
-	float: left;
-}
-
-/*
  *	General
  */
 
@@ -49,17 +19,6 @@ p { min-height: 1px; margin-bottom: 10px; }
 article { margin-bottom: 30px; }
 .entry-content p { position: relative; }
 .entry-header, .entry-summary, .entry-content, .entry-meta { margin-bottom: 10px; }
-
-#gondor .separator {
-	width: 500%;
-	border-top: 1px solid #eee;
-	margin-left: -200%;
-	position: absolute;
-}
-#gondor.left-sidebar .separator { left: 0; }
-#gondor.right-sidebar .separator { right: 0; }
-
-
 
 /*
  *	cdzTemplateParts

@@ -95,7 +95,7 @@ if ( ! function_exists( 'cdz_theme_options_scripts' ) ) {
 
 					<?php
 
-					$array = array( 'general', 'home', 'blog', 'search', 'error404', 'single', 'page', 'plugin_lt' );
+					$array = array( 'general', 'home', 'blog', 'search', 'error404', 'single', 'shop', 'product', 'page' );
 					echo cdz_to_sliders_select_show( $array );
 
 					?>
