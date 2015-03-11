@@ -1,7 +1,7 @@
 <?php
 
 /*
- *	Plugin Name: Monkeys Manager
+ *	Plugin Name: cdz Monkeys Manager
  *	Plugin URI: https://github.com/coderzjungle/cdz-monkeys-manager
  *	Author: CoderzJungle
  *	Author URI: http://www.coderzjungle.com
@@ -37,6 +37,8 @@ defined( 'ABSPATH' ) or exit;
 /*
  *	Define constants
  */
+
+if ( ! defined( 'CDZ_PLUGIN' ) { define( 'CDZ_PLUGIN', TRUE ); }
 
 define( 'CDZ_MONKEYS_MANAGER',	TRUE );
 
