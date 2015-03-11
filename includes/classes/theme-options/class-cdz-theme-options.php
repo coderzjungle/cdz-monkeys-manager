@@ -25,6 +25,7 @@ if ( ! class_exists( 'cdz_Theme_Options' ) ) {
 
 		var $obj_theme_options_admin = NULL;
 		var $obj_theme_options_panel = NULL;
+		var $obj_theme_options_plugin = NULL;
 		var $obj_theme_options_sanitizer = NULL;
 
 		/*
@@ -53,6 +54,12 @@ if ( ! class_exists( 'cdz_Theme_Options' ) ) {
 					if ( isset( $_GET['page'] ) && $_GET['page'] == 'cdz-theme-options' ) {
 						$this->obj_theme_options_panel = new cdz_Theme_Options_Panel;
 					}
+
+				}
+
+				if ( defined( 'CDZ_THEME' ) && CDZ_THEME ) {
+
+					$this->obj_theme_options_plugin = new cdz_Theme_Options_Plugin;
 
 				}
 
@@ -89,37 +96,9 @@ if ( ! class_exists( 'cdz_Theme_Options' ) ) {
 
 		static function get_options_array( $options = null ) {
 
-			global $cdz_monkeys_manager;
+			// global $cdz_monkeys_manager;
 
-			$options = array();
-
-			/*
-			 *	Theme options
-			 */
-
-			$options = array_merge( $options, cdz_options_general() );
-			$options = array_merge( $options, cdz_options_header() );
-			$options = array_merge( $options, cdz_options_navigation() );
-			$options = array_merge( $options, cdz_options_navigation_top() );
-			$options = array_merge( $options, cdz_options_sliders() );
-			$options = array_merge( $options, cdz_options_slogans() );
-			$options = array_merge( $options, cdz_options_sidebars() );
-			$options = array_merge( $options, cdz_options_widgets() );
-			$options = array_merge( $options, cdz_options_blog() );
-			$options = array_merge( $options, cdz_options_content() );
-			$options = array_merge( $options, cdz_options_error404() );
-			$options = array_merge( $options, cdz_options_footer() );
-
-			/*
-			 *	Plugins options
-			 */
-
-			// $options = array_merge( $options, cdz_options_plugins_mp() );
-			// $options = array_merge( $options, cdz_options_plugins_lt() );
-
-			/*
-			 *	Return array
-			 */
+			$options = apply_filters( 'cdz_get_options_array', array() );
 
 			return $options;
 
@@ -195,6 +174,6 @@ add_action( 'init', 'cdz_theme_options_init', 20 );
 
 function cdz_theme_options_init() {
 
-	if ( CDZ_THEME ) { $cdz_theme_options = new cdz_Theme_Options(); }
+	if ( defined( 'CDZ_PLUGIN' ) && CDZ_PLUGIN ) { $cdz_theme_options = new cdz_Theme_Options(); }
 
 }
