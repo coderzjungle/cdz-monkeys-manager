@@ -38,13 +38,24 @@ defined( 'ABSPATH' ) or exit;
  *	Define constants
  */
 
-define( 'CDZ_MONKEYS_MANAGER',	TRUE );
-
 define( 'CDZ_PLUGIN_VERSION',	'1.0.0' );
 define( 'CDZ_PLUGIN_URL',		rtrim( plugin_dir_url( __FILE__ ), '/') );
 define( 'CDZ_PLUGIN_PATH',		rtrim( plugin_dir_path( __FILE__ ), '/') );
 define( 'CDZ_THEME_URL',		get_template_directory_uri() );
 define( 'CDZ_THEME_PATH',		get_template_directory() );
+
+/*
+ *	Plugins Array
+ */
+
+$cdz_plugins_array = array( 'cdz-woocommerce-multi-vendors' );
+
+foreach ( $cdz_plugins_array as $key => $value ) {
+	if ( in_array( $value . '/init.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
+		define( 'CDZ_PLUGIN', TRUE );
+		break;
+	}
+}
 
 /*
  *	Init
