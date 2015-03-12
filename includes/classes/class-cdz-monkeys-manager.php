@@ -47,6 +47,13 @@ if ( ! class_exists( 'cdz_Monkeys_Manager' ) ) {
 			$this->load();
 
 			/*
+			 *	Enqueue Scripts
+			 */
+
+			add_action( 'admin_enqueue_scripts', array( $this, 'cdz_enqueue_scripts' ) );
+			add_action( 'wp_enqueue_scripts', array( $this, 'cdz_enqueue_scripts' ) );
+
+			/*
 			 *	Objects
 			 */
 
@@ -64,7 +71,7 @@ if ( ! class_exists( 'cdz_Monkeys_Manager' ) ) {
 			 *	Update Notifier
 			 */
 
-			if ( CDZ_THEME ) { $this->update_notifier(); }
+			if ( defined( 'CDZ_THEME' ) && CDZ_THEME ) { $this->update_notifier(); }
 
 			/*
 			 *	Woocommerce Hooks
@@ -98,6 +105,26 @@ if ( ! class_exists( 'cdz_Monkeys_Manager' ) ) {
 				define( 'CDZ_THEME', FALSE );
 
 			}
+
+		}
+
+		/*
+		 *	cdzFunction: Enqueue Scripts
+		 */
+
+		function cdz_enqueue_scripts() {
+
+			/*
+			 *	Style
+			 */
+
+			wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css', array(), '4.3.0' );
+
+			/*
+			 *	Scripts
+			 */
+
+			// no scripts
 
 		}
 
