@@ -34,7 +34,7 @@ if ( ! class_exists( 'cdz_Theme_Options' ) ) {
 
 		public function __construct() {
 
-			if ( current_user_can( 'edit_theme_options' ) && CDZ_THEME ) {
+			if ( current_user_can( 'edit_theme_options' ) ) {
 
 				/*
 				 *	Theme Options Std
@@ -64,7 +64,6 @@ if ( ! class_exists( 'cdz_Theme_Options' ) ) {
 				}
 
 				add_action( 'admin_init', array( $this, 'set_theme_option' ) );
-				add_action( 'wp_before_admin_bar_render', array( $this, 'admin_bar' ) );
 
 				/*
 				 *	Google Fonts
@@ -128,52 +127,18 @@ if ( ! class_exists( 'cdz_Theme_Options' ) ) {
 
 		}
 
-		/*
-		 *	cdzFunction: Menu Settings
-		 */
+	}
 
-		static function menu_settings() {
+}
 
-			$menu = array(
-				'page_title' => __( 'Coderz Jungle', 'cdz' ),
-				'menu_title' => __( 'Theme Options', 'cdz' ),
-				'capability' => 'edit_theme_options',
-				'menu_slug' => 'cdz-theme-options',
-			);
+function cdz_theme_options_init() {
 
-			return apply_filters( 'cdz_theme_options_menu_settings', $menu );
+	if ( ( defined( 'CDZ_PLUGIN' ) && CDZ_PLUGIN ) || defined( 'CDZ_THEME' ) && CDZ_THEME ) {
 
-		}
-
-		/*
-		 *	cdzFunction: Admin Bar
-		 */
-
-		function admin_bar() {
-
-			global $wp_admin_bar;
-
-			$menu = self::menu_settings();
-
-			$args = array(
-				//'parent' => 'appearance',
-				'id' => 'cdz-theme-options',
-				'title' => __( 'Theme Options', 'cdz' ),
-				'href' => admin_url( 'admin.php?page=' . $menu['menu_slug'] )
-			);
-
-			$wp_admin_bar->add_menu( $args );
-			
-		}
+		$cdz_theme_options = new cdz_Theme_Options();
 
 	}
 
 }
 
 add_action( 'init', 'cdz_theme_options_init', 20 );
-
-function cdz_theme_options_init() {
-
-	if ( defined( 'CDZ_PLUGIN' ) && CDZ_PLUGIN ) { $cdz_theme_options = new cdz_Theme_Options(); }
-
-}

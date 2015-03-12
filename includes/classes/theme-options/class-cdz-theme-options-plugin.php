@@ -30,8 +30,32 @@ if ( ! class_exists( 'cdz_Theme_Options_Plugin' ) ) {
 		public function __construct() {
 
 			add_filter( 'cdz_get_options_array', array( $this, 'options_array' ) );
+			add_action( 'wp_before_admin_bar_render', array( $this, 'admin_bar' ) );
+			add_action( 'admin_menu', array( $this, 'add_menu_pages' ) );
+			add_action( 'admin_menu', array( $this, 'add_menu_separator' ), 100 );
 
 		}
+
+		/*
+		 *	cdzFunction: Menu Settings
+		 */
+
+		static function menu_settings() {
+
+			$menu = array(
+				'page_title' => __( 'Coderz Jungle', 'cdz' ),
+				'menu_title' => __( 'Theme Options', 'cdz' ),
+				'capability' => 'edit_theme_options',
+				'menu_slug' => 'cdz-theme-options',
+			);
+
+			return apply_filters( 'cdz_theme_options_menu_settings', $menu );
+
+		}
+
+		/*
+		 *	cdzFunction: Theme Options Array
+		 */
 
 		function options_array() {
 
@@ -51,6 +75,64 @@ if ( ! class_exists( 'cdz_Theme_Options_Plugin' ) ) {
 			$options = array_merge( $options, cdz_options_footer() );
 
 			return $options;
+
+		}
+
+		/*
+		 *	cdzFunction: Admin Bar
+		 */
+
+		function admin_bar() {
+
+			global $wp_admin_bar;
+
+			$menu = self::menu_settings();
+
+			$args = array(
+				//'parent' => 'appearance',
+				'id' => 'cdz-theme-options',
+				'title' => __( 'Theme Options', 'cdz' ),
+				'href' => admin_url( 'admin.php?page=' . $menu['menu_slug'] )
+			);
+
+			$wp_admin_bar->add_menu( $args );
+			
+		}
+
+		/*
+		 *	cdzFunction: Add Menu Pages
+		 */
+
+		function add_menu_pages() {
+
+			$menu = self::menu_settings();
+
+			// $this->options_screen = apply_filters( 'of_options_screen', add_theme_page( $menu['page_title'], $menu['menu_title'], $menu['capability'], $menu['menu_slug'], array( $this, 'options_page' ) ) );
+			
+			/*
+			 *	cdz Admin Main Page
+			 */
+
+			$this->options_screen = add_menu_page( $menu['page_title'], $menu['menu_title'], $menu['capability'], $menu['menu_slug'], 'cdz_theme_options_page', 'dashicons-editor-code', 31 );
+
+			/*
+			 *	cdz Admin Sub Pages
+			 */
+
+			// add_submenu_page( 'cdz-theme-options', __( 'Theme Options', 'cdz' ), __( 'Theme Options', 'cdz' ), 'edit_theme_options', 'cdz-theme-options', array( $this, 'options_page' ) );
+			// add_submenu_page( 'cdz-theme-options', __( 'Theme Plugins', 'cdz' ), __( 'Theme Plugins', 'cdz' ), 'manage_options', 'install-required-plugins', array( $this, 'cdz_plugins' ) );
+			// add_submenu_page( 'cdz-theme-options', __( 'Documentation', 'cdz' ), __( 'Documentation', 'cdz' ), 'manage_options', 'cdz_documentation', array( $this, 'cdz_documentation' ) );
+			
+		}
+
+		/*
+		 *	cdzFunction: Add Menu Separators
+		 */
+
+		function add_menu_separator() {
+
+			global $menu;
+			$menu[30] = array( '', 'read', 'cdz-separator', '', 'wp-menu-separator cdz-separator' );
 
 		}
 
