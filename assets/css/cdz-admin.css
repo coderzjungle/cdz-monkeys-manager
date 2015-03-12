@@ -30,7 +30,7 @@
 #adminmenu .toplevel_page_cdz-theme-options.current:hover .wp-menu-image:before { background: url('../img/admin/dashicon-current.png') center no-repeat; }
 #adminmenu .toplevel_page_cdz-theme-options.current:hover * { color: #fff; }
 
-table.plugins #the-list #monkeys-manager .plugin-title > strong:before {
+table.plugins #the-list #cdz-monkeys-manager .plugin-title > strong:before {
 	content: ' ';
 	width: 20px;
 	height: 20px;

@@ -29,9 +29,12 @@ if ( ! class_exists( 'cdz_Theme_Options_Plugin' ) ) {
 
 		public function __construct() {
 
-			add_filter( 'cdz_get_options_array', array( $this, 'options_array' ) );
+			if ( $_GET['page'] == 'cdz-theme-options' ) {
+				add_filter( 'cdz_get_options_array', array( $this, 'options_array' ) );
+			}
+
 			add_action( 'wp_before_admin_bar_render', array( $this, 'admin_bar' ) );
-			add_action( 'admin_menu', array( $this, 'add_menu_pages' ) );
+			add_action( 'admin_menu', array( $this, 'add_menu_pages' ), 1000 );
 			add_action( 'admin_menu', array( $this, 'add_menu_separator' ), 100 );
 
 		}
