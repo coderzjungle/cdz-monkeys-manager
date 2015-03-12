@@ -38,8 +38,6 @@ defined( 'ABSPATH' ) or exit;
  *	Define constants
  */
 
-if ( ! defined( 'CDZ_PLUGIN' ) ) { define( 'CDZ_PLUGIN', TRUE ); }
-
 define( 'CDZ_MONKEYS_MANAGER',	TRUE );
 
 define( 'CDZ_PLUGIN_VERSION',	'1.0.0' );

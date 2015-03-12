@@ -29,8 +29,8 @@ if ( ! class_exists( 'cdz_Admin' ) ) {
 
 		public function __construct() {
 
-			add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_scripts' ) );
-			add_action( 'plugins_loaded', array( $this, 'load_plugin_textdomain' ) );
+			add_action( 'admin_enqueue_scripts', array( $this, 'cdz_enqueue_scripts' ) );
+			add_action( 'plugins_loaded', array( $this, 'cdz_load_plugin_textdomain' ) );
 
 		}
 
@@ -38,7 +38,7 @@ if ( ! class_exists( 'cdz_Admin' ) ) {
 		 *	cdzFunction: Enqueue Scripts
 		 */
 
-		function enqueue_scripts() {
+		function cdz_enqueue_scripts() {
 
 			/*
 			 *	Style
@@ -51,13 +51,15 @@ if ( ! class_exists( 'cdz_Admin' ) ) {
 			 *	Scripts
 			 */
 
+			// no scripts
+
 		}
 
 		/*
 		 *	cdzFunction: Load Plugin Textdomain
 		 */
 
-		function load_plugin_textdomain() {
+		function cdz_load_plugin_textdomain() {
 
 			load_plugin_textdomain( 'cdz', false, CDZ_PLUGIN_PATH . '/languages' );
 

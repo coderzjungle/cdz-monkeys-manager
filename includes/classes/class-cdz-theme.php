@@ -30,10 +30,9 @@ if ( ! class_exists( 'cdz_Theme' ) ) {
 		public function __construct() {
 
 			add_filter( 'body_class', array( $this, 'cdz_body_monkeys_manager' ) );
-			add_action( 'cdz_enqueue_styles', array( $this, 'cdz_enqueue_styles' ) );
-			add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_scripts' ) );
-			add_filter( 'template_include', array( $this, 'include_template_files' ) );
-			add_action( 'after_setup_theme', array( $this, 'load_theme_textdomain' ) );
+			add_action( 'wp_enqueue_scripts', array( $this, 'cdz_enqueue_scripts' ) );
+			add_filter( 'template_include', array( $this, 'cdz_include_template_files' ) );
+			add_action( 'after_setup_theme', array( $this, 'cdz_load_theme_textdomain' ) );
 
 			add_action( 'cdz_prepost_content', 'cdz_prepost_content', 10, 2 );
 
@@ -50,30 +49,38 @@ if ( ! class_exists( 'cdz_Theme' ) ) {
 		 */
 
 		function cdz_body_monkeys_manager( $classes ) {
+
 			$classes[] = 'cdz-monkeys-manager';
 			return $classes;
-		}
-
-		/*
-		 *	cdzFunction: Enqueue Styles
-		 */
-
-		function cdz_enqueue_styles() {
-
-			if ( file_exists( CDZ_THEME_PATH . '/assets/css/cdz-templates.css' ) ) {
-				echo '<link rel="stylesheet" id="cdz-templates-css" href="' . CDZ_THEME_URL . '/assets/css/cdz-templates.css" type="text/css" media="all">
-		';
-			} else { echo '<link rel="stylesheet" id="cdz-templates-css" href="' . CDZ_PLUGIN_URL . '/assets/css/cdz-templates.css" type="text/css" media="all">'; }
-			echo '<link rel="stylesheet" id="cdz-wp-stats-css" href="' . CDZ_PLUGIN_URL . '/assets/css/cdz-wp-stats.css" type="text/css" media="all">
-';
-
+			
 		}
 
 		/*
 		 *	cdzFunction: Enqueue Scripts
 		 */
 
-		function enqueue_scripts() {
+		function cdz_enqueue_scripts() {
+
+			/*
+			 *	Style
+			 */
+
+			if ( file_exists( CDZ_THEME_PATH . '/assets/css/cdz-templates.css' ) ) {
+
+				echo '<link rel="stylesheet" id="cdz-templates-css" href="' . CDZ_THEME_URL . '/assets/css/cdz-templates.css" type="text/css" media="all">
+		';
+			} else {
+
+				echo '<link rel="stylesheet" id="cdz-templates-css" href="' . CDZ_PLUGIN_URL . '/assets/css/cdz-templates.css" type="text/css" media="all">';
+
+			}
+			
+			echo '<link rel="stylesheet" id="cdz-wp-stats-css" href="' . CDZ_PLUGIN_URL . '/assets/css/cdz-wp-stats.css" type="text/css" media="all">
+';
+
+			/*
+			 *	Scripts
+			 */
 
 			// no scripts
 
@@ -83,7 +90,7 @@ if ( ! class_exists( 'cdz_Theme' ) ) {
 		 *	cdzFunction: Include Template Files
 		 */
 
-		function include_template_files( $template ) {
+		function cdz_include_template_files( $template ) {
 
 			if ( is_single() ) {
 
@@ -103,7 +110,7 @@ if ( ! class_exists( 'cdz_Theme' ) ) {
 		 *	cdzFunction: Load Theme Textdomain
 		 */
 
-		function load_theme_textdomain() {
+		function cdz_load_theme_textdomain() {
 
 			load_theme_textdomain( 'cdz', CDZ_THEME_PATH . '/languages' );
 
