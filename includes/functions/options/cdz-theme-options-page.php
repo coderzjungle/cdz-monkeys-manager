@@ -54,6 +54,8 @@ if ( ! function_exists( 'cdz_theme_options_page' ) ) {
 				<div id="cdz-panel" class="postbox">
 					<form action="options.php" method="post">
 
+						<input type="hidden" name="page" value="<?php echo isset( $_GET['page'] ) ? $_GET['page'] : ''; ?>" />
+
 						<?php settings_fields( 'optionsframework' ); ?>
 
 						<h2 class="page_title">

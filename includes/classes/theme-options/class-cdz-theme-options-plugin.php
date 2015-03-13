@@ -29,7 +29,7 @@ if ( ! class_exists( 'cdz_Theme_Options_Plugin' ) ) {
 
 		public function __construct() {
 
-			if ( $_GET['page'] == 'cdz-theme-options' ) {
+			if ( isset( $_GET['page'] ) && $_GET['page'] == 'cdz-theme-options' || isset( $_POST['page'] ) && $_POST['page'] == 'cdz-theme-options' ) {
 				add_filter( 'cdz_get_options_array', array( $this, 'options_array' ) );
 			}
 
