@@ -144,6 +144,14 @@ if ( ! class_exists( 'cdz_Theme_Options_Panel' ) ) {
 				switch ( $value['type'] ) {
 
 					/*
+					 *	Empty
+					 */
+
+					case 'empty':
+						$output .= '';
+						break;
+
+					/*
 					 *	Basic text input
 					 */
 
@@ -157,6 +165,14 @@ if ( ! class_exists( 'cdz_Theme_Options_Panel' ) ) {
 
 					case 'password':
 						$output .= '<input id="' . esc_attr( $value['id'] ) . '" class="of-input" name="' . esc_attr( $option_name . '[' . $value['id'] . ']' ) . '" type="password" value="' . esc_attr( $val ) . '" />';
+						break;
+
+					/*
+					 *	Number
+					 */
+
+					case 'number':
+						$output .= '<input id="' . esc_attr( $value['id'] ) . '" class="of-input" name="' . esc_attr( $option_name . '[' . $value['id'] . ']' ) . '" type="number" min="' . $value['restrict']['min'] . '" max="' . $value['restrict']['max'] . '" step="' . $value['restrict']['step'] . '" value="' . esc_attr( $val ) . '" />';
 						break;
 
 					/*
