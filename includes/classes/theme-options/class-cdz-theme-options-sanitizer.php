@@ -19,26 +19,28 @@ defined( 'ABSPATH' ) or exit;
  *	cdzClass: ? (coming soon)
  */
 
-add_filter( 'of_sanitize_text', 'sanitize_text_field' );
-add_filter( 'of_sanitize_password', 'sanitize_text_field' );
-add_filter( 'of_sanitize_textarea', 'of_sanitize_textarea' );
-add_filter( 'of_sanitize_select', 'of_sanitize_enum', 10, 2);
-add_filter( 'of_sanitize_radio', 'of_sanitize_enum', 10, 2);
-add_filter( 'of_sanitize_images', 'of_sanitize_enum', 10, 2);
-add_filter( 'of_sanitize_checkbox', 'of_sanitize_checkbox' );
-add_filter( 'of_sanitize_multicheck', 'of_sanitize_multicheck', 10, 2 );
-add_filter( 'of_sanitize_color', 'of_sanitize_hex' );
-add_filter( 'of_sanitize_upload', 'of_sanitize_upload' );
-add_filter( 'of_sanitize_editor', 'of_sanitize_editor' );
-add_filter( 'of_sanitize_info', 'of_sanitize_allowedposttags' );
-add_filter( 'of_sanitize_background', 'of_sanitize_background' );
-add_filter( 'of_background_repeat', 'of_sanitize_background_repeat' );
-add_filter( 'of_background_position', 'of_sanitize_background_position' );
-add_filter( 'of_background_attachment', 'of_sanitize_background_attachment' );
-add_filter( 'of_sanitize_typography', 'of_sanitize_typography', 10, 2 );
-add_filter( 'of_font_size', 'of_sanitize_font_size' );
-add_filter( 'of_font_style', 'of_sanitize_font_style' );
-add_filter( 'of_font_face', 'of_sanitize_font_face' );
+add_filter( 'of_sanitize_text',			'sanitize_text_field' );
+add_filter( 'of_sanitize_password',		'sanitize_text_field' );
+add_filter( 'of_sanitize_number',		'sanitize_text_field' );
+add_filter( 'of_sanitize_textarea',		'of_sanitize_textarea' );
+add_filter( 'of_sanitize_select',		'of_sanitize_enum', 10, 2);
+add_filter( 'of_sanitize_select_page',	'of_sanitize_page', 10, 2);
+add_filter( 'of_sanitize_radio',		'of_sanitize_enum', 10, 2);
+add_filter( 'of_sanitize_images',		'of_sanitize_enum', 10, 2);
+add_filter( 'of_sanitize_checkbox',		'of_sanitize_checkbox' );
+add_filter( 'of_sanitize_multicheck',	'of_sanitize_multicheck', 10, 2 );
+add_filter( 'of_sanitize_color',		'of_sanitize_hex' );
+add_filter( 'of_sanitize_upload',		'of_sanitize_upload' );
+add_filter( 'of_sanitize_editor',		'of_sanitize_editor' );
+add_filter( 'of_sanitize_info',			'of_sanitize_allowedposttags' );
+add_filter( 'of_sanitize_background',	'of_sanitize_background' );
+add_filter( 'of_background_repeat',		'of_sanitize_background_repeat' );
+add_filter( 'of_background_position',	'of_sanitize_background_position' );
+add_filter( 'of_background_attachment',	'of_sanitize_background_attachment' );
+add_filter( 'of_sanitize_typography',	'of_sanitize_typography', 10, 2 );
+add_filter( 'of_font_size',				'of_sanitize_font_size' );
+add_filter( 'of_font_style',			'of_sanitize_font_style' );
+add_filter( 'of_font_face',				'of_sanitize_font_face' );
 
 /*
  * Textarea
@@ -140,6 +142,15 @@ function of_sanitize_enum( $input, $option ) {
 		$output = $input;
 	}
 	return $output;
+}
+
+/*
+ * Check that the page is valid
+ */
+
+function of_sanitize_page( $input, $option ) {
+	
+	return $input;
 }
 
 /*

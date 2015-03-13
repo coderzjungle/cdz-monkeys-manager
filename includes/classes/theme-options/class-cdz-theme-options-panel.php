@@ -201,6 +201,21 @@ if ( ! class_exists( 'cdz_Theme_Options_Panel' ) ) {
 						$output .= '</select>';
 						break;
 
+					/*
+					 *	Select Page
+					 */
+
+					case 'select_page':
+						$args = array(
+							'name'       => esc_attr( $option_name . '[' . $value['id'] . ']' ),
+							'id'         => esc_attr( $value['id'] ),
+							'sort_order' => 'ASC',
+							'echo'       => 0,
+							'selected'   => ( $val ) ? $val : $value['std'],
+						);
+						$output .= str_replace( "'>", "'><option>-</option>", wp_dropdown_pages( $args ) ); 
+						break;
+
 
 					/*
 					 *	Radio Box
