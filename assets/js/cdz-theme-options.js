@@ -15,7 +15,8 @@ jQuery(document).ready( function($) {
 
 	var current_page_url = document.URL;
 
-	if ( current_page_url.indexOf( 'cdz-theme-options' ) > 0 ) {
+	//if ( current_page_url.indexOf( 'cdz-theme-options' ) > 0 ) {
+	if ( 1 ) {
 
 		/*
 		 *	Loads the color pickers
