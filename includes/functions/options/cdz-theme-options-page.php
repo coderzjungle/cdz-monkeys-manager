@@ -31,7 +31,7 @@ if ( ! function_exists( 'cdz_theme_options_page' ) ) {
 
 		<div class="wrap">
 			<h2 class="title">
-				<?php echo __( 'Theme Options', 'cdz' ); ?>
+				<?php echo __( 'Options', 'cdz' ); ?>
 				<a href="<?php echo get_site_url(); ?>" class="add-new-h2" target="_blank"><?php echo __( 'View Website', 'cdz' ); ?></a>
 			</h2>
 		</div>
