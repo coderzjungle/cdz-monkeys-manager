@@ -94,10 +94,15 @@ if ( ! class_exists( 'cdz_Theme_Options' ) ) {
 		}
 
 		static function get_options_array( $options = null ) {
+			
+			return apply_filters( 'cdz_get_options_array', array() );
 
-			// global $cdz_monkeys_manager;
+		}
 
-			$options = apply_filters( 'cdz_get_options_array', array() );
+		static function get_all_options_array( $options = null ) {
+
+			$options = apply_filters( 'cdz_get_mm_options_array', array() );
+			$options = array_merge( $options, apply_filters( 'cdz_get_wcmv_options_array', array() ) );
 
 			return $options;
 

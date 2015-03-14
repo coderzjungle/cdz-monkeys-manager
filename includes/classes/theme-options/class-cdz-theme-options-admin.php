@@ -79,7 +79,7 @@ if ( ! class_exists( 'cdz_Theme_Options_Admin' ) ) {
 		function settings_init() {
 
 			$cdz_theme_options_settings = get_option( 'optionsframework' );
-			register_setting( 'optionsframework', $cdz_theme_options_settings['id'],  array ( $this, 'validate_options' ) );
+			register_setting( 'optionsframework', $cdz_theme_options_settings['id'], array( $this, 'validate_options' ) );
 			add_action( 'theme_options_after_validate', array( $this, 'save_options_notice' ) );
 
 		}
@@ -114,7 +114,7 @@ if ( ! class_exists( 'cdz_Theme_Options_Admin' ) ) {
 			 */
 
 			$clean = array();
-			$options = cdz_Theme_Options::get_options_array();
+			$options = cdz_Theme_Options::get_all_options_array();
 
 			foreach ( $options as $option ) {
 
@@ -123,6 +123,13 @@ if ( ! class_exists( 'cdz_Theme_Options_Admin' ) ) {
 				if ( ! isset( $option['type'] ) ) { continue; }
 
 				$id = preg_replace( '/[^a-zA-Z0-9._\-]/', '', strtolower( $option['id'] ) );
+
+				if ( ! isset( $input[$id] ) ) {
+
+					$clean[$id] = cdz_get_option( $option['id'] );
+					continue;
+
+				}
 
 				/*
 				 *	Set checkbox to false if it wasn't sent in the $_POST
