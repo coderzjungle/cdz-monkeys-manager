@@ -38,6 +38,8 @@ defined( 'ABSPATH' ) or exit;
  *	Define constants
  */
 
+define( 'CDZ_MONKEYS_MANAGER',	TRUE );
+
 define( 'CDZ_PLUGIN_VERSION',	'1.0.0' );
 define( 'CDZ_PLUGIN_URL',		rtrim( plugin_dir_url( __FILE__ ), '/') );
 define( 'CDZ_PLUGIN_PATH',		rtrim( plugin_dir_path( __FILE__ ), '/') );
