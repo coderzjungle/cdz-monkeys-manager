@@ -124,13 +124,6 @@ if ( ! class_exists( 'cdz_Theme_Options_Admin' ) ) {
 
 				$id = preg_replace( '/[^a-zA-Z0-9._\-]/', '', strtolower( $option['id'] ) );
 
-				if ( ! isset( $input[$id] ) ) {
-
-					$clean[$id] = cdz_get_option( $option['id'] );
-					continue;
-
-				}
-
 				/*
 				 *	Set checkbox to false if it wasn't sent in the $_POST
 				 */
@@ -138,10 +131,19 @@ if ( ! class_exists( 'cdz_Theme_Options_Admin' ) ) {
 				if ( 'checkbox' == $option['type'] && ! isset( $input[$id] ) ) { $input[$id] = false; }
 
 				/*
+				 *	Take the previous saved value if this is not set
+				 */
+				
+				if ( ! isset( $input[$id] ) ) {
+					$clean[$id] = cdz_get_option( $option['id'] );
+					continue;
+				}
+
+				/*
 				 *	Set each item in the multicheck to false if it wasn't sent in the $_POST
 				 */
 
-				if ( 'multicheck' == $option['type'] && ! isset( $input[$id] ) ) {
+				if ( $option['type'] == 'multicheck' && ! isset( $input[$id] ) ) {
 					foreach ( $option['options'] as $key => $value ) {
 						$input[$id][$key] = false;
 					}
