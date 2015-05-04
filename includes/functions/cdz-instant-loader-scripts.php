@@ -37,7 +37,7 @@ if ( ! function_exists( 'cdz_instant_loader_scripts' ) ) {
 
 						}
 
-						jQuery('#primary').html('<div class=\"cdz_instant_loading\"><i class=\"fa fa-circle-o-notch fa-spin\"></i></div>').load( '$plugindir/../../load.php?cdz_permalink=' + permalink + '&t=default&cdz_instant_loader=1', function() {
+						jQuery('#primary').html('<div class=\"cdz_instant_loading\"><i class=\"fa fa-circle-o-notch fa-spin\"></i></div>').load( '$plugindir/../../load.php?url=' + permalink + '&t=default&cdz_instant_loader=1', function() {
 
 							jQuery(this).fadeIn();
 

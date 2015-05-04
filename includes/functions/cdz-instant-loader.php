@@ -24,23 +24,21 @@ if ( ! function_exists( 'cdz_instant_loader' ) ) {
 	function cdz_instant_loader() {
 
 		/*
+		 *	App
+		 */
+
+		$app = FALSE;
+		if ( ( isset( $_GET['app'] ) AND $_GET['app'] == 1 ) OR
+			( isset( $_POST['app'] ) AND $_POST['app'] == 1 ) ) { $app = TRUE; }
+
+		/*
 		 *	Set permalink
 		 */
 
 		$permalink = '';
-
-		if ( isset( $_GET['cdz_permalink'] ) AND $_GET['cdz_permalink'] != '' ) {
-
-			$permalink = $_GET['cdz_permalink'];
-
-		} else if ( isset( $_POST['cdz_permalink'] ) AND $_POST['cdz_permalink'] != '' ) {
-
-			$permalink = $_GET['cdz_permalink'];
-
-		} else {
-
-			$permalink = '/';
-		}
+		if ( isset( $_GET['url'] ) AND $_GET['url'] != '' ) { $permalink = $_GET['url']; }
+		else if ( isset( $_POST['url'] ) AND $_POST['url'] != '' ) { $permalink = $_POST['url']; }
+		else { $permalink = '/'; }
 
 		/*
 		 *	Get post
@@ -61,8 +59,16 @@ if ( ! function_exists( 'cdz_instant_loader' ) ) {
 
 			while ( have_posts() ) : the_post();
 
-				$template_path = get_template_directory() . '/' . $post_type . '.php';
-				if ( ! file_exists( $template_path ) ) { $template_path = 'templates/' . $post_type . '.php'; }
+				if ( $app ) {
+
+					$template_path = get_template_directory() . '/app.php';
+
+				} else {
+
+					$template_path = get_template_directory() . '/' . $post_type . '.php';
+					if ( ! file_exists( $template_path ) ) { $template_path = 'templates/' . $post_type . '.php'; }
+
+				}
 
 				if ( file_exists( $template_path ) ) { include $template_path; }
 				else { echo __( 'Ooops! Template not found...', 'cdz' ); }
