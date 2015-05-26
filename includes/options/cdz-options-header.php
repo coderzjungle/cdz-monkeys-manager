@@ -94,6 +94,18 @@ if ( ! function_exists( 'cdz_options_header' ) ) {
 			);
 
 			$options[] = array(
+				'name'			=>	__( 'Custom Logo Position', 'cdz' ),
+				'id'			=>	'opt_custom_logo_position',
+				'type'			=>	'radio',
+				'options'		=>	array(
+										'left'		=>	__( 'Left', 'cdz' ),
+										'center'	=>	__( 'Center', 'cdz' ),
+										'right'		=>	__( 'Right', 'cdz' ),
+									),
+				'std'			=>	cdz_get_theme_options_std( 'opt_custom_logo_position' ),
+			);
+
+			$options[] = array(
 				'name'			=>	__( 'Custom Logo', 'cdz' ),
 				'desc'			=>	__( 'Enable the custom logo', 'cdz' ),
 				'id'			=>	'opt_custom_logo',
@@ -134,19 +146,6 @@ if ( ! function_exists( 'cdz_options_header' ) ) {
 				'class'			=>	'hidden',
 				'type'			=>	'checkbox',
 				'std'			=>	cdz_get_theme_options_std( 'opt_custom_logo_crop' ),
-			);
-
-
-			$options[] = array(
-				'name'			=>	__( 'Custom Logo Position', 'cdz' ),
-				'id'			=>	'opt_custom_logo_position',
-				'type'			=>	'radio',
-				'options'		=>	array(
-										'left'		=>	__( 'Left', 'cdz' ),
-										'center'	=>	__( 'Center', 'cdz' ),
-										'right'		=>	__( 'Right', 'cdz' ),
-									),
-				'std'			=>	cdz_get_theme_options_std( 'opt_custom_logo_position' ),
 			);
 
 		}

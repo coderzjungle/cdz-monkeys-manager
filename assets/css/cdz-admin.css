@@ -12,23 +12,34 @@
  */
 
 /*
- *	WP Admin
+ *	WP Admin top bar
  */
 
 #wpadminbar #wp-admin-bar-cdz-theme-options > * { color: #eee; }
 #wpadminbar #wp-admin-bar-cdz-theme-options > .ab-item:before { content: ' '; width: 20px; height: 32px; background: url('../img/admin/dashicon.png') center no-repeat !important; padding: 0px; }
-#wpadminbar #wp-admin-bar-cdz-theme-options:hover * { color: #9c0; }
+#wpadminbar #wp-admin-bar-cdz-theme-options:hover * { color: #abc24a; }
 #wpadminbar #wp-admin-bar-cdz-theme-options:hover > .ab-item:before { background: url('../img/admin/dashicon-hover.png') center no-repeat !important; }
 #wpadminbar #wp-admin-bar-update_notifier > .ab-item:before { content: '\f463'; top: 2px; }
 
-#adminmenu .toplevel_page_cdz-theme-options { background-color: #111; }
+/*
+ *	WP Admin left bar
+ */
+
+#adminmenu .toplevel_page_cdz-theme-options { background-color: #23282d; }
+
 #adminmenu .toplevel_page_cdz-theme-options * { color: #eee; }
-#adminmenu .toplevel_page_cdz-theme-options .wp-menu-image:before { content: ''; background: url('../img/admin/dashicon.png') center no-repeat; }
-#adminmenu .toplevel_page_cdz-theme-options:hover .wp-menu-image:before { background: url('../img/admin/dashicon-hover.png') center no-repeat; }
-#adminmenu .toplevel_page_cdz-theme-options:hover * { color: #9c0; }
+#adminmenu .toplevel_page_cdz-theme-options .wp-menu-image:before { content: ''; background: url('../img/admin/dashicon-green.png') center no-repeat; }
+
+#adminmenu .toplevel_page_cdz-theme-options:hover .wp-menu-image:before { background: url('../img/admin/dashicon-green.png') center no-repeat; }
+#adminmenu .toplevel_page_cdz-theme-options:hover, #adminmenu .toplevel_page_cdz-theme-options:hover * { color: #abc24a; background-color: #191e23; }
+
+#adminmenu .toplevel_page_cdz-theme-options.current * { color: #000; background-color: #abc24a !important; }
 #adminmenu .toplevel_page_cdz-theme-options.current .wp-menu-image:before,
-#adminmenu .toplevel_page_cdz-theme-options.current:hover .wp-menu-image:before { background: url('../img/admin/dashicon-current.png') center no-repeat; }
-#adminmenu .toplevel_page_cdz-theme-options.current:hover * { color: #fff; }
+#adminmenu .toplevel_page_cdz-theme-options.current:hover .wp-menu-image:before { background: url('../img/admin/dashicon-white.png') center no-repeat !important; }
+
+/*
+ *	WP Admin plugin page
+ */
 
 table.plugins #the-list #cdz-monkeys-manager .plugin-title > strong:before {
 	content: ' ';
@@ -40,13 +51,3 @@ table.plugins #the-list #cdz-monkeys-manager .plugin-title > strong:before {
 	display: block;
 	float: left;
 }
-
-/*#gondor .separator {
-	width: 500%;
-	border-top: 1px solid #eee;
-	margin-left: -200%;
-	position: absolute;
-}
-#gondor.left-sidebar .separator { left: 0; }
-#gondor.right-sidebar .separator { right: 0; }
-*/

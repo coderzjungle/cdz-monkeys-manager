@@ -53,40 +53,32 @@ if ( ! function_exists( 'cdz_prepost_content' ) ) {
 
 			<?php
 
-			$gondor_classes = '';
-			if ( isset( $sidebars['left'] ) && $sidebars['left'] != 'none' && $sidebars['left'] != FALSE && $sidebars['left_cols'] > 0 ) { $gondor_classes .= ' left-sidebar'; }
-			if ( isset( $sidebars['right'] ) && $sidebars['right'] != 'none' && $sidebars['right'] != FALSE && $sidebars['right_cols'] > 0 ) { $gondor_classes .= ' right-sidebar'; }
+			$middle_classes = '';
+			if ( isset( $sidebars['left'] ) && $sidebars['left'] != 'none' && $sidebars['left'] != FALSE && $sidebars['left_cols'] > 0 ) { $middle_classes .= ' left-sidebar'; }
+			if ( isset( $sidebars['right'] ) && $sidebars['right'] != 'none' && $sidebars['right'] != FALSE && $sidebars['right_cols'] > 0 ) { $middle_classes .= ' right-sidebar'; }
 
 			?>
 
-			<div id="gondor" class="<?php echo $gondor_classes; ?>">
-
+			<div id="cdz-middle" class="<?php echo $middle_classes; ?>">
 				<div class="grid_container">
-
 					<div class="row">
 
 						<?php cdz_sidebar( 'left', $sidebars['left'], $sidebars['left_cols'] ); ?>
 
 						<div id="main-content" class="main-content<?php echo $sidebars['content_cols'] == 12 ? '' : ' col_' . $sidebars['content_cols']; ?>">
-
 							<div id="primary" class="content-area">
-
 								<div id="content" class="site-content"  role="main">
 
-				<?php elseif ( $prepost == 'post' ) : ?>
+		<?php elseif ( $prepost == 'post' ) : ?>
 
 								</div>
-
 							</div>
-
 						</div>
 
 						<?php cdz_sidebar( 'right', $sidebars['right'], $sidebars['right_cols'] ); ?>
 						
 					</div>
-
 				</div>
-
 			</div>
 
 		<?php
