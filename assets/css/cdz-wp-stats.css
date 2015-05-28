@@ -11,7 +11,8 @@
  *                                                    |___/                             
  */
 
-#cdz-wp-stats { color: #aaa; background-color: #222; height: 40px; border-bottom: 1px solid #222; padding: 10px 20px; left: 0px; right: 0px; bottom: -1px; font-size: 12px; position: fixed; z-index: 99999; }
+#side-sortables { padding-bottom: 60px; }
+#cdz-wp-stats { color: #aaa; background-color: #23282d; height: 40px; border-bottom: 1px solid #23282d; padding: 10px 20px; left: 0px; right: 0px; bottom: -1px; font-size: 12px; position: fixed; z-index: 999; }
 .wp-admin #cdz-wp-stats { left: 160px; }
 #cdz-wp-stats .cj-logo { width: 200px; height: 40px; border-right: 1px solid #333; padding: 0px 20px 0px 0px; }
 #cdz-wp-stats .cj-logo a { display: block; }

@@ -35,7 +35,7 @@
 
 #adminmenu .toplevel_page_cdz-theme-options.current * { color: #000; background-color: #abc24a !important; }
 #adminmenu .toplevel_page_cdz-theme-options.current .wp-menu-image:before,
-#adminmenu .toplevel_page_cdz-theme-options.current:hover .wp-menu-image:before { background: url('../img/admin/dashicon-white.png') center no-repeat !important; }
+#adminmenu .toplevel_page_cdz-theme-options.current:hover .wp-menu-image:before { background: url('../img/admin/dashicon-black.png') center no-repeat !important; }
 
 /*
  *	WP Admin plugin page

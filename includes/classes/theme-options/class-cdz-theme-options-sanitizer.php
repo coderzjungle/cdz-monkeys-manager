@@ -1,7 +1,7 @@
 <?php
 
 /*
- *       ( ( (                        |"|                         ___         .      .   
+ *	      ( ( (                        |"|                         ___         .      .   
  *     '. ___ .'       ,,,,,         _|_|_        __MMM__        .|||.      .  .:::.     
  *    '  (> <) '      /(o o)\        (o o)         (o o)         (o o)        :(o o):  . 
  *   ooO--(_)--Ooo-ooO--(_)--Ooo-ooO--(_)--Ooo-ooO--(_)--Ooo-ooO--(_)--Ooo-ooO--(_)--Ooo
@@ -43,7 +43,7 @@ add_filter( 'of_font_style',			'of_sanitize_font_style' );
 add_filter( 'of_font_face',				'of_sanitize_font_face' );
 
 /*
- * Textarea
+ *	Textarea
  */
 
 function of_sanitize_textarea(  $input) {
@@ -53,7 +53,7 @@ function of_sanitize_textarea(  $input) {
 }
 
 /*
- * Checkbox
+ *	Checkbox
  */
 
 function of_sanitize_checkbox( $input ) {
@@ -66,7 +66,7 @@ function of_sanitize_checkbox( $input ) {
 }
 
 /*
- * Multicheck
+ *	Multicheck
  */
 
 function of_sanitize_multicheck( $input, $option ) {
@@ -85,7 +85,7 @@ function of_sanitize_multicheck( $input, $option ) {
 }
 
 /*
- * Uploader
+ *	Uploader
  */
 
 function of_sanitize_upload( $input ) {
@@ -98,7 +98,7 @@ function of_sanitize_upload( $input ) {
 }
 
 /*
- * Editor
+ *	Editor
  */
 
 function of_sanitize_editor($input) {
@@ -113,7 +113,7 @@ function of_sanitize_editor($input) {
 }
 
 /*
- * Allowed Tags
+ *	Allowed Tags
  */
 
 function of_sanitize_allowedtags( $input ) {
@@ -123,7 +123,7 @@ function of_sanitize_allowedtags( $input ) {
 }
 
 /*
- * Allowed Post Tags
+ *	Allowed Post Tags
  */
 
 function of_sanitize_allowedposttags( $input ) {
@@ -133,19 +133,21 @@ function of_sanitize_allowedposttags( $input ) {
 }
 
 /*
- * Check that the key value sent is valid
+ *	Check that the key value sent is valid
  */
 
 function of_sanitize_enum( $input, $option ) {
+
 	$output = '';
-	if ( array_key_exists( $input, $option['options'] ) ) {
+	if ( is_array( $option['options'] ) && array_key_exists( $input, $option['options'] ) ) {
 		$output = $input;
 	}
 	return $output;
+	
 }
 
 /*
- * Check that the page is valid
+ *	Check that the page is valid
  */
 
 function of_sanitize_page( $input, $option ) {
@@ -154,7 +156,7 @@ function of_sanitize_page( $input, $option ) {
 }
 
 /*
- * Background
+ *	Background
  */
 
 function of_sanitize_background( $input ) {
@@ -200,7 +202,7 @@ function of_sanitize_background_attachment( $value ) {
 }
 
 /*
- * Typography
+ *	Typography
  */
 
 function of_sanitize_typography( $input, $option ) {

@@ -194,11 +194,13 @@ if ( ! class_exists( 'cdz_Theme_Options_Panel' ) ) {
 					 */
 
 					case 'select':
-						$output .= '<select class="of-input" name="' . esc_attr( $option_name . '[' . $value['id'] . ']' ) . '" id="' . esc_attr( $value['id'] ) . '">';
-						foreach ($value['options'] as $key => $option ) {
-							$output .= '<option'. selected( $val, $key, false ) .' value="' . esc_attr( $key ) . '">' . esc_html( $option ) . '</option>';
+						if ( is_array( $value['options'] ) ) {
+							$output .= '<select class="of-input" name="' . esc_attr( $option_name . '[' . $value['id'] . ']' ) . '" id="' . esc_attr( $value['id'] ) . '">';
+							foreach ( $value['options'] as $key => $option ) {
+								$output .= '<option'. selected( $val, $key, false ) .' value="' . esc_attr( $key ) . '">' . esc_html( $option ) . '</option>';
+							}
+							$output .= '</select>';
 						}
-						$output .= '</select>';
 						break;
 
 					/*

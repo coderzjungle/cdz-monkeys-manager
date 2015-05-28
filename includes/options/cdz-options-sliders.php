@@ -43,7 +43,7 @@ if ( ! function_exists( 'cdz_options_sliders' ) ) {
 
 		} else {
 
-			$revlink = '<a href="' . admin_url( 'themes.php?page=install-required-plugins' ) . '">' . __( 'Install', 'cdz' ) . '</a>';
+			$revlink = '<a href="' . admin_url( 'themes.php?page=install-required-plugins' ) . '">' . __( 'Install Slider Revolution', 'cdz' ) . '</a>';
 		}
 
 
