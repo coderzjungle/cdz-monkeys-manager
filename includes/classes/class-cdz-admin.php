@@ -45,7 +45,6 @@ if ( ! class_exists( 'cdz_Admin' ) ) {
 			 */
 
 			wp_enqueue_style( 'cdz_admin', CDZ_PLUGIN_URL . '/assets/css/cdz-admin.css' );
-			wp_enqueue_style( 'cdz_wp_stats_style', CDZ_PLUGIN_URL . '/assets/css/cdz-wp-stats.css' );
 
 			/*
 			 *	Scripts

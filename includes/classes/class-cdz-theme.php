@@ -67,22 +67,24 @@ if ( ! class_exists( 'cdz_Theme' ) ) {
 
 			if ( file_exists( CDZ_THEME_PATH . '/assets/css/cdz-templates.css' ) ) {
 
-				echo '<link rel="stylesheet" id="cdz-templates-css" href="' . CDZ_THEME_URL . '/assets/css/cdz-templates.css" type="text/css" media="all">
-		';
+				// echo '<link rel="stylesheet" id="cdz-templates-css" href="' . CDZ_THEME_URL . '/assets/css/cdz-templates.css" type="text/css" media="all">';
+				wp_enqueue_style( 'cdz_templates', CDZ_THEME_URL . '/assets/css/cdz-templates.css' );
+
 			} else {
 
-				echo '<link rel="stylesheet" id="cdz-templates-css" href="' . CDZ_PLUGIN_URL . '/assets/css/cdz-templates.css" type="text/css" media="all">';
+				// echo '<link rel="stylesheet" id="cdz-templates-css" href="' . CDZ_PLUGIN_URL . '/assets/css/cdz-templates.css" type="text/css" media="all">';
+				wp_enqueue_style( 'cdz_templates', CDZ_PLUGIN_URL . '/assets/css/cdz-templates.css' );
 
 			}
 			
-			echo '<link rel="stylesheet" id="cdz-wp-stats-css" href="' . CDZ_PLUGIN_URL . '/assets/css/cdz-wp-stats.css" type="text/css" media="all">
-';
+			// echo '<link rel="stylesheet" id="cdz-wp-stats-css" href="' . CDZ_PLUGIN_URL . '/assets/css/cdz-wp-stats.css" type="text/css" media="all">';
+			wp_enqueue_style( 'cdz_swiper', CDZ_PLUGIN_URL . '/assets/css/swiper.min.css' );
 
 			/*
 			 *	Scripts
 			 */
 
-			// no scripts
+			wp_enqueue_script( 'cdz_swiper', CDZ_PLUGIN_URL . '/assets/js/swiper.min.js', array( 'jquery' ) );
 
 		}
 
