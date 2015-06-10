@@ -22,9 +22,9 @@ defined( 'ABSPATH' ) or exit;
 $cdz_testimonial_title			= $post->post_title;
 $cdz_testimonial_content		= $post->post_content;
 
-$cdz_testimonial_author_label	= get_post_meta( $post->ID, 'cdz_testimonial_author_label', true );
 $cdz_testimonial_author_name	= get_post_meta( $post->ID, 'cdz_testimonial_author_name', true );
-$cdz_testimonial_website_label	= get_post_meta( $post->ID, 'cdz_testimonial_website_label', true );
+$cdz_testimonial_author_role	= get_post_meta( $post->ID, 'cdz_testimonial_author_role', true );
+$cdz_testimonial_author_vote	= get_post_meta( $post->ID, 'cdz_testimonial_author_vote', true );
 $cdz_testimonial_website_url	= get_post_meta( $post->ID, 'cdz_testimonial_website_url', true );
 
 get_header();
@@ -39,12 +39,32 @@ if ( is_single() ) : ?>
 
 		<div class="entry-meta">
 
+			<?php if ( $cdz_testimonial_author_vote ) : ?>
+
+				<p class="vote stars-<?php echo $cdz_testimonial_author_vote; ?>">
+					<i class="fa fa-star"></i>
+					<span class="label"><?php echo __( 'Vote' ); ?>:</span>
+					<span class="text"><?php echo $cdz_testimonial_author_vote; ?></span>
+				</p>
+
+			<?php endif; ?>
+
 			<?php if ( $cdz_testimonial_author_name ) : ?>
 
 				<p class="author">
 					<i class="fa fa-user"></i>
-					<span class="label"><?php echo $cdz_testimonial_author_label ? $cdz_testimonial_author_label : __( 'Author' ) . ': '; ?></span>
+					<span class="label"><?php echo __( 'Author' ); ?>:</span>
 					<span class="text"><?php echo $cdz_testimonial_author_name; ?></span>
+				</p>
+
+			<?php endif; ?>
+
+			<?php if ( $cdz_testimonial_author_role ) : ?>
+
+				<p class="role">
+					<i class="fa fa-briefcase"></i>
+					<span class="label"><?php echo __( 'Role' ); ?>:</span>
+					<span class="text"><?php echo $cdz_testimonial_author_role; ?></span>
 				</p>
 
 			<?php endif; ?>
@@ -53,7 +73,7 @@ if ( is_single() ) : ?>
 
 				<p class="website">
 					<i class="fa fa-globe"></i>
-					<span class="label"><?php echo $cdz_testimonial_website_label ? $cdz_testimonial_website_label : __( 'Website' ) . ': '; ?></span>
+					<span class="label"><?php echo __( 'Website' ); ?>:</span>
 					<span class="text"><a href="<?php echo esc_url( $cdz_testimonial_website_url ); ?>"><?php echo $cdz_testimonial_website_url; ?></a></span>
 				</p>
 

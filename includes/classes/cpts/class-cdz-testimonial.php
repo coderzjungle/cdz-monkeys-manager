@@ -156,23 +156,29 @@ class cdz_Testimonial {
 		 *	Get meta
 		 */
 
-		$cdz_testimonial_author_label		= get_post_meta( $post->ID, 'cdz_testimonial_author_label', true );
 		$cdz_testimonial_author_name		= get_post_meta( $post->ID, 'cdz_testimonial_author_name', true );
-		$cdz_testimonial_website_label		= get_post_meta( $post->ID, 'cdz_testimonial_website_label', true );
+		$cdz_testimonial_author_role		= get_post_meta( $post->ID, 'cdz_testimonial_author_role', true );
+		$cdz_testimonial_author_vote		= get_post_meta( $post->ID, 'cdz_testimonial_author_vote', true );
 		$cdz_testimonial_website_url		= get_post_meta( $post->ID, 'cdz_testimonial_website_url', true );
 
 		/*
 		 *	Fields
 		 */
 
-		echo '<p><label for="cdz_testimonial_author_label">' . __( 'Author Label', 'cdz' ) . ' - <i>"' . __( 'Author', 'cdz' ) . ':"</i></label></p>';
-		echo '<input type="text" name="cdz_testimonial_author_label" value="' . $cdz_testimonial_author_label  . '" id="cdz_testimonial_author_label" class="widefat" />';
-
 		echo '<p><label for="cdz_testimonial_author_name">' . __( 'Author Name', 'cdz' ) . '</label></p>';
 		echo '<input type="text" name="cdz_testimonial_author_name" value="' . $cdz_testimonial_author_name . '" id="cdz_testimonial_author_name" class="widefat" />';
 
-		echo '<p><label for="cdz_testimonial_website_label">' . __( 'Website Label', 'cdz' ) . ' - <i>"' . __( 'Website', 'cdz' ) . ':"</i></label></p>';
-		echo '<input type="text" name="cdz_testimonial_website_label" value="' . $cdz_testimonial_website_label  . '" id="cdz_testimonial_website_label" class="widefat" />';
+		echo '<p><label for="cdz_testimonial_author_role">' . __( 'Author Role', 'cdz' ) . '</label></p>';
+		echo '<input type="text" name="cdz_testimonial_author_role" value="' . $cdz_testimonial_author_role . '" id="cdz_testimonial_author_role" class="widefat" />';
+
+		echo '<p><label for="cdz_testimonial_author_vote">' . __( 'Author Vote', 'cdz' ) . '</label></p>';
+		echo '<select name="cdz_testimonial_author_vote" id="cdz_testimonial_author_vote">
+				<option value="5" ' . selected( $cdz_testimonial_author_vote, 5, false ) . '>5</option>
+				<option value="4" ' . selected( $cdz_testimonial_author_vote, 4, false ) . '>4</option>
+				<option value="3" ' . selected( $cdz_testimonial_author_vote, 3, false ) . '>3</option>
+				<option value="2" ' . selected( $cdz_testimonial_author_vote, 2, false ) . '>2</option>
+				<option value="1" ' . selected( $cdz_testimonial_author_vote, 1, false ) . '>1</option>
+			</select>';
 
 		echo '<p><label for="cdz_testimonial_website_url">' . __( 'Website URL', 'cdz' ) . '</label></p>';
 		echo '<input type="text" name="cdz_testimonial_website_url" value="' . $cdz_testimonial_website_url  . '" id="cdz_testimonial_website_url" class="widefat" />';
@@ -228,9 +234,9 @@ class cdz_Testimonial {
 		 *	Get Data and put them into an array to make it easier to loop though
 		 */
 
-		$cdz_testimonial_meta['cdz_testimonial_author_label']	= $_POST['cdz_testimonial_author_label'];
 		$cdz_testimonial_meta['cdz_testimonial_author_name']	= $_POST['cdz_testimonial_author_name'];
-		$cdz_testimonial_meta['cdz_testimonial_website_label']	= $_POST['cdz_testimonial_website_label'];
+		$cdz_testimonial_meta['cdz_testimonial_author_role']	= $_POST['cdz_testimonial_author_role'];
+		$cdz_testimonial_meta['cdz_testimonial_author_vote']	= $_POST['cdz_testimonial_author_vote'];
 		$cdz_testimonial_meta['cdz_testimonial_website_url']	= $_POST['cdz_testimonial_website_url'];
 
 		// $cdz_testimonial_meta['cdz_testimonial_featured']		= isset( $_POST['cdz_testimonial_featured'] ) ? $_POST['cdz_testimonial_featured'] : '';
