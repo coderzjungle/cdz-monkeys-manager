@@ -48,18 +48,23 @@ if ( ! class_exists( 'cdz_WC_Products_By_Category_Slider' ) ) {
 					'type'			=> 'textfield',
 					'param_name'	=> 'number',
 					'heading'		=> __( 'Quantity', 'cdz' ),
-					'description'	=> __( 'The number of products of the slider.', 'cdz' ),
+					'description'	=> __( 'The number of products.', 'cdz' ),
 					'value' 		=> '8',
 				),
-
 				array(
 					'type'			=> 'textfield',
 					'param_name'	=> 'columns',
 					'heading'		=> __( 'Columns', 'cdz' ),
-					'description'	=> __( 'The number of columns of the slider.', 'cdz' ),
+					'description'	=> __( 'The number of columns.', 'cdz' ),
 					'value' 		=> '4',
 				),
-
+				array(
+					'type'			=> 'textfield',
+					'param_name'	=> 'category',
+					'heading'		=> __( 'Category', 'cdz' ),
+					'description'	=> __( 'One or more categories separated by a comma. Example: "music, posters"', 'cdz' ),
+					'value' 		=> '',
+				),
 				array(
 					'type'			=> 'dropdown',
 					'param_name'	=> 'orderby',
@@ -71,7 +76,6 @@ if ( ! class_exists( 'cdz_WC_Products_By_Category_Slider' ) ) {
 						__( 'Title', 'cdz' )	=> 'title',
 					),
 				),
-
 				array(
 					'type'			=> 'dropdown',
 					'param_name'	=> 'order',
@@ -83,65 +87,21 @@ if ( ! class_exists( 'cdz_WC_Products_By_Category_Slider' ) ) {
 					),
 				),
 
-				array(
-					'type'			=> 'textfield',
-					'param_name'	=> 'category',
-					'heading'		=> __( 'Category', 'cdz' ),
-					'description'	=> __( 'One or more categories slug separated by ","', 'cdz' ),
-					'value' 		=> '',
-				),
-
 				/*
 				 *	Swiper slider
 				 */
 
 				array(
 					'type'			=> 'textfield',
-					'param_name'	=> 'initialSlide',
-					'heading'		=> __( 'Initial slide', 'cdz' ),
-					'description'	=> __( '', 'cdz' ),
-					'value' 		=> '0',
-				),
-
-				array(
-					'type'			=> 'dropdown',
-					'param_name'	=> 'direction',
-					'heading'		=> __( 'Direction', 'cdz' ),
-					'description'	=> __( '', 'cdz' ),
-					'value' 		=> array(
-						__( 'Horizontal', 'cdz' )	=> 'horizontal',
-						__( 'Vertical', 'cdz' )		=> 'vertical',
-					),
-				),
-
-				array(
-					'type'			=> 'textfield',
 					'param_name'	=> 'speed',
-					'heading'		=> __( 'Speed (ms)', 'cdz' ),
-					'description'	=> __( '', 'cdz' ),
+					'heading'		=> __( 'Slider Speed (ms)', 'cdz' ),
+					'description'	=> __( 'Duration of transition between slides (in ms).', 'cdz' ),
 					'value' 		=> '300',
 				),
-
-				array(
-					'type'			=> 'textfield',
-					'param_name'	=> 'width',
-					'heading'		=> __( 'Width', 'cdz' ),
-					'description'	=> __( '', 'cdz' ),
-					'value' 		=> '',
-				),
-
-				array(
-					'type'			=> 'textfield',
-					'param_name'	=> 'height',
-					'heading'		=> __( 'Height', 'cdz' ),
-					'description'	=> __( '', 'cdz' ),
-					'value' 		=> '',
-				),
-
 				array(
 					'type'			=> 'textfield',
 					'param_name'	=> 'autoplay',
-					'heading'		=> __( 'Autoplay (ms)', 'cdz' ),
+					'heading'		=> __( 'Slider Autoplay (ms)', 'cdz' ),
 					'description'	=> __( 'Delay between transitions (in ms). If this parameter is not specified, auto play will be disabled.', 'cdz' ),
 					'value' 		=> '',
 				),

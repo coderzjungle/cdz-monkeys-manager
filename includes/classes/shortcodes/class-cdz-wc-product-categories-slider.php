@@ -16,16 +16,16 @@
 defined( 'ABSPATH' ) or exit;
 
 /*
- *	cdzShortcode: WooCommerce Products Slider
+ *	cdzShortcode: WooCommerce Product Categories Slider
  */
 
-if ( ! class_exists( 'cdz_WC_Products_Slider' ) ) {
+if ( ! class_exists( 'cdz_WC_Product_Categories_Slider' ) ) {
 
-	class cdz_WC_Products_Slider extends cdz_Shortcode {
+	class cdz_WC_Product_Categories_Slider extends cdz_Shortcode {
 
-		public $name = 'Products Slider';
-		public $base = 'cdz_wc_products_slider';
-		public $slug = 'cdz-wc-products-slider';
+		public $name = 'Product Categories Slider';
+		public $base = 'cdz_wc_product_categories_slider';
+		public $slug = 'cdz-wc-product-categories-slider';
 		public $desc = 'WooCommerce';
 
 		public function get_options() {
@@ -48,7 +48,7 @@ if ( ! class_exists( 'cdz_WC_Products_Slider' ) ) {
 					'type'			=> 'textfield',
 					'param_name'	=> 'number',
 					'heading'		=> __( 'Quantity', 'cdz' ),
-					'description'	=> __( 'The number of products.', 'cdz' ),
+					'description'	=> __( 'Display the number of products.', 'cdz' ),
 					'value' 		=> '8',
 				),
 				array(
@@ -62,15 +62,15 @@ if ( ! class_exists( 'cdz_WC_Products_Slider' ) ) {
 					'type'			=> 'textfield',
 					'param_name'	=> 'ids',
 					'heading'		=> __( 'Ids', 'cdz' ),
-					'description'	=> __( 'Show multiple products by ID.', 'cdz' ),
+					'description'	=> __( 'Set IDs to a comma separated list of category IDs to only show those.', 'cdz' ),
 					'value' 		=> '',
 				),
 				array(
 					'type'			=> 'textfield',
-					'param_name'	=> 'skus',
-					'heading'		=> __( 'SKUs', 'cdz' ),
-					'description'	=> __( '', 'cdz' ),
-					'value' 		=> 'Show multiple products by SKU.',
+					'param_name'	=> 'parent',
+					'heading'		=> __( 'Parent category', 'cdz' ),
+					'description'	=> __( 'Set to 0 to only display top level categories.', 'cdz' ),
+					'value' 		=> '0',
 				),
 				array(
 					'type'			=> 'dropdown',
@@ -91,6 +91,16 @@ if ( ! class_exists( 'cdz_WC_Products_Slider' ) ) {
 					'value' 		=> array(
 						__( 'Ascendant', 'cdz' )	=> 'asc',
 						__( 'Descendant', 'cdz' )	=> 'desc',
+					),
+				),
+				array(
+					'type'			=> 'dropdown',
+					'param_name'	=> 'hide_empty',
+					'heading'		=> __( 'Hide Empty', 'cdz' ),
+					'description'	=> __( 'Hide empty categories.', 'cdz' ),
+					'value' 		=> array(
+						__( 'True', 'cdz' )		=> '1',
+						__( 'False', 'cdz' )	=> '0',
 					),
 				),
 
@@ -121,4 +131,4 @@ if ( ! class_exists( 'cdz_WC_Products_Slider' ) ) {
 
 }
 
-$cdz_shortcodes['cdz_wc_products_slider'] = new cdz_WC_Products_Slider();
+$cdz_shortcodes['cdz_wc_product_categories_slider'] = new cdz_WC_Product_Categories_Slider();

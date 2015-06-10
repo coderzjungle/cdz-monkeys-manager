@@ -16,7 +16,7 @@
 defined( 'ABSPATH' ) or exit;
 
 /*
- *	cdzTemplate: WooCommerce Products by Category Slider
+ *	cdzTemplate: WooCommerce Product Categories Slider
  */
 
 $rand_num = rand( 00000, 99999 );
@@ -27,59 +27,69 @@ if ( ! empty( $title ) ) { echo '<h2>' . $title . '</h2>'; }
 ?>
 
 <div class="cdz-buttons-wrapper">
-	<div id="cdz-wc-products-by-category-slider-<?php echo $rand_num; ?>" class="cdz-wc-products-by-category-slider swiper-container">
-
+	<div id="cdz-wc-product-categories-slider-<?php echo $rand_num; ?>" class="cdz-wc-product-categories-slider swiper-container">
 		<ul class="products swiper-wrapper">
+
 			<?php
 
-			$meta_query = WC()->query->get_meta_query();
+			if ( isset( $ids ) ) {
+				$ids = explode( ',', $ids );
+				$ids = array_map( 'trim', $ids );
+			} else {
+				$ids = array();
+			}
+
+			$hide_empty = ( $hide_empty == true || $hide_empty == 1 ) ? 1 : 0;
 
 			$args = array(
-				'post_type'				=> 'product',
-				'post_status'			=> 'publish',
-				'ignore_sticky_posts'	=> 1,
-				'orderby'				=> $orderby,
-				'order'					=> $order,
-				'posts_per_page'		=> $number,
-				'meta_query' 			=> $meta_query,
-				'tax_query' 			=> array(
-					array(
-						'taxonomy'	=> 'product_cat',
-						'terms'		=> array_map( 'sanitize_title', explode( ',', $category ) ),
-						'field'		=> 'slug',
-						'operator'	=> 'IN', // Possible values are 'IN', 'NOT IN', 'AND'.
-					)
-				),
+				'orderby'    => $orderby,
+				'order'      => $order,
+				'hide_empty' => $hide_empty,
+				'include'    => $ids,
+				'pad_counts' => true,
+				'child_of'   => $parent
 			);
 
-			if ( ! $category ) { return ''; }
+			$product_categories = get_terms( 'product_cat', $args );
 
-			$loop = new WP_Query( $args );
-			if ( $loop->have_posts() ) {
-				while ( $loop->have_posts() ) : $loop->the_post();
+			if ( '' !== $parent ) {
+				$product_categories = wp_list_filter( $product_categories, array( 'parent' => $parent ) );
+			}
+
+			if ( $hide_empty ) {
+				foreach ( $product_categories as $key => $category ) {
+					if ( $category->count == 0 ) {
+						unset( $product_categories[ $key ] );
+					}
+				}
+			}
+
+			if ( $number ) { $product_categories = array_slice( $product_categories, 0, $number ); }
+
+			$woocommerce_loop['columns'] = $columns;
+			$woocommerce_loop['loop'] = $woocommerce_loop['column'] = '';
+
+			if ( $product_categories ) {
+				foreach ( $product_categories as $category ) {
 
 					echo '<div class="swiper-slide">';
-					wc_get_template_part( 'content', 'product' );
+					wc_get_template( 'content-product_cat.php', array( 'category' => $category ) );
 					echo '</div>';
 
-				endwhile;
-			} else { echo __( 'No products found!', 'cdz' ); }
-			wp_reset_postdata();
+				}
+			}
 
 			?>
+
 		</ul>
-
 		<div class="swiper-pagination"></div>
-
 	</div>
-
 	<div id="cdz-button-arrow-left-<?php echo $rand_num; ?>" class="cdz-button-arrow cdz-button-arrow-left"></div>
 	<div id="cdz-button-arrow-right-<?php echo $rand_num; ?>" class="cdz-button-arrow cdz-button-arrow-right"></div>
-
 </div>
 
 <script>
-	var mySwiper = new Swiper('#cdz-wc-products-by-category-slider-<?php echo $rand_num; ?>', {
+	var mySwiper = new Swiper('#cdz-wc-product-categories-slider-<?php echo $rand_num; ?>', {
 
 		slidesPerView: <?php echo empty( $columns ) ? 4 : $columns; ?>,
 		speed: <?php echo empty( $speed ) ? 300 : $speed; ?>,

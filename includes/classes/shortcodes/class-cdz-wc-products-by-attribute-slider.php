@@ -16,16 +16,16 @@
 defined( 'ABSPATH' ) or exit;
 
 /*
- *	cdzShortcode: WooCommerce Products Slider
+ *	cdzShortcode: WooCommerce Products by Attribute Slider
  */
 
-if ( ! class_exists( 'cdz_WC_Products_Slider' ) ) {
+if ( ! class_exists( 'cdz_WC_Products_By_Attribute_Slider' ) ) {
 
-	class cdz_WC_Products_Slider extends cdz_Shortcode {
+	class cdz_WC_Products_By_Attribute_Slider extends cdz_Shortcode {
 
-		public $name = 'Products Slider';
-		public $base = 'cdz_wc_products_slider';
-		public $slug = 'cdz-wc-products-slider';
+		public $name = 'Products by Attribute Slider';
+		public $base = 'cdz_wc_products_by_attribute_slider';
+		public $slug = 'cdz-wc-products-by-attribute-slider';
 		public $desc = 'WooCommerce';
 
 		public function get_options() {
@@ -60,17 +60,17 @@ if ( ! class_exists( 'cdz_WC_Products_Slider' ) ) {
 				),
 				array(
 					'type'			=> 'textfield',
-					'param_name'	=> 'ids',
-					'heading'		=> __( 'Ids', 'cdz' ),
-					'description'	=> __( 'Show multiple products by ID.', 'cdz' ),
+					'param_name'	=> 'attribute',
+					'heading'		=> __( 'Attribute', 'cdz' ),
+					'description'	=> __( 'One or more attributes separated by a comma. Example: "color, size"', 'cdz' ),
 					'value' 		=> '',
 				),
 				array(
 					'type'			=> 'textfield',
-					'param_name'	=> 'skus',
-					'heading'		=> __( 'SKUs', 'cdz' ),
-					'description'	=> __( '', 'cdz' ),
-					'value' 		=> 'Show multiple products by SKU.',
+					'param_name'	=> 'filter',
+					'heading'		=> __( 'Filter', 'cdz' ),
+					'description'	=> __( 'One or more filter separated by a comma. Example: "black, green"', 'cdz' ),
+					'value' 		=> '',
 				),
 				array(
 					'type'			=> 'dropdown',
@@ -102,7 +102,7 @@ if ( ! class_exists( 'cdz_WC_Products_Slider' ) ) {
 					'type'			=> 'textfield',
 					'param_name'	=> 'speed',
 					'heading'		=> __( 'Slider Speed (ms)', 'cdz' ),
-					'description'	=> __( 'Duration of transition between slides (in ms)', 'cdz' ),
+					'description'	=> __( 'Duration of transition between slides (in ms).', 'cdz' ),
 					'value' 		=> '300',
 				),
 				array(
@@ -121,4 +121,4 @@ if ( ! class_exists( 'cdz_WC_Products_Slider' ) ) {
 
 }
 
-$cdz_shortcodes['cdz_wc_products_slider'] = new cdz_WC_Products_Slider();
+$cdz_shortcodes['cdz_wc_products_by_attribute_slider'] = new cdz_WC_Products_By_Attribute_Slider();

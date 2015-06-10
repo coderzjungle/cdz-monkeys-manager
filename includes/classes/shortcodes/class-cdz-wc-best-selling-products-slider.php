@@ -16,16 +16,16 @@
 defined( 'ABSPATH' ) or exit;
 
 /*
- *	cdzShortcode: WooCommerce Products Slider
+ *	cdzShortcode: WooCommerce Best Selling Products Slider
  */
 
-if ( ! class_exists( 'cdz_WC_Products_Slider' ) ) {
+if ( ! class_exists( 'cdz_WC_Best_Selling_Products_Slider' ) ) {
 
-	class cdz_WC_Products_Slider extends cdz_Shortcode {
+	class cdz_WC_Best_Selling_Products_Slider extends cdz_Shortcode {
 
-		public $name = 'Products Slider';
-		public $base = 'cdz_wc_products_slider';
-		public $slug = 'cdz-wc-products-slider';
+		public $name = 'Best Selling Products Slider';
+		public $base = 'cdz_wc_best_selling_products_slider';
+		public $slug = 'cdz-wc-best-selling-products-slider';
 		public $desc = 'WooCommerce';
 
 		public function get_options() {
@@ -58,41 +58,6 @@ if ( ! class_exists( 'cdz_WC_Products_Slider' ) ) {
 					'description'	=> __( 'The number of columns.', 'cdz' ),
 					'value' 		=> '4',
 				),
-				array(
-					'type'			=> 'textfield',
-					'param_name'	=> 'ids',
-					'heading'		=> __( 'Ids', 'cdz' ),
-					'description'	=> __( 'Show multiple products by ID.', 'cdz' ),
-					'value' 		=> '',
-				),
-				array(
-					'type'			=> 'textfield',
-					'param_name'	=> 'skus',
-					'heading'		=> __( 'SKUs', 'cdz' ),
-					'description'	=> __( '', 'cdz' ),
-					'value' 		=> 'Show multiple products by SKU.',
-				),
-				array(
-					'type'			=> 'dropdown',
-					'param_name'	=> 'orderby',
-					'heading'		=> __( 'Order by', 'cdz' ),
-					'description'	=> __( 'Select the products order.', 'cdz' ),
-					'value' 		=> array(
-						__( 'Date', 'cdz' )		=> 'date',
-						__( 'Name', 'cdz' )		=> 'name',
-						__( 'Title', 'cdz' )	=> 'title',
-					),
-				),
-				array(
-					'type'			=> 'dropdown',
-					'param_name'	=> 'order',
-					'heading'		=> __( 'Order', 'cdz' ),
-					'description'	=> __( 'Select the products order direction.', 'cdz' ),
-					'value' 		=> array(
-						__( 'Ascendant', 'cdz' )	=> 'asc',
-						__( 'Descendant', 'cdz' )	=> 'desc',
-					),
-				),
 
 				/*
 				 *	Swiper slider
@@ -102,7 +67,7 @@ if ( ! class_exists( 'cdz_WC_Products_Slider' ) ) {
 					'type'			=> 'textfield',
 					'param_name'	=> 'speed',
 					'heading'		=> __( 'Slider Speed (ms)', 'cdz' ),
-					'description'	=> __( 'Duration of transition between slides (in ms)', 'cdz' ),
+					'description'	=> __( 'Duration of transition between slides (in ms).', 'cdz' ),
 					'value' 		=> '300',
 				),
 				array(
@@ -121,4 +86,4 @@ if ( ! class_exists( 'cdz_WC_Products_Slider' ) ) {
 
 }
 
-$cdz_shortcodes['cdz_wc_products_slider'] = new cdz_WC_Products_Slider();
+$cdz_shortcodes['cdz_wc_best_selling_products_slider'] = new cdz_WC_Best_Selling_Products_Slider();

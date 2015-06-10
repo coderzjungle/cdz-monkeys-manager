@@ -16,7 +16,7 @@
 defined( 'ABSPATH' ) or exit;
 
 /*
- *	cdzTemplate: WooCommerce Products by Category Slider
+ *	cdzTemplate: WooCommerce Products by Attribute Slider
  */
 
 $rand_num = rand( 00000, 99999 );
@@ -27,11 +27,12 @@ if ( ! empty( $title ) ) { echo '<h2>' . $title . '</h2>'; }
 ?>
 
 <div class="cdz-buttons-wrapper">
-	<div id="cdz-wc-products-by-category-slider-<?php echo $rand_num; ?>" class="cdz-wc-products-by-category-slider swiper-container">
+	<div id="cdz-wc-products-by-attribute-slider-<?php echo $rand_num; ?>" class="cdz-wc-products-by-attribute-slider swiper-container">
 
 		<ul class="products swiper-wrapper">
 			<?php
 
+			$attribute  = strstr( $attribute, 'pa_' ) ? sanitize_title( $attribute ) : 'pa_' . sanitize_title( $attribute );
 			$meta_query = WC()->query->get_meta_query();
 
 			$args = array(
@@ -42,17 +43,14 @@ if ( ! empty( $title ) ) { echo '<h2>' . $title . '</h2>'; }
 				'order'					=> $order,
 				'posts_per_page'		=> $number,
 				'meta_query' 			=> $meta_query,
-				'tax_query' 			=> array(
+				'tax_query'				=> array(
 					array(
-						'taxonomy'	=> 'product_cat',
-						'terms'		=> array_map( 'sanitize_title', explode( ',', $category ) ),
+						'taxonomy'	=> $attribute,
+						'terms'		=> array_map( 'sanitize_title', explode( ',', $filter ) ),
 						'field'		=> 'slug',
-						'operator'	=> 'IN', // Possible values are 'IN', 'NOT IN', 'AND'.
 					)
 				),
 			);
-
-			if ( ! $category ) { return ''; }
 
 			$loop = new WP_Query( $args );
 			if ( $loop->have_posts() ) {
@@ -79,7 +77,7 @@ if ( ! empty( $title ) ) { echo '<h2>' . $title . '</h2>'; }
 </div>
 
 <script>
-	var mySwiper = new Swiper('#cdz-wc-products-by-category-slider-<?php echo $rand_num; ?>', {
+	var mySwiper = new Swiper('#cdz-wc-products-by-attribute-slider-<?php echo $rand_num; ?>', {
 
 		slidesPerView: <?php echo empty( $columns ) ? 4 : $columns; ?>,
 		speed: <?php echo empty( $speed ) ? 300 : $speed; ?>,
