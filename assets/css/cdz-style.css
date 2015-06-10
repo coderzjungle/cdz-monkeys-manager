@@ -1,0 +1,45 @@
+/*
+ *       ( ( (                        |"|                         ___         .      .   
+ *     '. ___ .'       ,,,,,         _|_|_        __MMM__        .|||.      .  .:::.     
+ *    '  (> <) '      /(o o)\        (o o)         (o o)         (o o)        :(o o):  . 
+ *   ooO--(_)--Ooo-ooO--(_)--Ooo-ooO--(_)--Ooo-ooO--(_)--Ooo-ooO--(_)--Ooo-ooO--(_)--Ooo
+ *     ____          _                  _                   _                           
+ *    / ___|___   __| | ___ _ __ ____  | |_   _ _ __   __ _| | ___   ___ ___  _ __ ___  
+ *   | |   / _ \ / _` |/ _ \ '__|_  /  | | | | | '_ \ / _` | |/ _ \ / __/ _ \| '_ ` _ \ 
+ *   | |__| (_) | (_| |  __/ |   / / |_| | |_| | | | | (_| | |  __/| (_| (_) | | | | | |
+ *    \____\___/ \__,_|\___|_|  /___\___/ \__,_|_| |_|\__, |_|\___(_)___\___/|_| |_| |_|
+ *                                                    |___/                             
+ */
+
+/*
+ *	Sliders
+ */
+
+.cdz-buttons-wrapper { margin-bottom: 30px; position: relative; }
+.cdz-button-arrow {
+	width: 40px;
+	height: 50px;
+	background-color: rgba(0,0,0,0.1);
+	-moz-background-size: 30px 40px;
+	-webkit-background-size: 30px 40px;
+	background-size: 30px 40px;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-top: -25px;
+	top: 50%;
+	position: absolute;
+	cursor: pointer;
+	z-index: 10;
+	opacity: 0.1;
+}
+.cdz-button-arrow-left{
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23202020'%2F%3E%3C%2Fsvg%3E");
+	left: 0;
+}
+.cdz-button-arrow-right {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23202020'%2F%3E%3C%2Fsvg%3E");
+	right: 0;
+}
+.swiper-button-disabled { display: none; }
+.cdz-buttons-wrapper:hover .cdz-button-arrow { opacity: 1; }
+.cdz-buttons-wrapper .swiper-container .product { margin-bottom: 5px !important; }
