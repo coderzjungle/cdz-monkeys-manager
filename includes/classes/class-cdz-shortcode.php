@@ -63,7 +63,7 @@ if ( ! class_exists( 'cdz_Shortcode' ) ) {
 
 			ob_start();
 
-			include CDZ_PLUGIN_PATH . '/templates/shortcodes/' . $this->slug . '.php';
+			include cdz_get_template( '', 'shortcodes/' . $this->slug . '.php' );
 
 			return ob_get_clean();
 			

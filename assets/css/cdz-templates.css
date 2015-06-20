@@ -62,6 +62,13 @@ article.cdz-style-big-thumbnail .thumb { margin-bottom: 10px; }
 article.cdz-style-big-thumbnail .thumb-img { max-width: 100%; height: auto; display: block; }
 
 /*
+ *	cdzTemplatePart: Big Thumbnail
+ */
+
+article.cdz-style-grid-filtered .thumb { margin-bottom: 10px; }
+article.cdz-style-grid-filtered .thumb-img { max-width: 100%; height: auto; display: block; }
+
+/*
  *	cdzTemplatePart: Columns
  */
 

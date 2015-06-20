@@ -19,7 +19,24 @@ defined( 'ABSPATH' ) or exit;
  *	cdzTemplatePart: Big Thumbnail
  */
 
-if ( get_post_thumbnail_id() ) : ?>
+?>
+
+<header class="entry-header">
+
+	<?php
+
+	if ( is_single() ) { the_title( '<h1 class="entry-title">', '</h1>' ); }
+	else { the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' ); }
+
+	?>
+
+	<div class="entry-meta">
+		<p class="categories button"><?php echo cdz_get_the_category_list( $post->ID ); ?></p>
+	</div>
+
+</header>
+
+<?php if ( get_post_thumbnail_id() ) : ?>
 
 	<div class="thumb">
 
@@ -45,17 +62,6 @@ if ( get_post_thumbnail_id() ) : ?>
 	</div>
 
 <?php endif; ?>
-
-<header class="entry-header">
-
-	<?php
-
-	if ( is_single() ) { the_title( '<h1 class="entry-title">', '</h1>' ); }
-	else { the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' ); }
-
-	?>
-
-</header>
 
 <?php if ( is_single() ) : ?>
 

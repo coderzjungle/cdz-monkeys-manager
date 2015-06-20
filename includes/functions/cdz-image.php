@@ -28,7 +28,7 @@ if ( ! function_exists( 'cdz_image' ) ) {
 
 		if ( $width == '' ) {
 
-			$width = $container_width = (int) cdz_get_option( 'opt_grid_container_max_width' ) - 40;
+			$width = $container_width = (int) cdz_get_option( 'opt_grid_container_max_width' );
 			$template_sidebars = cdz_get_sidebars( $cdz_template );
 			$single_column_width = $container_width / 100 * 8.33333333333;
 

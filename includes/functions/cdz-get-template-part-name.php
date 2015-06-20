@@ -24,6 +24,7 @@ if ( ! function_exists( 'cdz_get_template_part_name' ) ) {
 	function cdz_get_template_part_name( $style ) {
 
 		if		( $style == 'small-thumbnail-right' )	{ return 'small-thumbnail'; }
+		if		( $style == 'grid-filtered' )			{ return 'big-thumbnail'; }
 		else if	( strpos( $style, '-columns') )			{ return 'big-thumbnail'; }
 
 		return $style;

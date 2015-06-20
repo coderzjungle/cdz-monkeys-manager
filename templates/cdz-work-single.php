@@ -35,9 +35,9 @@ do_action( 'cdz_prepost_content', 'cdz-work-single', 'pre' );
 
 if ( is_single() ) : ?>
 
-	<article id="<?php echo cdz_function_to_slug( get_post_type() ); ?>-<?php the_ID(); ?>" <?php post_class( 'cdz-style-small-thumbnail cdz-template-small-thumbnail' ); ?>>
+	<article id="<?php echo cdz_function_to_slug( get_post_type() ); ?>-<?php the_ID(); ?>" <?php post_class( 'cdz-style-big-thumbnail cdz-template-big-thumbnail' ); ?>>
 
-		<?php include dirname( __FILE__ ) . '/parts/small-thumbnail.php'; ?>
+		<?php include dirname( __FILE__ ) . '/parts/big-thumbnail.php'; ?>
 
 		<div class="entry-meta">
 

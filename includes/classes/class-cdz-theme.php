@@ -80,18 +80,18 @@ if ( ! class_exists( 'cdz_Theme' ) ) {
 		}
 
 		/*
-		 *	cdzFunction: Include Template Files
+		 *	cdzFunction: Include CPT Template Files
 		 */
 
 		function cdz_include_template_files( $template ) {
 
 			if ( is_single() ) {
 
-				return cdz_get_template( $template, 'cdz-monkeys-manager', cdz_function_to_slug( get_post_type() ) . '-single.php' );
+				return cdz_get_template( $template, cdz_function_to_slug( get_post_type() ) . '-single.php' );
 				
 			} else if ( is_archive() ) {
 
-				return cdz_get_template( $template, 'cdz-monkeys-manager', cdz_function_to_slug( get_post_type() ) . '-archive.php' );
+				return cdz_get_template( $template, cdz_function_to_slug( get_post_type() ) . '-archive.php' );
 
 			}
 

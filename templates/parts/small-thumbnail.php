@@ -55,6 +55,10 @@ if ( get_post_thumbnail_id() ) : ?>
 
 	?>
 
+	<div class="entry-meta">
+		<p class="categories button"><?php echo cdz_get_the_category_list( $post->ID ); ?></p>
+	</div>
+
 </header>
 
 <?php if ( is_single() ) : ?>

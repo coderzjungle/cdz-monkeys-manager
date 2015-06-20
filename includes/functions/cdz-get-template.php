@@ -21,19 +21,19 @@ defined( 'ABSPATH' ) or exit;
 
 if ( ! function_exists( 'cdz_get_template' ) ) {
 
-	function cdz_get_template( $template, $pluginslug, $filename ) {
+	function cdz_get_template( $template, $file ) {
 
-		if ( file_exists( CDZ_THEME_PATH . '/' . $pluginslug . '/' . $filename ) ) {
+		if ( file_exists( CDZ_THEME_PATH . '/templates/' . $file ) ) {
 
-			$template = CDZ_THEME_PATH . '/' . $pluginslug . '/' . $filename;
+			$template = CDZ_THEME_PATH . '/templates/' . $file;
 
-		} else if ( file_exists( CDZ_THEME_PATH . '/cdz-theme/templates/plugins/' . $pluginslug . '/' . $filename ) ) {
+		} else if ( file_exists( CDZ_THEME_PATH . '/theme/templates/' . $file ) ) {
 
-			$template = CDZ_THEME_PATH . '/cdz-theme/templates/plugins/' . $pluginslug . '/' . $filename;
+			$template = CDZ_THEME_PATH . '/theme/templates/plugins/' . $file;
 
-		} else if ( file_exists( CDZ_PLUGIN_PATH . '/templates/' . $filename ) ) {
+		} else if ( file_exists( CDZ_PLUGIN_PATH . '/templates/' . $file ) ) {
 
-			$template = CDZ_PLUGIN_PATH . '/templates/' . $filename;
+			$template = CDZ_PLUGIN_PATH . '/templates/' . $file;
 
 		}
 		
