@@ -21,7 +21,6 @@ defined( 'ABSPATH' ) or exit;
 
 $rand_num = rand( 00000, 99999 );
 
-
 if ( ! empty( $title ) ) { echo '<h2>' . $title . '</h2>'; }
 
 ?>
