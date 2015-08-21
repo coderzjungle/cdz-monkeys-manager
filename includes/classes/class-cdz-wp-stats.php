@@ -125,4 +125,4 @@ if ( ! class_exists( 'cdz_WP_Stats' ) ) {
 
 }
 
-$cdz_wp_stats = new cdz_WP_Stats();
+// $cdz_wp_stats = new cdz_WP_Stats();

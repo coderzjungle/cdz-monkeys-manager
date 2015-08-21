@@ -120,7 +120,7 @@ if ( ! class_exists( 'cdz_Monkeys_Manager' ) ) {
 
 			wp_enqueue_style( 'font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css', array(), '4.3.0' );
 			wp_enqueue_style( 'cdz_style', CDZ_PLUGIN_URL . '/assets/css/cdz-style.css' );
-			wp_enqueue_style( 'cdz_wp_stats_style', CDZ_PLUGIN_URL . '/assets/css/cdz-wp-stats.css' );
+			// wp_enqueue_style( 'cdz_wp_stats_style', CDZ_PLUGIN_URL . '/assets/css/cdz-wp-stats.css' );
 
 			/*
 			 *	Scripts
