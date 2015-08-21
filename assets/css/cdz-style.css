@@ -21,6 +21,14 @@
 .megamenu .sub-menu .menu-item-has-children > a:after { display: none !important; }
 
 /*
+ *	Breadcrumbs
+ */
+
+#breadcrumbs { margin: 10px 0px; list-style: none; overflow: hidden; }
+#breadcrumbs li { display: inline-block; vertical-align: middle; }
+#breadcrumbs .separator { margin: 0px 10px; font-size: 13px; font-weight: 100; }
+
+/*
  *	Sliders
  */
 
