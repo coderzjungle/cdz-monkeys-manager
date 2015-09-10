@@ -62,10 +62,10 @@ if ( ! function_exists( 'cdz_options_header' ) ) {
 				'class'			=>	'hidden',
 				'type'			=>	'radio',
 				'options'		=>	array(
-										'type_1' =>	__( 'Type 1 - Logo Top, Nav Bottom', 'cdz' ),
-										'type_2' =>	__( 'Type 2 - Nav Top, Logo Bottom', 'cdz' ),
-										'type_3' =>	__( 'Type 3 - Logo Left, Nav Right', 'cdz' ),
-										'type_4' =>	__( 'Type 4 - Nav Left, Logo Right', 'cdz' ),
+										'type_1' =>	__( 'Type 1 - Logo & Header Sidebar Top, Main Navigation Bottom', 'cdz' ),
+										'type_2' =>	__( 'Type 2 - Main Navigation Top, Logo & Header Sidebar Bottom', 'cdz' ),
+										'type_3' =>	__( 'Type 3 - Logo Left, Main Navigation Right, Header Sidebar Bottom', 'cdz' ),
+										'type_4' =>	__( 'Type 4 - Header Sidebar Top, Main Navigation Left, Logo Right', 'cdz' ),
 									),
 				'std'			=>	cdz_get_theme_options_std( 'opt_header_layout' ),
 			);
@@ -77,6 +77,13 @@ if ( ! function_exists( 'cdz_options_header' ) ) {
 				'class'			=>	'advo',
 				'type'			=>	'checkbox',
 				'std'			=>	cdz_get_theme_options_std( 'opt_header_fixed' ),
+			);
+
+			$options[] = array(
+				'name'			=>	 __( 'Header background', 'cdz' ),
+				'id'			=>	'opt_header_background',
+				'type'			=>	'background',
+				'std'			=>	cdz_get_theme_options_std( 'opt_header_background' ),
 			);
 
 		}

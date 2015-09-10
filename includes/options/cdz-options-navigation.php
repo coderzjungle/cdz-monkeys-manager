@@ -68,6 +68,13 @@ if ( ! function_exists( 'cdz_options_navigation' ) ) {
 				'std'			=>	cdz_get_theme_options_std( 'opt_nav_alignment' ),
 			);
 
+			$options[] = array(
+				'name'			=>	 __( 'Menu background', 'cdz' ),
+				'id'			=>	'opt_nav_background',
+				'type'			=>	'background',
+				'std'			=>	cdz_get_theme_options_std( 'opt_nav_background' ),
+			);
+
 		}
 
 		/*

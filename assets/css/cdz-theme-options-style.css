@@ -20,7 +20,7 @@
 #cdz-panel p { margin-bottom:0; padding-bottom:10px; }
 #cdz-panel .section { padding:10px 10px 0; }
 #cdz-panel .group { padding-bottom: 30px; }
-#cdz-panel .section .controls { float: left; min-width:350px; width: 54%; padding-right:2%; }
+#cdz-panel .section .controls { min-width:350px; width: 100%; /*padding-right: 2%;*/ }
 #cdz-panel .section .explain { max-width:38%; float: left; font-size: 12px; line-height:16px; color: #777; }
 #cdz-panel .controls input[type=text] { width:100%; }
 #cdz-panel .section-checkbox .controls { width: 98%; }

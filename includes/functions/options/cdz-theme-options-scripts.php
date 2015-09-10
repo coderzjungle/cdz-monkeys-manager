@@ -38,52 +38,52 @@ if ( ! function_exists( 'cdz_theme_options_scripts' ) ) {
 					$array = array();
 
 
-					$array['adv_options']				= array( '.advo' );
+					$array['adv_options']				= array( '.advo', );
 
-					$array['header']					= array( 'header_layout' );
-					$array['custom_logo']				= array( 'custom_logo_uploader', 'custom_logo_width', 'custom_logo_height', 'custom_logo_crop' );
-					$array['custom_icons_touch']		= array( 'custom_icons_touch_152', 'custom_icons_touch_144', 'custom_icons_touch_120', 'custom_icons_touch_114', 'custom_icons_touch_76', 'custom_icons_touch_72', 'custom_icons_touch_57' );
-					$array['custom_icons_ie_10']		= array( 'custom_icons_ie_10_metro_tile_color', 'custom_icons_ie_10_metro_tile_image' );
+					$array['header']					= array( 'header_layout', 'header_fixed', 'header_background', );
+					$array['custom_logo']				= array( 'custom_logo_uploader', 'custom_logo_width', 'custom_logo_height', 'custom_logo_crop', );
+					$array['custom_icons_touch']		= array( 'custom_icons_touch_152', 'custom_icons_touch_144', 'custom_icons_touch_120', 'custom_icons_touch_114', 'custom_icons_touch_76', 'custom_icons_touch_72', 'custom_icons_touch_57', );
+					$array['custom_icons_ie_10']		= array( 'custom_icons_ie_10_metro_tile_color', 'custom_icons_ie_10_metro_tile_image', );
 					
 					// Sliders
-					$array['slider_home']				= array( 'slider_home_type' );
-					$array['slider_blog']				= array( 'slider_blog_type' );
-					$array['slider_search']				= array( 'slider_search_type' );
-					$array['slider_error404']			= array( 'slider_error404_type' );
-					$array['slider_single']				= array( 'slider_single_type' );
-					$array['slider_shop']				= array( 'slider_shop_type' );
-					$array['slider_product']			= array( 'slider_product_type' );
-					$array['slider_page']				= array( 'slider_page_type' );
+					$array['slider_home']				= array( 'slider_home_type', );
+					$array['slider_blog']				= array( 'slider_blog_type', );
+					$array['slider_search']				= array( 'slider_search_type', );
+					$array['slider_error404']			= array( 'slider_error404_type', );
+					$array['slider_single']				= array( 'slider_single_type', );
+					$array['slider_shop']				= array( 'slider_shop_type', );
+					$array['slider_product']			= array( 'slider_product_type', );
+					$array['slider_page']				= array( 'slider_page_type', );
 
 					// Slogans
-					$array['slogan_home']				= array( 'slogan_home_img', 'slogan_home_text', 'slogan_home_subtext' );
-					$array['slogan_blog']				= array( 'slogan_blog_img', 'slogan_blog_text', 'slogan_blog_subtext' );
-					$array['slogan_search']				= array( 'slogan_search_img', 'slogan_search_text', 'slogan_search_subtext' );
-					$array['slogan_error404']			= array( 'slogan_error404_img', 'slogan_error404_text', 'slogan_error404_subtext' );
-					$array['slogan_single']				= array( 'slogan_single_img', 'slogan_single_text', 'slogan_single_subtext' );
-					$array['slogan_page']				= array( 'slogan_page_img', 'slogan_page_text', 'slogan_page_subtext' );
+					$array['slogan_home']				= array( 'slogan_home_img', 'slogan_home_text', 'slogan_home_subtext', );
+					$array['slogan_blog']				= array( 'slogan_blog_img', 'slogan_blog_text', 'slogan_blog_subtext', );
+					$array['slogan_search']				= array( 'slogan_search_img', 'slogan_search_text', 'slogan_search_subtext', );
+					$array['slogan_error404']			= array( 'slogan_error404_img', 'slogan_error404_text', 'slogan_error404_subtext', );
+					$array['slogan_single']				= array( 'slogan_single_img', 'slogan_single_text', 'slogan_single_subtext', );
+					$array['slogan_page']				= array( 'slogan_page_img', 'slogan_page_text', 'slogan_page_subtext', );
 
 					// Sidebars
-					$array['sidebar_home']				= array( 'sidebar_home_left', 'sidebar_home_left_cols', 'sidebar_home_right', 'sidebar_home_right_cols' );
-					$array['sidebar_blog']				= array( 'sidebar_blog_left', 'sidebar_blog_left_cols', 'sidebar_blog_right', 'sidebar_blog_right_cols' );
-					$array['sidebar_search']			= array( 'sidebar_search_left', 'sidebar_search_left_cols', 'sidebar_search_right', 'sidebar_search_right_cols' );
-					$array['sidebar_error404']			= array( 'sidebar_error404_left', 'sidebar_error404_left_cols', 'sidebar_error404_right', 'sidebar_error404_right_cols' );
-					$array['sidebar_single']			= array( 'sidebar_single_left', 'sidebar_single_left_cols', 'sidebar_single_right', 'sidebar_single_right_cols' );
-					$array['sidebar_page']				= array( 'sidebar_page_left', 'sidebar_page_left_cols', 'sidebar_page_right', 'sidebar_page_right_cols' );
-					$array['sidebar_shop']				= array( 'sidebar_shop_left', 'sidebar_shop_left_cols', 'sidebar_shop_right', 'sidebar_shop_right_cols' );
-					$array['sidebar_product_category']	= array( 'sidebar_product_category_left', 'sidebar_product_category_left_cols', 'sidebar_product_category_right', 'sidebar_product_category_right_cols' );
-					$array['sidebar_product']			= array( 'sidebar_product_left', 'sidebar_product_left_cols', 'sidebar_product_right', 'sidebar_product_right_cols' );
-					$array['sidebar_cart']				= array( 'sidebar_cart_left', 'sidebar_cart_left_cols', 'sidebar_cart_right', 'sidebar_cart_right_cols' );
-					$array['sidebar_checkout']			= array( 'sidebar_checkout_left', 'sidebar_checkout_left_cols', 'sidebar_checkout_right', 'sidebar_checkout_right_cols' );
-					$array['sidebar_account']			= array( 'sidebar_account_left', 'sidebar_account_left_cols', 'sidebar_account_right', 'sidebar_account_right_cols' );
+					$array['sidebar_home']				= array( 'sidebar_home_left', 'sidebar_home_left_cols', 'sidebar_home_right', 'sidebar_home_right_cols', );
+					$array['sidebar_blog']				= array( 'sidebar_blog_left', 'sidebar_blog_left_cols', 'sidebar_blog_right', 'sidebar_blog_right_cols', );
+					$array['sidebar_search']			= array( 'sidebar_search_left', 'sidebar_search_left_cols', 'sidebar_search_right', 'sidebar_search_right_cols', );
+					$array['sidebar_error404']			= array( 'sidebar_error404_left', 'sidebar_error404_left_cols', 'sidebar_error404_right', 'sidebar_error404_right_cols', );
+					$array['sidebar_single']			= array( 'sidebar_single_left', 'sidebar_single_left_cols', 'sidebar_single_right', 'sidebar_single_right_cols', );
+					$array['sidebar_page']				= array( 'sidebar_page_left', 'sidebar_page_left_cols', 'sidebar_page_right', 'sidebar_page_right_cols', );
+					$array['sidebar_shop']				= array( 'sidebar_shop_left', 'sidebar_shop_left_cols', 'sidebar_shop_right', 'sidebar_shop_right_cols', );
+					$array['sidebar_product_category']	= array( 'sidebar_product_category_left', 'sidebar_product_category_left_cols', 'sidebar_product_category_right', 'sidebar_product_category_right_cols', );
+					$array['sidebar_product']			= array( 'sidebar_product_left', 'sidebar_product_left_cols', 'sidebar_product_right', 'sidebar_product_right_cols', );
+					$array['sidebar_cart']				= array( 'sidebar_cart_left', 'sidebar_cart_left_cols', 'sidebar_cart_right', 'sidebar_cart_right_cols', );
+					$array['sidebar_checkout']			= array( 'sidebar_checkout_left', 'sidebar_checkout_left_cols', 'sidebar_checkout_right', 'sidebar_checkout_right_cols', );
+					$array['sidebar_account']			= array( 'sidebar_account_left', 'sidebar_account_left_cols', 'sidebar_account_right', 'sidebar_account_right_cols', );
 					
 					// Testimonials
-					// $array['slider_plugin_lt']			= array( 'slider_plugin_lt_type' );
-					// $array['slogan_plugin_lt']			= array( 'slogan_plugin_lt_img', 'slogan_plugin_lt_text', 'slogan_plugin_lt_subtext' );
-					// $array['sidebar_plugin_lt']			= array( 'sidebar_plugin_lt_left', 'sidebar_plugin_lt_left_cols', 'sidebar_plugin_lt_right', 'sidebar_plugin_lt_right_cols' );
+					// $array['slider_plugin_lt']			= array( 'slider_plugin_lt_type', );
+					// $array['slogan_plugin_lt']			= array( 'slogan_plugin_lt_img', 'slogan_plugin_lt_text', 'slogan_plugin_lt_subtext', );
+					// $array['sidebar_plugin_lt']			= array( 'sidebar_plugin_lt_left', 'sidebar_plugin_lt_left_cols', 'sidebar_plugin_lt_right', 'sidebar_plugin_lt_right_cols', );
 
-					$array['footer']					= array( 'footer_widgets_cols' );
-					$array['copyright']					= array( 'copyright_layout', 'copyright_left_text', 'copyright_right_text' );
+					$array['footer']					= array( 'footer_widgets_cols', );
+					$array['copyright']					= array( 'copyright_layout', 'copyright_left_text', 'copyright_right_text', );
 
 					echo cdz_to_checkbox_show( $array );
 

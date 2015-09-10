@@ -343,105 +343,113 @@ if ( ! function_exists( 'cdz_options_sliders' ) ) {
 		);
 
 		/*
-		 *	Shop page
+		 *	Woocommerce
 		 */
 
-		$options[] = array(
-			'name'			=>	__( 'Shop page', 'cdz' ),
-			'desc'			=>	__('Plugins supported', 'cdz') . ': <a href="https://wordpress.org/plugins/woocommerce/" target="_blank">' . __( 'Woocommerce', 'cdz' ) . '</a>',
-			'type'			=>	'info',
-		);
+		if ( cdz_get_theme_options_std( 'info_sliders_shop' ) ) {
 
-		$options[] = array(
-			'name'			=>	__( 'Enable settings', 'cdz' ),
-			'desc'			=>	__( 'These options will override the general settings in this page', 'cdz' ),
-			'id'			=>	'opt_slider_shop',
-			'type'			=>	'checkbox',
-			'std'			=>	cdz_get_theme_options_std( 'opt_slider_shop' ),
-		);
+			/*
+			 *	Shop page
+			 */
 
-		$options[] = array(
-			'name'			=>	__( 'Slider', 'cdz' ),
-			'id'			=>	'opt_slider_shop_type',
-			'class'			=>	'hidden',
-			'type'			=>	'select',
-			'options'		=>	array(
-									'none'			=>	'- None -',
-									'fiximage'		=>	'Fixed Image',
-									'revslider'		=>	'Revolution Slider (Plugin)',
-								),
-			'std'			=>	cdz_get_theme_options_std( 'opt_slider_shop_type' ),
-		);
+			$options[] = array(
+				'name'			=>	__( 'Shop page', 'cdz' ),
+				'desc'			=>	__('Plugins supported', 'cdz') . ': <a href="https://wordpress.org/plugins/woocommerce/" target="_blank">' . __( 'Woocommerce', 'cdz' ) . '</a>',
+				'type'			=>	'info',
+			);
 
-		$options[] = array(
-			'name'			=>	__( 'Fixed Image', 'cdz' ),
-			'id'			=>	'opt_slider_shop_fiximage_url',
-			'class'			=>	'hidden',
-			'type'			=>	'upload',
-			'std'			=>	cdz_get_theme_options_std( 'opt_slider_shop_fiximage_url' ),
-		);
+			$options[] = array(
+				'name'			=>	__( 'Enable settings', 'cdz' ),
+				'desc'			=>	__( 'These options will override the general settings in this page', 'cdz' ),
+				'id'			=>	'opt_slider_shop',
+				'type'			=>	'checkbox',
+				'std'			=>	cdz_get_theme_options_std( 'opt_slider_shop' ),
+			);
 
-		$options[] = array(
-			'name'			=>	__( 'Revolution Slider', 'cdz' ),
-			'desc'			=>	$revlink,
-			'id'			=>	'opt_slider_shop_revslider_id',
-			'class'			=>	'hidden',
-			'type'			=>	'select',
-			'options'		=>	$revslider_list,
-			'std'			=>	cdz_get_theme_options_std( 'opt_slider_shop_revslider_id' ),
-		);
+			$options[] = array(
+				'name'			=>	__( 'Slider', 'cdz' ),
+				'id'			=>	'opt_slider_shop_type',
+				'class'			=>	'hidden',
+				'type'			=>	'select',
+				'options'		=>	array(
+										'none'			=>	'- None -',
+										'fiximage'		=>	'Fixed Image',
+										'revslider'		=>	'Revolution Slider (Plugin)',
+									),
+				'std'			=>	cdz_get_theme_options_std( 'opt_slider_shop_type' ),
+			);
+
+			$options[] = array(
+				'name'			=>	__( 'Fixed Image', 'cdz' ),
+				'id'			=>	'opt_slider_shop_fiximage_url',
+				'class'			=>	'hidden',
+				'type'			=>	'upload',
+				'std'			=>	cdz_get_theme_options_std( 'opt_slider_shop_fiximage_url' ),
+			);
+
+			$options[] = array(
+				'name'			=>	__( 'Revolution Slider', 'cdz' ),
+				'desc'			=>	$revlink,
+				'id'			=>	'opt_slider_shop_revslider_id',
+				'class'			=>	'hidden',
+				'type'			=>	'select',
+				'options'		=>	$revslider_list,
+				'std'			=>	cdz_get_theme_options_std( 'opt_slider_shop_revslider_id' ),
+			);
+
+			/*
+			 *	Single product page
+			 */
+
+			$options[] = array(
+				'name'			=>	__( 'Single product page', 'cdz' ),
+				'desc'			=>	__('Plugins supported', 'cdz') . ': <a href="https://wordpress.org/plugins/woocommerce/" target="_blank">' . __( 'Woocommerce', 'cdz' ) . '</a>',
+				'type'			=>	'info',
+			);
+
+			$options[] = array(
+				'name'			=>	__( 'Enable settings', 'cdz' ),
+				'desc'			=>	__( 'These options will override the general settings in this page', 'cdz' ),
+				'id'			=>	'opt_slider_product',
+				'type'			=>	'checkbox',
+				'std'			=>	cdz_get_theme_options_std( 'opt_slider_product' ),
+			);
+
+			$options[] = array(
+				'name'			=>	__( 'Slider', 'cdz' ),
+				'id'			=>	'opt_slider_product_type',
+				'class'			=>	'hidden',
+				'type'			=>	'select',
+				'options'		=>	array(
+										'none'			=>	'- None -',
+										'fiximage'		=>	'Fixed Image',
+										'revslider'		=>	'Revolution Slider (Plugin)',
+									),
+				'std'			=>	cdz_get_theme_options_std( 'opt_slider_product_type' ),
+			);
+
+			$options[] = array(
+				'name'			=>	__( 'Fixed Image', 'cdz' ),
+				'id'			=>	'opt_slider_product_fiximage_url',
+				'class'			=>	'hidden',
+				'type'			=>	'upload',
+				'std'			=>	cdz_get_theme_options_std( 'opt_slider_product_fiximage_url' ),
+			);
+
+			$options[] = array(
+				'name'			=>	__( 'Revolution Slider', 'cdz' ),
+				'desc'			=>	$revlink,
+				'id'			=>	'opt_slider_product_revslider_id',
+				'class'			=>	'hidden',
+				'type'			=>	'select',
+				'options'		=>	$revslider_list,
+				'std'			=>	cdz_get_theme_options_std( 'opt_slider_product_revslider_id' ),
+			);
+
+		}
 
 		/*
-		 *	Single product page
-		 */
-
-		$options[] = array(
-			'name'			=>	__( 'Single product page', 'cdz' ),
-			'desc'			=>	__('Plugins supported', 'cdz') . ': <a href="https://wordpress.org/plugins/woocommerce/" target="_blank">' . __( 'Woocommerce', 'cdz' ) . '</a>',
-			'type'			=>	'info',
-		);
-
-		$options[] = array(
-			'name'			=>	__( 'Enable settings', 'cdz' ),
-			'desc'			=>	__( 'These options will override the general settings in this page', 'cdz' ),
-			'id'			=>	'opt_slider_product',
-			'type'			=>	'checkbox',
-			'std'			=>	cdz_get_theme_options_std( 'opt_slider_product' ),
-		);
-
-		$options[] = array(
-			'name'			=>	__( 'Slider', 'cdz' ),
-			'id'			=>	'opt_slider_product_type',
-			'class'			=>	'hidden',
-			'type'			=>	'select',
-			'options'		=>	array(
-									'none'			=>	'- None -',
-									'fiximage'		=>	'Fixed Image',
-									'revslider'		=>	'Revolution Slider (Plugin)',
-								),
-			'std'			=>	cdz_get_theme_options_std( 'opt_slider_product_type' ),
-		);
-
-		$options[] = array(
-			'name'			=>	__( 'Fixed Image', 'cdz' ),
-			'id'			=>	'opt_slider_product_fiximage_url',
-			'class'			=>	'hidden',
-			'type'			=>	'upload',
-			'std'			=>	cdz_get_theme_options_std( 'opt_slider_product_fiximage_url' ),
-		);
-
-		$options[] = array(
-			'name'			=>	__( 'Revolution Slider', 'cdz' ),
-			'desc'			=>	$revlink,
-			'id'			=>	'opt_slider_product_revslider_id',
-			'class'			=>	'hidden',
-			'type'			=>	'select',
-			'options'		=>	$revslider_list,
-			'std'			=>	cdz_get_theme_options_std( 'opt_slider_product_revslider_id' ),
-		);
-
-		/*
-		 *	Page
+		 *	Other pages
 		 */
 
 		$options[] = array(
